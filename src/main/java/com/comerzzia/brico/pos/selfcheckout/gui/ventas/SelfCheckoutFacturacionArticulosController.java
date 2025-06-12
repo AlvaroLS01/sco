@@ -580,13 +580,17 @@ public class SelfCheckoutFacturacionArticulosController extends FacturacionArtic
 
 		String codigo = (String) getDatos().get(IntroduccionManualController.PARAM_CODIGO);
 
-		if (StringUtils.isNotBlank(codigo) && codigo.contains("@")) {
-			buscarFidelizado(codigo);
-		}
-//		else if (StringUtils.isNotBlank(codigo) && codigo.length() == 9 && (esDNI(codigo) || esCIF(codigo) || esNIF(codigo) || esNIFPortugues(codigo))) {
-		else if (StringUtils.isNotBlank(codigo) && (codigo.length() >= 8 && codigo.length() <= 10)) {
-			buscarFidelizado(codigo);
-		}
+                if (StringUtils.isNotBlank(codigo) && codigo.contains("@")) {
+                        String errorKey = BricoEmailValidator.getValidationErrorKey(codigo);
+                        if (errorKey != null) {
+                                VentanaDialogoComponent.crearVentanaAviso(I18N.getTexto(errorKey), getStage());
+                                return;
+                        }
+                        buscarFidelizado(codigo);
+                }
+                else if (StringUtils.isNotBlank(codigo) && (esNIF(codigo) || esNIFPortugues(codigo))) {
+                        buscarFidelizado(codigo);
+                }
 		else if (StringUtils.isNotBlank(codigo)) {
 
 			log.debug("introducirCodigoManual() - Introduciendo manualmente el código: " + codigo);

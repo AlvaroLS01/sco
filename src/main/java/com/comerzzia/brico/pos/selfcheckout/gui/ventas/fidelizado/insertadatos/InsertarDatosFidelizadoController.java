@@ -25,6 +25,9 @@ import com.comerzzia.pos.services.core.sesion.Sesion;
 import com.comerzzia.pos.util.config.AppConfig;
 import com.comerzzia.pos.util.i18n.I18N;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -135,22 +138,27 @@ public class InsertarDatosFidelizadoController extends WindowController implemen
 		}
 	}
 
-	@FXML
-	public void accionAceptar() {
-		String input = tfInsertarEmail.getText().trim();
+        @FXML
+        public void accionAceptar() {
+                String input = tfInsertarEmail.getText().trim();
 
 		if (StringUtils.isBlank(input)) {
 			VentanaDialogoComponent.crearVentanaAviso(I18N.getTexto("No puede dejar el campo vacío."), getStage());
 			return;
 		}
 
-		if (input.contains("@")) {
-			String errorKey = BricoEmailValidator.getValidationErrorKey(input);
-			if (errorKey != null) {
-				VentanaDialogoComponent.crearVentanaAviso(I18N.getTexto(errorKey), getStage());
-				return;
-			}
-		}
+                if (input.contains("@")) {
+                        String errorKey = BricoEmailValidator.getValidationErrorKey(input);
+                        if (errorKey != null) {
+                                VentanaDialogoComponent.crearVentanaAviso(I18N.getTexto(errorKey), getStage());
+                                return;
+                        }
+                } else {
+                        if (!(esNIF(input) || esNIFPortugues(input))) {
+                                VentanaDialogoComponent.crearVentanaAviso(I18N.getTexto("El documento seleccionado no es válido."), getStage());
+                                return;
+                        }
+                }
 
 		getDatos().put("valor", valor);
 		getDatos().put(DATO_INSERTADO, input);
@@ -250,14 +258,28 @@ public class InsertarDatosFidelizadoController extends WindowController implemen
 
 	}
 	
-	public void resetearCorreo() {
-		if(tfInsertarEmail.getText().contains("@")) {
-			String[] mailDividido = tfInsertarEmail.getText().split("@");
-			if (mailDividido.length > 1) {
-				tfInsertarEmail.setText(mailDividido[0]);
-			}
-		}
-	}
+        public void resetearCorreo() {
+                if(tfInsertarEmail.getText().contains("@")) {
+                        String[] mailDividido = tfInsertarEmail.getText().split("@");
+                        if (mailDividido.length > 1) {
+                                tfInsertarEmail.setText(mailDividido[0]);
+                        }
+                }
+        }
+
+       private boolean esNIF(String nif) {
+               String patronNIF = "^[0-9]{8}[A-HJ-NP-TV-Z]$|^[ABCDEFGHJKLMNPQRSUVW][0-9]{7}[0-9A-J]$";
+               Pattern pattern = Pattern.compile(patronNIF, Pattern.CASE_INSENSITIVE);
+               Matcher matcher = pattern.matcher(nif);
+               return matcher.matches();
+       }
+
+       private boolean esNIFPortugues(String nif) {
+               String patronNIFPortugues = "^[0-9]{9}$";
+               Pattern pattern = Pattern.compile(patronNIFPortugues, Pattern.CASE_INSENSITIVE);
+               Matcher matcher = pattern.matcher(nif);
+               return matcher.matches();
+       }
 
 	@FXML
 	public void accionCancelar() {
