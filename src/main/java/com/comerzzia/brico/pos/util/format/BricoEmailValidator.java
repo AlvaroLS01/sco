@@ -19,11 +19,19 @@ public class BricoEmailValidator extends EmailValidator {
 		super();
 	}
 
-	public static String getValidationErrorKey(String email) {
-		boolean basicOk = !StringUtils.isBlank(email) && !email.contains(" ") && email.indexOf('@') > 0 && email.indexOf('@') == email.lastIndexOf('@');
-		if (!basicOk) {
-			return I18N.getTexto("El formato del email no es válido");
-		}
+        public static String getValidationErrorKey(String email) {
+                if (StringUtils.isBlank(email) || email.contains(" ")) {
+                        return I18N.getTexto("El formato del email no es válido");
+                }
+
+                if (!email.contains("@")) {
+                        return I18N.getTexto("El email debe contener '@'");
+                }
+
+                boolean basicOk = email.indexOf('@') > 0 && email.indexOf('@') == email.lastIndexOf('@');
+                if (!basicOk) {
+                        return I18N.getTexto("El formato del email no es válido");
+                }
 
 		String[] parts = email.split("@", 2);
 		String localPart = parts[0];
