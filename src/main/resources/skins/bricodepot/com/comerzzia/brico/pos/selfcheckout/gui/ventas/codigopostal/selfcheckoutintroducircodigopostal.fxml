@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.comerzzia.pos.core.gui.componentes.tecladonumerico.*?>
+<?import com.comerzzia.pos.core.gui.componentes.textField.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-classpath-element C:/Tier1/ExploradorApps/Aplicaciones/JPOS_3_0/jpos/lib/comerzzia-pos-core-3.0-SNAPSHOT.jar?>
+<?scenebuilder-classpath-element C:/Tier1/ExploradorApps/Aplicaciones/JPOS_3_0/jpos/lib?>
+
+<AnchorPane id="AnchorPane" minWidth="392.0" prefHeight="508.0" prefWidth="392.0" styleClass="mainFxmlClass, pantalla-detalle" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.comerzzia.brico.pos.selfcheckout.gui.ventas.codigopostal.SelfCheckoutIntroducirCodigoPostalController">
+  <children>
+    <HBox id="HBox" alignment="CENTER" prefHeight="508.0" spacing="5.0" style="" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox prefHeight="508.0" prefWidth="392.0" spacing="10.0" HBox.hgrow="ALWAYS">
+          <children>
+            <HBox prefHeight="50.0" prefWidth="200.0" styleClass="titulo-ventana" VBox.vgrow="NEVER">
+              <children>
+                <Label fx:id="lbIntroCodArticulo" alignment="CENTER" minHeight="51.0" prefHeight="50.0" prefWidth="613.0" styleClass="intro-number" text="%Introduzca el código postal" />
+              </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="91.0" prefWidth="392.0" VBox.vgrow="ALWAYS">
+              <children>
+                <TextField fx:id="tfCodigo" onKeyReleased="#actionButonOKTecladoNumerico" prefHeight="50.0" prefWidth="-1.0" styleClass="text-corp, art-number" HBox.hgrow="ALWAYS">
+                  <HBox.margin>
+                    <Insets left="15.0" right="15.0" />
+                  </HBox.margin>
+                </TextField>
+              </children>
+            </HBox>
+            <HBox fx:id="panelTecladoNumerico" alignment="CENTER" prefHeight="300.0" prefWidth="392.0">
+              <children>
+                <TecladoNumerico fx:id="tecladoNumerico" prefHeight="265.0" prefWidth="215.0" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+              </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="126.0" prefWidth="392.0" VBox.vgrow="NEVER">
+              <children>
+                <Button fx:id="btAceptar" minHeight="42.0" minWidth="115.0" mnemonicParsing="false" onAction="#accionAceptar" prefHeight="42.0" prefWidth="-1.0" style="" styleClass="text-black" text="%Aceptar">
+                  <font>
+                    <Font size="16.0" fx:id="x1" />
+                  </font>
+                </Button>
+                <Button fx:id="btCancelar" mnemonicParsing="false" onAction="#accionCancelar" styleClass="text-black" text="%Cancelar">
+                  <HBox.margin>
+                    <Insets left="10.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+              <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+              </padding>
+            </HBox>
+          </children>
+        </VBox>
+      </children>
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@../../styles/styles.css" />
+    <URL value="@selfcheckoutintroducircodigopostal.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,70 @@
+.btSpanish {
+    -fx-background-image: url("espana.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 10px center;
+    -fx-padding: 10 10 10 40;
+    -fx-text-fill: rgba(0,0,0);
+    -fx-font-size: 18;
+}
+
+.btEnglish {
+    -fx-background-image: url("reino-unido.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 10px center;
+    -fx-padding: 10 10 10 40;
+    -fx-text-fill: rgba(0,0,0);
+    -fx-font-size: 18;
+}
+
+.btGerman {
+    -fx-background-image: url("alemania.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 10px center;
+    -fx-padding: 10 10 10 40;
+    -fx-text-fill: rgba(0,0,0);
+    -fx-font-size: 18;
+}
+
+.btPortuguese {
+    -fx-background-image: url("portugal.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 10px center;
+    -fx-padding: 10 10 10 40;
+    -fx-text-fill: rgba(0,0,0);
+    -fx-font-size: 18;
+}
+
+.btCatalan {
+    -fx-background-image: url("catalunya.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 10px center;
+    -fx-padding: 10 10 10 40;
+    -fx-text-fill: rgba(0,0,0);
+    -fx-font-size: 18;
+}
+
+.logo-brico {
+    -fx-background-image: url("logo_brico.png");
+    -fx-background-position: center;
+    -fx-background-size: 25% auto;
+    -fx-background-repeat: no-repeat;
+
+}
+
+.logo {
+	-fx-background-image: url("logo.png");
+    -fx-background-position: center;
+    -fx-background-size: 10% auto;
+    -fx-background-repeat: no-repeat;
+    -fx-text-fill: #0082AA; 
+}
+
+#boton-conversion{
+	-fx-text-fill: rgba(0,0,0) !important;
+	-fx-font-weight: bold !important;
+	-fx-font-size: 14px !important;
+    -fx-background-image: url("factura_completa_es.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center 10%;
+    -fx-background-size: 90%;
+}

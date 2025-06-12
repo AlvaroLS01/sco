@@ -1,0 +1,55 @@
+.titulo-ventana{
+    -fx-background-color: rgba(227,6,19) !important;
+    -fx-text-fill: rgba(255,255,255) !important; 
+}
+.titulo-ventana .label{
+    -fx-background-color: rgba(227,6,19) !important;
+    -fx-text-fill: rgba(255,255,255) !important; 
+}
+
+.boton-fondo-black {
+    -fx-background-color: rgba(0, 0, 0);
+    -fx-text-fill: rgba(255, 255, 255) !important;
+}
+
+.boton-fondo-black:hover {
+    -fx-background-color: rgba(0, 0, 0);
+    -fx-text-fill: rgba(255, 255, 255) !important;
+}
+.texto-resaltado{
+    -fx-text-fill: rgba(0, 0, 0);
+}
+.label{
+    -fx-text-fill: rgba(0, 0, 0);
+}
+
+.text-input{
+    -fx-text-fill: rgba(0, 0, 0);
+}
+
+.text-black{
+    -fx-text-fill: rgba(0, 0, 0) !important;
+}
+
+.check-box {
+    -fx-font-size: 20px;
+    -fx-text-fill: black;  /* Cambia el color del texto a negro */
+    -fx-font-weight: bold;  /* Poner el texto en negrita */
+}
+
+/* Centrar el texto del CheckBox */
+.check-box .text {
+    -fx-alignment: center-left;
+}
+
+.vbox {
+    -fx-spacing: 15px; /* Añadir espacio entre los checkboxes */
+    -fx-padding: 20px; /* Añadir espacio alrededor */
+}
+
+.btAtras{
+	-fx-background-image: url("../../../atras.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left center;
+    -fx-padding: 10 10 10 30;
+}

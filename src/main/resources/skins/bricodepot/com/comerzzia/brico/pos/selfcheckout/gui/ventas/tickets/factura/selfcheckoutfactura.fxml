@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.comerzzia.pos.core.gui.componentes.tecladonumerico.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="739.0" styleClass="pantalla-detalle" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.comerzzia.brico.pos.selfcheckout.gui.ventas.tickets.factura.SelfCheckoutFacturaController">
+  <children>
+    <HBox id="HBox" alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" HBox.hgrow="ALWAYS">
+          <children>
+            <VBox id="VBox" alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <AnchorPane minHeight="30.0" prefHeight="38.0" prefWidth="878.0" styleClass="titulo-ventana" VBox.vgrow="NEVER">
+                  <children>
+                    <Label alignment="CENTER" layoutY="8.0" text="%Datos del cliente para la factura" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="62.0" prefWidth="737.0" VBox.vgrow="ALWAYS" />
+                <TabPane prefHeight="410.0" prefWidth="737.0" tabClosingPolicy="UNAVAILABLE">
+                  <tabs>
+                    <Tab style="" text="%Datos generales">
+                      <content>
+                        <AnchorPane minHeight="261.0" prefHeight="341.0" prefWidth="878.0">
+                          <children>
+                            <VBox minHeight="261.0" prefHeight="261.0" prefWidth="878.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <children>
+                                <HBox minHeight="33.0" prefHeight="33.0" prefWidth="800.0">
+                                  <children>
+                                    <FlowPane hgap="5.0" prefHeight="33.0" prefWidth="774.0" HBox.hgrow="SOMETIMES">
+                                      <children>
+                                        <Label alignment="CENTER_RIGHT" maxWidth="140.0" minWidth="110.0" prefHeight="33.0" prefWidth="120.0" text="%Nombre comercial" textAlignment="RIGHT">
+                                          <FlowPane.margin>
+                                            <Insets />
+                                          </FlowPane.margin>
+                                        </Label>
+                                        <TextField id="tfEntradasVentas" fx:id="tfRazonSocial" editable="true" focusTraversable="true" maxWidth="610.0" onKeyReleased="#accionAceptarIntro" prefHeight="30.0" prefWidth="485.0" styleClass="text-right" />
+                                      </children>
+                                    </FlowPane>
+                                    <AnchorPane prefHeight="95.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                                  </children>
+                                </HBox>
+                                <HBox minHeight="33.0" prefHeight="33.0" prefWidth="800.0">
+                                  <children>
+                                    <FlowPane hgap="5.0" prefHeight="33.0" prefWidth="774.0" HBox.hgrow="SOMETIMES">
+                                      <children>
+                                        <Label alignment="CENTER_RIGHT" maxWidth="140.0" minWidth="110.0" prefHeight="33.0" prefWidth="120.0" text="%Domicilio" textAlignment="RIGHT">
+                                          <FlowPane.margin>
+                                            <Insets />
+                                          </FlowPane.margin>
+                                        </Label>
+                                        <TextField id="tfEntradasVentas" fx:id="tfDomicilio" editable="true" focusTraversable="true" maxWidth="610.0" prefHeight="30.0" prefWidth="482.0" styleClass="text-right" />
+                                      </children>
+                                    </FlowPane>
+                                    <AnchorPane prefHeight="95.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                                  </children>
+                                </HBox>
+                                <HBox minHeight="33.0" prefHeight="33.0" prefWidth="800.0">
+                                  <children>
+                                    <FlowPane hgap="5.0" prefHeight="33.0" prefWidth="774.0" HBox.hgrow="SOMETIMES">
+                                      <children>
+                                        <Label alignment="CENTER_RIGHT" maxWidth="140.0" minWidth="110.0" prefHeight="33.0" prefWidth="120.0" text="%Población" textAlignment="RIGHT">
+                                          <FlowPane.margin>
+                                            <Insets />
+                                          </FlowPane.margin>
+                                        </Label>
+                                        <TextField id="tfEntradasVentas" fx:id="tfPoblacion" editable="true" focusTraversable="true" maxWidth="600.0" prefHeight="30.0" prefWidth="485.0" styleClass="text-right" />
+                                      </children>
+                                    </FlowPane>
+                                    <AnchorPane prefHeight="95.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                                  </children>
+                                </HBox>
+                                <FlowPane hgap="5.0" prefHeight="33.0" prefWidth="800.0">
+                                  <children>
+                                    <Label alignment="CENTER_RIGHT" maxWidth="140.0" minWidth="110.0" prefHeight="33.0" prefWidth="120.0" text="%Provincia" textAlignment="RIGHT" />
+                                    <TextField id="tfEntradasVentas" fx:id="tfProvincia" editable="true" focusTraversable="true" maxWidth="486.0" prefHeight="30.0" prefWidth="486.0" styleClass="text-right" />
+                                  </children>
+                                </FlowPane>
+                                <FlowPane alignment="CENTER_LEFT" hgap="5.0" prefHeight="33.0" prefWidth="200.0">
+                                  <children>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="33.0" prefWidth="120.0" text="%Localidad" />
+                                    <TextField fx:id="tfLocalidad" prefHeight="30.0" prefWidth="485.0" />
+                                  </children>
+                                </FlowPane>
+                                <HBox minHeight="33.0" prefHeight="33.0" prefWidth="800.0">
+                                  <children>
+                                    <FlowPane hgap="5.0" prefHeight="33.0" prefWidth="774.0" HBox.hgrow="SOMETIMES">
+                                      <children>
+                                        <Label alignment="CENTER_RIGHT" maxWidth="140.0" minWidth="110.0" prefHeight="33.0" prefWidth="120.0" text="%C.P." textAlignment="RIGHT">
+                                          <FlowPane.margin>
+                                            <Insets />
+                                          </FlowPane.margin>
+                                        </Label>
+                                        <TextField id="tfEntradasVentas" fx:id="tfCP" editable="true" focusTraversable="true" maxWidth="468.0" prefHeight="30.0" prefWidth="126.0" styleClass="text-right" />
+                                      </children>
+                                    </FlowPane>
+                                    <AnchorPane prefHeight="95.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                                  </children>
+                                </HBox>
+                                <FlowPane hgap="5.0" prefHeight="33.0" prefWidth="200.0">
+                                  <children>
+                                    <Label alignment="CENTER_RIGHT" maxWidth="140.0" minWidth="100.0" prefHeight="33.0" prefWidth="120.0" text="%Tipo Documento" textAlignment="RIGHT" />
+                                    <ComboBox id="cbTipoDoc" fx:id="cbTipoDocIdent" editable="false" prefHeight="30.0" prefWidth="193.5" visibleRowCount="4">
+                                      <items>
+                                        <FXCollections fx:factory="observableArrayList">
+                                          <String fx:value="Item 1" />
+                                          <String fx:value="Item 2" />
+                                          <String fx:value="Item 3" />
+                                        </FXCollections>
+                                      </items>
+                                    </ComboBox>
+                                    <Label alignment="CENTER_RIGHT" prefWidth="117.0" text="%Num. Documento" />
+                                    <TextField id="tfEntradasVentas" fx:id="tfNumDocIdent" editable="true" focusTraversable="true" maxWidth="468.0" prefHeight="30.0" prefWidth="180.0" styleClass="text-right" />
+                                  </children>
+                                </FlowPane>
+                                <FlowPane hgap="5.0" prefHeight="33.0" prefWidth="200.0">
+                                  <children>
+                                    <Label alignment="CENTER_RIGHT" maxWidth="140.0" minWidth="110.0" prefHeight="33.0" prefWidth="121.00009999999747" text="%Teléfono" textAlignment="RIGHT" />
+                                    <TextField id="tfEntradasVentas" fx:id="tfTelefono" editable="true" focusTraversable="true" maxWidth="468.0" prefHeight="30.0" prefWidth="150.0" styleClass="text-right" />
+                                  </children>
+                                </FlowPane>
+                                <FlowPane hgap="5.0" prefHeight="33.0" prefWidth="200.0">
+                                  <children>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="33.0" prefWidth="120.0" text="%Pais" />
+                                    <TextField fx:id="tfCodPais" prefWidth="91.0" />
+                                    <TextField fx:id="tfDesPais" editable="false" focusTraversable="false" prefWidth="350.0" />
+                                    <Button id="" fx:id="btBuscarPais" minHeight="25.0" mnemonicParsing="false" onAction="#accionBuscarPais" prefHeight="30.0001220703125" prefWidth="35.0" styleClass="btTipoDoc, text-black" text="" />
+                                  </children>
+                                </FlowPane>
+                              </children>
+                            </VBox>
+                          </children>
+                          <padding>
+                            <Insets left="50.0" />
+                          </padding>
+                        </AnchorPane>
+                      </content>
+                    </Tab>
+                    <Tab text="%Datos bancarios">
+                      <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      </content>
+                    </Tab>
+                  </tabs>
+                </TabPane>
+                <AnchorPane prefHeight="46.0" prefWidth="878.0" VBox.vgrow="ALWAYS">
+                  <children>
+                    <Label fx:id="lbError" layoutY="13.0" prefWidth="500.0" styleClass="lbError" text="" AnchorPane.rightAnchor="43.0" />
+                  </children>
+                </AnchorPane>
+                <HBox id="HBox" alignment="CENTER" maxHeight="60.0" minHeight="46.0" prefHeight="46.0" prefWidth="878.0" spacing="5.0" VBox.vgrow="NEVER">
+                  <children>
+                    <AnchorPane minWidth="400.0" prefHeight="46.0" prefWidth="400.0" HBox.hgrow="ALWAYS">
+                      <children>
+                        <Button id="accionBuscar" mnemonicParsing="false" onAction="#accionBuscar" prefHeight="47.0" prefWidth="120.0" styleClass="btBuscar, text-black" text="%Buscar Cliente" wrapText="true" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="289.0" AnchorPane.topAnchor="0.0" />
+                      </children>
+                    </AnchorPane>
+                    <TilePane alignment="BOTTOM_RIGHT" hgap="10.0" minHeight="35.0" prefHeight="56.0" prefWidth="263.0">
+                      <children>
+                        <Button minHeight="42.0" minWidth="150.0" mnemonicParsing="false" onAction="#aceptar" prefHeight="42.0" prefWidth="150.0" styleClass="btAceptar, text-black" text="%Aceptar" />
+                        <Button minHeight="42.0" minWidth="150.0" mnemonicParsing="false" onAction="#accionCancelar" prefHeight="42.0" prefWidth="150.0" styleClass="text-black" text="%Cancelar">
+                          <TilePane.margin>
+                            <Insets />
+                          </TilePane.margin>
+                        </Button>
+                      </children>
+                    </TilePane>
+                  </children>
+                </HBox>
+              </children>
+            </VBox>
+          </children>
+          <HBox.margin>
+            <Insets />
+          </HBox.margin>
+        </AnchorPane>
+      </children>
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@../../../styles/styles.css" />
+    <URL value="@selfcheckoutfactura.css" />
+  </stylesheets>
+</AnchorPane>

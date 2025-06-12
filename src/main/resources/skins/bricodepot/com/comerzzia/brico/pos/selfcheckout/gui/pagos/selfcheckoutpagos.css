@@ -1,0 +1,107 @@
+.lb-total {
+	-fx-font-size: 55px;
+	-fx-text-fill: rgba(0,0,0) !important;
+	-fx-font-weight: bold;
+	-fx-padding: 0px 8px 0px 0px;
+}
+
+
+.contenedor-total {
+	-fx-background-color: rgba(237,237,237);
+	-fx-border-color: rgba(237,237,237);
+}
+.contenedor-total.entregado {
+	-fx-background-color: rgba(237,237,237);
+	-fx-border-color: rgba(237,237,237);
+}
+.contenedor-total.entregado .label-total , .contenedor-total.entregado .lb-total {
+	-fx-text-fill: rgba(0,0,0);	
+}
+.thechange.contenedor-total .cambio, .lb-total.cambio {		
+	-fx-text-fill: rgba(0,0,0);	
+}
+
+.thechange {
+	-fx-background-color: rgba(255,255,255);	;
+}
+.label-total.cambio {
+		-fx-text-fill: rgba(0,0,0);	;	
+} 
+.input-invisible {
+	-fx-background-color: white;
+	-fx-border-color: white;
+}
+.label-total {
+	-fx-text-fill: rgba(0,0,0);	;
+}
+.lb-destacado {
+	-fx-font-size: 22px;
+	-fx-text-fill: rgba(0,0,0);
+}
+.lb-boton-compuesto {
+	-fx-text-fill: rgba(255,255,255);
+	-fx-font-size: 14;
+	-fx-text-transform: uppercase;
+	-fx-background-color: rgba(0,0,0);
+	
+}
+
+/*	ESTILOS TABLA	*/
+.column-header .label{
+    -fx-background-color: rgba(227,6,19) !important;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #919191;
+    -fx-text-fill: rgba(255,255,255) !important; 
+    -fx-padding: 8 0 8 0;
+    
+}
+.table-view .table-row-cell:focused:odd , .list-view .list-cell:focused:odd {
+    -fx-background-color: rgba(227,6,19) !important;
+     -fx-text-fill: rgba(255,255,255); 
+}
+
+.table-view .table-row-cell:odd , .list-view .list-cell:odd {
+    -fx-background-color: #e6ecea;
+    -fx-text-fill: rgba(0,0,0);
+}
+.table-view .table-row-cell:odd:focused , .list-view .list-cell:odd:focused {
+    -fx-background-color: rgba(0,0,0);
+    -fx-text-fill: rgba(255,255,255); 
+}
+.table-view .table-row-cell:even:focused , .list-view .list-cell:even:focused {
+    -fx-background-color: rgba(0,0,0);
+    -fx-text-fill: rgba(255,255,255); 
+}
+
+.list-view .list-cell:odd {
+	-fx-text-fill: rgba(0,0,0);
+}
+
+
+.boton-fondo-black {
+    -fx-background-color: rgba(0, 0, 0);
+    -fx-text-fill: rgba(255, 255, 255) !important;
+}
+
+.boton-fondo-black:hover {
+    -fx-background-color: rgba(0, 0, 0);
+    -fx-text-fill: rgba(255, 255, 255) !important;
+}
+
+.text-black{
+    -fx-text-fill: rgba(0, 0, 0) !important;
+}
+
+.btContinuar{
+	-fx-background-image: url("continuar.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right center;
+    -fx-padding: 10 10 10 30;
+}
+
+.btAtras{
+	-fx-background-image: url("atras.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left center;
+    -fx-padding: 10 10 10 30;
+}

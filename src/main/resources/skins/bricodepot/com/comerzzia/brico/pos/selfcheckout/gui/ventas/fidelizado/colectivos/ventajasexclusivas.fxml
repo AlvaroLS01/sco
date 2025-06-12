@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-stylesheet ../../../../../styles/styles.css?>
+<?scenebuilder-stylesheet ventajasexclusivas.css?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="960.0" styleClass="pantalla-modal" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.comerzzia.brico.pos.selfcheckout.gui.ventas.fidelizado.colectivos.VentajasExclusivasController">
+  <children>
+    <VBox prefHeight="700.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="titulo-ventana">
+          <children>
+            <Label fx:id="lbTitulo" alignment="CENTER" contentDisplay="LEFT" styleClass="intro-number" text="%VENTAJAS EXCLUSIVAS PARA AMANTES DEL BRICOLAJE">
+              <font>
+                <Font size="22.0" />
+              </font>
+            </Label>
+          </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="313.0" prefWidth="960.0">
+          <children>
+            <Button mnemonicParsing="false" onAction="#unirseDYI" prefHeight="193.0" prefWidth="400.0" styleClass="boton-fondo-white" text="%Y SI ERES PARTICULAR UNETE AL BRICOCLUB" />
+            <VBox prefHeight="313.0" prefWidth="36.0" />
+            <Button mnemonicParsing="false" onAction="#unirsePRO" prefHeight="193.0" prefWidth="400.0" styleClass="boton-fondo-black" text="%Y SI ERES PROFESIONAL BRICOCLUB PRO" />
+          </children>
+        </HBox>
+        <HBox alignment="BOTTOM_RIGHT" prefHeight="92.0" prefWidth="960.0">
+          <children>
+            <Button fx:id="btCancelar" mnemonicParsing="false" onAction="#accionCancelar" prefHeight="53.0" prefWidth="173.0" styleClass=", btCancelar" text="%Cancelar" />
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

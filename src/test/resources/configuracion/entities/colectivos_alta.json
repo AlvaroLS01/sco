@@ -1,0 +1,46 @@
+[
+	{
+		"codigo": "0003",
+		"descripcion": "CONSTRUCCION"
+	},
+	{
+		"codigo": "0004",
+		"descripcion": "REFORMAS"
+	},
+	{
+		"codigo": "0005",
+		"descripcion": "REFORMAS DE BAÑO"
+	},
+	{
+		"codigo": "0006",
+		"descripcion": "REFORMAS DE COCINA"
+	},
+	{
+		"codigo": "0007",
+		"descripcion": "CARPINTERIA"
+	},
+	{
+		"codigo": "0008",
+		"descripcion": "AIRE ACONDICIONADO / CALEFACCION"
+	},
+	{
+		"codigo": "0009",
+		"descripcion": "ALICATADO"
+	},
+	{
+		"codigo": "0010",
+		"descripcion": "ELECTRICIDAD"
+	},
+	{
+		"codigo": "0011",
+		"descripcion": "FONTANERIA"
+	},
+	{
+		"codigo": "0012",
+		"descripcion": "PINTURA"
+	},
+	{
+		"codigo": "0013",
+		"descripcion": "EXTERIOR"
+	}
+]

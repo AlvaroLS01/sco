@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.comerzzia.pos.core.gui.componentes.datepicker.* ?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="800.0" styleClass="mainFxmlClass, pantalla-modal" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.comerzzia.brico.pos.selfcheckout.gui.ventas.tickets.factura.lpd.LeyProteccionDatosController">
+  <children>
+    <VBox alignment="CENTER" prefHeight="480.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="450.0" styleClass="titulo-ventana" VBox.vgrow="NEVER">
+          <children>
+            <Label fx:id="lbTitulo" text="" />
+          </children>
+        </HBox>
+        <HBox prefHeight="20.0" prefWidth="200.0" />
+        <WebView fx:id="wvTexto" prefHeight="330.0" prefWidth="778.0" VBox.vgrow="ALWAYS" />
+        <HBox prefHeight="30.0" prefWidth="200.0">
+          <children>
+            <VBox alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="800.0" HBox.hgrow="ALWAYS">
+              <children>
+                <CheckBox fx:id="checkBox" mnemonicParsing="false" prefWidth="162.0" text="%Imprimir Documento" />
+              </children>
+            </VBox>
+          </children>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="778.0" VBox.vgrow="ALWAYS">
+          <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="63.0" prefWidth="389.0">
+              <children>
+                <Button fx:id="btRechazar" mnemonicParsing="false" onAction="#accionRechazar" prefHeight="40.0" prefWidth="110.0" text="%Rechazar" />
+              </children>
+            </VBox>
+            <VBox alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="405.0">
+              <children>
+                <Button fx:id="btAceptar" mnemonicParsing="false" onAction="#accionAceptar" prefHeight="42.0" prefWidth="434.0" text="%Aceptar Terminos y Condiciones Generales" />
+              </children>
+            </VBox>
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+  </children>
+  <stylesheets>
+    <URL value="@../../../styles/styles.css" />
+  </stylesheets>
+</AnchorPane>

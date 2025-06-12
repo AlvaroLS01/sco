@@ -1,0 +1,30 @@
+<plantilla> 
+    <documento>
+		<logo></logo>  
+		<linea> <texto> </texto> </linea>
+		#set( $imprimirDatosFacturacion =  false)
+		#parse("./plantillas/datos_cabecera.xml")
+		<linea> <texto> </texto> </linea>
+		<linea>
+			<texto align="left" size="40">${ticket.getCabecera().getFechaAsLocale()}</texto>
+		</linea>    
+		<linea>
+			<texto size="16" align="left">Ticket regalo: </texto>
+			<texto>${ticket.getCabecera().getTarjetaRegalo().getNumTarjetaRegalo()}</texto>			
+		</linea>
+		<linea>
+			<texto size="16" align="left">Saldo Ticket: </texto>
+			<texto>${ticket.getCabecera().getTarjetaRegalo().getSaldoTotalAsString()}€</texto>			
+		</linea>
+		<linea>
+			<texto size="30" align="left">${ticket.getCabecera().getCodTicket()}</texto>
+		</linea>
+		<linea> <texto> </texto> </linea>
+		<linea> <texto>----------------------------------------</texto> </linea>
+		<codbar align="center" tipo-leyenda="0" >${ticket.getCabecera().getTarjetaRegalo().getNumTarjetaRegalo()}</codbar>	
+		<linea>
+			<texto></texto>
+		</linea>
+		<corte></corte>
+	</documento>
+</plantilla>

@@ -1,0 +1,35 @@
+/*  selfcheckoutfactura.css */
+
+.titulo-ventana .label{
+    -fx-background-color: rgba(227,6,19) !important;
+    -fx-text-fill: rgba(255,255,255) !important; 
+}
+
+.label{
+    -fx-text-fill: rgba(0,0,0) !important;
+    -fx-font-size: 16px !important; 
+    -fx-font-weight: normal !important;
+}
+
+.text-field{
+    -fx-text-fill: rgba(0,0,0) !important; 
+}
+
+.boton-fondo-black {
+    -fx-background-color: rgba(0, 0, 0);
+    -fx-text-fill: rgba(255, 255, 255) !important;
+}
+
+.boton-fondo-black:hover {
+    -fx-background-color: rgba(0, 0, 0);
+    -fx-text-fill: rgba(255, 255, 255) !important;
+}
+.text-black{
+    -fx-text-fill: rgba(0, 0, 0) !important;
+}
+
+#titulo-conversion{
+	-fx-font-size: 15px !important;
+	-fx-font-weight: normal !important;
+}
+

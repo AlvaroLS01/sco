@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-stylesheet ../../styles/styles.css?>
+<?scenebuilder-stylesheet ../../../../../../../../../../../../../../../../../../../Productos/Comerzzia/trunk/SolucionTienda/jpos/comerzzia-pos-skin/src/main/resources/skins/standard/com/comerzzia/pos/gui/styles/styles.css?>
+
+<AnchorPane id="AnchorPane" prefHeight="692.0" prefWidth="888.0" style="" styleClass="mainFxmlClass, main-derecha" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.comerzzia.barreto.selfcheckout.gui.ventas.busqueda.SelfCheckoutBuscarArticulosController">
+  <children>
+    <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+          <children>
+            <HBox fx:id="hbCentral" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+              <children>
+                <VBox fx:id="vbListado" prefHeight="598.0" prefWidth="275.0" styleClass="sinborde">
+                  <children>
+                    <FlowPane alignment="CENTER" prefHeight="40.0" prefWidth="227.0" style="" styleClass="background-corporativo, sinborde">
+                      <children>
+                        <Label styleClass="sinborde, lb-destacado" text="%Artículos añadidos" />
+                      </children>
+                    </FlowPane>
+                    <ListView fx:id="lvArticulos" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" styleClass="sinborde, item-added" VBox.vgrow="ALWAYS" />
+                  </children>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                  <children>
+                    <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" pannable="true" prefHeight="200.0" prefWidth="200.0" styleClass="sinborde" VBox.vgrow="ALWAYS">
+                      <content>
+                        <AnchorPane id="Content" fx:id="panelBotonera" minHeight="0.0" minWidth="0.0" prefHeight="-1.0" prefWidth="-1.0" />
+                      </content>
+                    </ScrollPane>
+                  </children>
+                </VBox>
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+        <VBox alignment="CENTER_RIGHT" prefHeight="94.0" prefWidth="888.0">
+          <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+              <children>
+                <Button fx:id="btAddArticulos" focusTraversable="false" mnemonicParsing="false" onAction="#accionAceptar" prefHeight="50.0" prefWidth="160.0" styleClass="add-item" text="%Añadir artículos" />
+                <Button mnemonicParsing="false" onAction="#volverAtras" prefHeight="50.0" styleClass="goback" text="%Volver atrás" />
+              </children>
+              <VBox.margin>
+                <Insets right="15.0" />
+              </VBox.margin>
+            </HBox>
+          </children>
+          <VBox.margin>
+            <Insets />
+          </VBox.margin>
+        </VBox>
+      </children>
+    </VBox>
+  </children>
+  <stylesheets>
+    <URL value="@../styles/styles.css" />
+  </stylesheets>
+</AnchorPane>

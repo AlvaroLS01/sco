@@ -1,0 +1,55 @@
+.btPapel {
+    -fx-background-image: url("factura-icon.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+	-fx-background-size: contain;
+}
+
+.btEmail {
+    -fx-background-image: url("mail-icon.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+	-fx-background-size: contain;
+}
+
+.btAmbos {
+    -fx-background-image: url("ambos.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+	-fx-background-size: contain;
+}
+
+.boton-fondo-black {
+    -fx-background-color: rgba(0, 0, 0);
+    -fx-text-fill: rgba(255, 255, 255) !important;
+}
+
+.boton-fondo-black:hover {
+    -fx-background-color: rgba(0, 0, 0);
+    -fx-text-fill: rgba(255, 255, 255) !important;
+}
+
+.texto-resaltado {
+    -fx-text-fill: rgba(0, 0, 0) !important;
+}
+
+.label {
+    -fx-text-fill: rgba(0, 0, 0) !important;
+}
+
+
+#checkPapel{
+    -fx-text-fill: rgba(0, 0, 0) !important;
+}
+
+#checkCorreo{
+    
+    -fx-text-fill: rgba(0, 0, 0) !important;
+}
+#checkAmbos{
+    -fx-text-fill: rgba(0, 0, 0) !important;
+}
+
+.text-black{
+    -fx-text-fill: rgba(0, 0, 0) !important;
+}

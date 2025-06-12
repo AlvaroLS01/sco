@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.comerzzia.pos.core.gui.componentes.textField.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="440.0" maxWidth="700.0" minHeight="280.0" prefHeight="408.0" prefWidth="550.0" styleClass="mainFxmlClass, pantalla-detalle" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.comerzzia.bricodepot.pos.gui.ventas.articulos.autorizaracciones.AutorizarAccionesController">
+  <children>
+    <Pane layoutX="1.0" layoutY="45.0" prefHeight="252.0" prefWidth="549.0">
+      <children>
+        <Label fx:id="lbMensaje" alignment="CENTER_LEFT" layoutX="14.0" layoutY="8.0" prefHeight="30.0" prefWidth="351.0" rotate="0.0" style="&#10;" text="%Indique el usuario que autoriza la devolución:">
+          <font>
+            <Font size="16.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label alignment="CENTER_RIGHT" font="$x1" layoutX="22.0" layoutY="47.0" prefHeight="30.0" prefWidth="124.0" rotate="0.0" style="" text="%Usuario" />
+        <TextField fx:id="tfUsuario" disable="false" editable="true" focusTraversable="true" layoutX="161.0" layoutY="47.0" prefHeight="30.0" prefWidth="266.0" text="" />
+        <Label alignment="CENTER_RIGHT" font="$x1" layoutX="22.0" layoutY="87.0" prefHeight="30.0" prefWidth="124.0" rotate="0.0" style="" text="%Contraseña" />
+        <PasswordField fx:id="tfPass" layoutX="161.0" layoutY="87.0" prefHeight="30.0" prefWidth="266.0" />
+        <Label fx:id="lbTituloDatosDevolucion" alignment="CENTER_LEFT" font="$x1" layoutX="14.0" layoutY="127.0" prefHeight="30.0" prefWidth="280.0" rotate="0.0" style="&#10;" text="%Datos de la devolución:" />
+        <Label fx:id="lbDocumento" alignment="CENTER_RIGHT" font="$x1" layoutX="14.0" layoutY="168.0" prefHeight="30.0" prefWidth="132.0" rotate="0.0" style="" text="%Documento" />
+        <TextField fx:id="tfDocumento" disable="false" editable="true" focusTraversable="true" layoutX="161.0" layoutY="168.0" prefHeight="30.0" prefWidth="266.0" text="" />
+      </children>
+    </Pane>
+    <AnchorPane layoutX="0.0" minHeight="40.0" prefHeight="40.0" prefWidth="550.0" style="&#10;" styleClass="titulo-ventana" AnchorPane.topAnchor="-1.0">
+      <children>
+        <Label fx:id="lbTitulo" alignment="CENTER" contentDisplay="CENTER" prefWidth="549.0" text="%Autorizar devolución" AnchorPane.bottomAnchor="6.26" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.74" />
+      </children>
+    </AnchorPane>
+    <AnchorPane layoutX="1.0" minHeight="50.0" prefHeight="56.0" prefWidth="549.0" AnchorPane.bottomAnchor="4.0">
+      <children>
+        <HBox alignment="CENTER_RIGHT" prefHeight="46.0" prefWidth="549.0" spacing="10.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+          <children>
+            <Button id="btAceptar" alignment="CENTER" font="$x1" minHeight="42.0" minWidth="115.0" mnemonicParsing="false" onAction="#accionAceptar" prefHeight="42.0" prefWidth="115.0001220703125" style="" styleClass="btAceptar" text="%Aceptar" textAlignment="LEFT" />
+            <Button id="btCancelar" font="$x1" minHeight="42.0" minWidth="115.0" mnemonicParsing="false" onAction="#accionCancelar" prefHeight="42.0" prefWidth="115.0" styleClass="btCancelar" text="%Cancelar" HBox.hgrow="ALWAYS">
+              <HBox.margin>
+                <Insets right="10.0" />
+              </HBox.margin>
+            </Button>
+          </children>
+        </HBox>
+      </children>
+    </AnchorPane>
+    <Label fx:id="lbError" alignment="CENTER" contentDisplay="CENTER" layoutX="62.0" layoutY="297.0" prefHeight="30.0" prefWidth="428.0" styleClass="lbError" text="" textFill="#cc0000" />
+  </children>
+  <stylesheets>
+    <URL value="@../../../styles/styles.css" />
+  </stylesheets>
+</AnchorPane>

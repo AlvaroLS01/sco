@@ -1,0 +1,295 @@
+.lb-total {
+	-fx-font-size: 55px;
+	-fx-text-fill: rgba(0,0,0) !important;
+	-fx-font-weight: bold;
+	-fx-padding: 0px 8px 0px 0px;
+}
+
+.contenedor-total {
+	-fx-background-color: rgba(237,237,237);
+	-fx-border-color: rgba(237,237,237);
+}
+/*  Datos tarjeta fidelizado    */
+#lbNombreFidelizadoEtiqueta{
+    -fx-text-fill: rgba(0,0,0) !important;
+}
+#lbNumTarjetaEtiqueta{
+    -fx-text-fill: rgba(0,0,0) !important;
+}
+#lbDocumentoEtiqueta{
+    -fx-text-fill: rgba(0,0,0) !important;
+}
+#lbEmailEtiqueta{
+    -fx-text-fill: rgba(0,0,0) !important;
+}
+
+#lbNombreTarjetaFidelizado{
+    -fx-text-fill: rgba(0,0,0) !important;
+}
+#lbNumTarjetaFidelizado{
+    -fx-text-fill: rgba(0,0,0) !important;
+}
+#lbDocumentoFidelizado{
+    -fx-text-fill: rgba(0,0,0) !important;
+}
+#lbEmailFidelizado{
+    -fx-text-fill: rgba(0,0,0) !important;
+}
+
+.input-invisible {
+	-fx-background-color: white;
+	-fx-border-color: white;
+}
+
+.btPagar {
+    -fx-background-image: url("pagar.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 60px center;
+    -fx-padding: 10 10 10 40;
+	-fx-font-size: 50px;	
+	-fx-text-fill: rgba(237,237,237);
+	-fx-background-color: rgba(0,0,0);
+/* 	    -fx-background-color: 
+        rgba(0,0,0,0.08),
+        linear-gradient(#18894b, #157946),
+        linear-gradient( #18894b 53%, #157946 54%, #14703d 100%);*/
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 10; 
+	-fx-cursor: "hand";
+}
+ .btPagar:hover {
+        -fx-background-color: rgba(227,6,19); 
+	    /* -fx-background-color:
+        rgba(0,0,0,0.08),
+        linear-gradient(#18894b, #157946),
+        linear-gradient( #18894b 54%, #14703d 54%, #14703d 100%); */
+}
+
+.text-black{
+    -fx-text-fill: rgba(0, 0, 0) !important;
+}
+
+.boton-fondo-black {
+    -fx-background-color: rgba(0, 0, 0);
+    -fx-text-fill: rgba(255, 255, 255) !important;
+}
+
+.boton-fondo-black:hover {
+    -fx-background-color: rgba(0, 0, 0);
+    -fx-text-fill: rgba(255, 255, 255) !important;
+}
+
+.vertical-options {
+    -fx-padding: 10 10 10 40;
+    -fx-text-fill: rgba(255,255,255);
+    -fx-font-size: 18;
+}
+
+.btPagar:focused {
+        -fx-background-color: #157946;
+	    -fx-background-color:
+        rgba(0,0,0,0.08),
+        linear-gradient(#18894b, #157946),
+        linear-gradient( #18894b 54%, #14703d 54%, #14703d 100%);
+}
+.lb-destacado {
+	-fx-text-fill: rgba(0,0,0);
+}
+#buscarArticulos{
+    -fx-background-color: rgba(0,0,0);
+    -fx-text-fill: rgba(255,255,255) !important;
+}
+
+#lbTotal {
+	-fx-text-fill: rgba(0,0,0) !important;
+	-fx-border-width: 0;
+	-fx-font-size: 55px;
+}
+
+.bots-column.bot-background-search {
+    -fx-background-image: url("search-lupa_white.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 30px center;
+    -fx-background-size: 55px;	
+  
+}.bots-column.bot-background-change {
+    -fx-background-image: url("change-account_white.png");
+    -fx-background-color: rgba(0,0,0);
+    -fx-text-fill: rgba(255,255,255) !important;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 30px center;
+    -fx-background-size: 55px;	
+  
+}
+.bots-column.bot-background-manual {
+    -fx-background-image: url("code-bar_white.png");
+    -fx-background-color: rgba(0,0,0);
+    -fx-text-fill: rgba(255,255,255) !important;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 30px center;
+    -fx-background-size: 55px;	
+  
+}
+.bots-column.delete-line {
+    -fx-background-image: url("delete-line_white.png");
+    -fx-background-color: rgba(0,0,0);
+    -fx-text-fill: rgba(255,255,255) !important;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 30px center;
+    -fx-background-size: 55px;  
+}
+.notengo {
+	-fx-background-image: url("notengo_white.png");
+    -fx-background-color: rgba(0,0,0);
+    -fx-text-fill: rgba(255,255,255) !important;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 110 center;
+    -fx-padding: 10 40 10 10; 
+      -fx-background-size: 25px;
+}
+.notengoleft {
+	-fx-background-image: url("notengoleft_white.png");
+    -fx-background-color: rgba(0,0,0);
+    -fx-text-fill: rgba(255,255,255) !important;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 5px center;
+    -fx-padding: 10 40 10 10; 
+    -fx-background-size: 25px;
+}
+
+.notengoleft:hover {
+    -fx-background-color: rgba(227,6,19);
+}
+.notengo:hover {
+    -fx-background-color: rgba(227,6,19);
+}
+
+.btFactura{
+    -fx-background-color: rgba(0,0,0);
+    -fx-text-fill: rgba(255,255,255); 
+}
+
+.btFactura:hover{
+    -fx-background-color: rgba(227,6,19) !important;
+    -fx-text-fill: rgba(255,255,255); 
+}
+
+.btFidelizado{
+    -fx-background-color: rgba(0,0,0);
+    -fx-text-fill: rgba(255,255,255); 
+}
+
+.btFidelizado:hover{
+    -fx-background-color: rgba(227,6,19) !important;
+    -fx-text-fill: rgba(255,255,255); 
+}
+
+/* ESTILOS PARA LAS COLUMNAS    */
+
+.column-header .label{
+    -fx-background-color: rgba(227,6,19) !important;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #919191;
+    -fx-text-fill: rgba(255,255,255) !important; 
+    -fx-padding: 8 0 8 0;
+    
+}
+.table-view .table-row-cell:focused:odd , .list-view .list-cell:focused:odd {
+    -fx-background-color: rgba(227,6,19) !important;
+     -fx-text-fill: rgba(255,255,255); 
+}
+
+.table-view .table-row-cell:odd , .list-view .list-cell:odd {
+    -fx-background-color: #e6ecea;
+    -fx-text-fill: rgba(0,0,0);
+}
+.table-view .table-row-cell:odd:focused , .list-view .list-cell:odd:focused {
+    -fx-background-color: rgba(0,0,0);
+    -fx-text-fill: rgba(255,255,255); 
+}
+.table-view .table-row-cell:even:focused , .list-view .list-cell:even:focused {
+    -fx-background-color: rgba(0,0,0);
+    -fx-text-fill: rgba(255,255,255); 
+}
+
+.list-view .list-cell:odd {
+	-fx-text-fill: rgba(0,0,0);
+}
+
+.btContinuar{
+	-fx-background-image: url("continuar.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left center;
+    -fx-padding: 10 10 10 30;
+}
+
+.btAtras{
+	-fx-background-image: url("atras.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left center;
+    -fx-padding: 10 10 10 30;
+}
+
+.lb-fidelizado{
+	-fx-text-fill: rgba(0,0,0);
+	-fx-font-size: 30px;
+	-fx-font-weight: bold;
+}
+.lb-destacadorojo {
+	-fx-font-weight: bold;
+	-fx-font-size: 20px;
+	-fx-text-fill:  rgba(227,6,19);
+}
+
+.btTicket {
+	-fx-font-size: 16px;
+	-fx-text-fill: rgba(0,0,0) !important;
+	-fx-font-weight: bold;
+}
+
+.btFacturaA4 {
+	-fx-font-size: 14px;
+	-fx-text-fill: rgba(0,0,0) !important;
+	-fx-font-weight: bold;
+}
+
+.lbBoton{
+	-fx-font-size: 16px;
+	-fx-text-fill: rgba(0,0,0) !important;
+	-fx-font-weight: bold;
+}
+
+.btModificarCantidad {
+	-fx-background-image: url("cantidad.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: top center;
+	-fx-background-size: contain;
+}
+
+.btEanManual {
+	-fx-background-image: url("ean.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: top center;
+	-fx-background-size: contain;
+}
+
+.img-codigo-qr {
+ 	-fx-background-image: url("codigo-qr.png");
+ 	-fx-background-repeat: no-repeat;
+ 	-fx-background-position: center center;
+ }
+
+.btTicket {
+	-fx-background-image: url("ticket_compra.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: bottom center;
+	-fx-background-size: contain;
+}
+
+.btFacturaCompleta {
+	-fx-background-image: url("factura_completa.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: bottom center;
+	-fx-background-size: contain;
+}

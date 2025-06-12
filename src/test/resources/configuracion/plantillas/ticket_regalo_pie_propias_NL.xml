@@ -1,0 +1,25 @@
+		#if(!${tarjetaRegalo})
+			<linea line-size="4"> <texto align="center" style="1">***Cadeauticket*** </texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Bedankt voor je bezoek</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Ruilen en/of retourneren is alleen mogelijk binnen een termijn van 30 dagen na de aankoopdatum en op vertoon van de originele kassabon.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Voorwaarden landelijk geldig.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Voor terugbetaling of omruilen moeten de artikelen worden geretourneerd in dezelfde staat als waarin je ze hebt ontvangen, ze moeten ongedragen, ongewassen en met de veiligheidsverpakking intact zijn.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Badmode kan alleen worden geretourneerd of geruild als alle hygiënische beschermingen intact zijn.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Het aankoopbedrag zal worden terugbetaald via dezelfde methode als de betaling, indien en voor zover het originele aankoopbewijs wordt voorgelegd of, indien van toepassing, op vertoon van de kaart en het transactiebewijs. Bij inlevering van een cadeauticket wordt voor het overeenkomstige bedrag een tegoedkaart verstrekt.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Dit doet geen afbreuk aan je wettelijke rechten.</texto> </linea>
+		#else
+			<linea line-size="4"> <texto align="center" style="1">***Cadeauticket***</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Bedankt voor je bezoek</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Ruilen en/of retourneren is alleen mogelijk binnen een termijn van 30 dagen na de aankoopdatum en op vertoon van de originele kassabon.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Voorwaarden landelijk geldig.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Voor terugbetaling of omruilen moeten de artikelen worden geretourneerd in dezelfde staat als waarin je ze hebt ontvangen, ze moeten ongedragen, ongewassen en met de veiligheidsverpakking intact zijn.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Badmode kan alleen worden geretourneerd of geruild als alle hygiënische beschermingen intact zijn.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Het aankoopbedrag zal worden terugbetaald via dezelfde methode als de betaling, indien en voor zover het originele aankoopbewijs wordt voorgelegd of, indien van toepassing, op vertoon van de kaart en het transactiebewijs. Bij inlevering van een cadeauticket wordt voor het overeenkomstige bedrag een tegoedkaart verstrekt.</texto> </linea>
+		#end
+		
+
+
+
+
+
+		

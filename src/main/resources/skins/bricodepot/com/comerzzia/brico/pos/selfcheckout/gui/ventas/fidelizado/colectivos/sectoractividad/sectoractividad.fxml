@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-stylesheet sectoractividad.css?>
+<?scenebuilder-stylesheet ../../../../../../styles/styles.css?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="628.0" styleClass="pantalla-modal" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.comerzzia.brico.pos.selfcheckout.gui.ventas.fidelizado.colectivos.sectoractividad.SectorActividadController">
+  <children>
+    <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="titulo-ventana">
+          <children>
+            <Label fx:id="lbTitulo" text="%SELECCIONA TU COLECTIVO">
+              <font>
+                <Font size="30.0" />
+              </font>
+            </Label>
+          </children>
+        </HBox>
+        <VBox id="vbColectivos" alignment="TOP_LEFT" prefHeight="641.0" prefWidth="642.0">
+          <children>
+            <HBox prefHeight="662.0" prefWidth="642.0">
+              <children>
+                <VBox prefHeight="550.0" prefWidth="76.0" />
+                <VBox fx:id="vbColectivos" prefHeight="662.0" prefWidth="522.0" styleClass="vbox">
+                  <children>
+                    <HBox prefHeight="25.0" prefWidth="482.0" />
+                  </children>
+                </VBox>
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

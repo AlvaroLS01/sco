@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.comerzzia.pos.core.gui.componentes.datepicker.* ?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="800.0" styleClass="mainFxmlClass, pantalla-modal" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.comerzzia.brico.pos.selfcheckout.gui.ventas.tickets.fidelizado.lpd.LeyProteccionDatosFidelizadoController">
+  <children>
+    <VBox alignment="CENTER" prefHeight="480.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="450.0" styleClass="titulo-ventana" VBox.vgrow="NEVER">
+          <children>
+            <Label fx:id="lbTitulo" text="" />
+          </children>
+        </HBox>
+        <HBox prefHeight="20.0" prefWidth="200.0" />
+        <WebView fx:id="wvTexto" prefHeight="330.0" prefWidth="778.0" VBox.vgrow="ALWAYS" />
+        <HBox alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0">
+          <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="389.0">
+                     <children>
+                        <Button fx:id="btRetrocederPag" contentDisplay="CENTER" mnemonicParsing="false" onAction="#retrocederPag" prefHeight="25.0" prefWidth="191.0" text="%Retroceder Página">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER_RIGHT" prefHeight="33.0" prefWidth="405.0">
+                     <children>
+                <CheckBox fx:id="checkBox" mnemonicParsing="false" prefHeight="21.0" prefWidth="201.0" text="%Imprimir Documento" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </VBox>
+          </children>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="778.0" VBox.vgrow="ALWAYS">
+          <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="63.0" prefWidth="389.0">
+              <children>
+                <Button fx:id="btRechazar" mnemonicParsing="false" onAction="#accionRechazar" prefHeight="40.0" prefWidth="110.0" styleClass="btCancelar" text="%Volver" />
+              </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="405.0">
+              <children>
+                <Button fx:id="btAceptar" mnemonicParsing="false" onAction="#accionAceptar" prefHeight="42.0" prefWidth="434.0" styleClass="btAceptar" text="%Aceptar Terminos y Condiciones Generales" />
+              </children>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+            </VBox>
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+  </children>
+  <stylesheets>
+    <URL value="@../../../styles/styles.css" />
+  </stylesheets>
+</AnchorPane>

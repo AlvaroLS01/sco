@@ -1,0 +1,23 @@
+/*  selfcheckoutintroducircodigo.css*/
+
+.intro-number{
+    -fx-background-color: rgba(227,6,19) !important;
+    -fx-text-fill: rgba(255,255,255); 
+}
+
+.text-corp{
+    -fx-text-fill: rgba(0,0,0) !important;
+}
+
+.texto-negrita{
+    -fx-text-fill: rgba(0,0,0) !important;
+}
+
+.text-black{
+    -fx-text-fill: rgba(0,0,0) !important;
+}
+
+.text-fondo-black{
+    -fx-background-color: rgba(0,0,0) !important;
+    -fx-text-fill: rgba(255,255,255); 
+}

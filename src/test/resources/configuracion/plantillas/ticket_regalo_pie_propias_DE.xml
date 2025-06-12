@@ -1,0 +1,26 @@
+		#if(!${tarjetaRegalo})
+			<linea line-size="4"> <texto align="center" style="1">***Geschenkbeleg***</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Vielen Dank für Ihren Besuch</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Umtausch sowie Rückgabe sind nur innerhalb von 30 Tagen ab Kaufdatum und unter Vorlage eines gültigen Kassenbons möglich.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Waren, die zurückgegeben oder umgetauscht werden, müssen sich in einem perfekten Zustand befinden und das Etikett darf nicht beschädigt sein.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Badekleidung kann nur zurückgegeben oder umgetauscht werden, wenn alle hygienischen Schutzaufkleber unbeschädigt sind.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Im Falle einer Rückerstattung wird der Einkaufspreis mit der gleichen Methode zurückerstattet, mit der die Zahlung erfolgt ist, falls der Original-Kassenbon vorgelegt wird, oder, falls anwendbar, nach Vorlage der Karte und des Transaktionsbelegs. Wenn ein Geschenkbeleg vorgelegt wird, dann wird eine Gutschriftkarte zur Rückerstattung ausgestellt.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Ihre gesetzlichen Rechte bleiben davon unberührt.</texto> </linea>
+		#else
+			<linea line-size="4"> <texto align="center" style="1">***Ticket Regalo***</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Gracias por su visita.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Los artículos de esta tienda son de temporadas anteriores y sólo se podrán cambiar en tiendas OUTLET situadas en Islas Canarias.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">No se admiten devoluciones; sólo cambios por otros artículos. En ningún caso se devolverá el importe de la compra.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">El cambio se efectuará previa presentación del ticket de compra y en el plazo de 15 días.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">En ningún caso se admiten cambios / devoluciones de artículos de fiesta, bisutería y artículos de baño.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Esta garantía es adicional y no afecta los derechos legales del consumidor.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">***Tarjeta Abono/Regalo***</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">La Tarjeta únicamente es válida para la compra de artículos a la venta en los puntos de venta de BIMBA Y LOLA presentes en el territorio español (excepto El Corte Inglés y tienda online www.bimbaylola.com) hasta que se consuma el saldo de la Tarjeta.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Dicho saldo no será reembolsable ni será canjeable por dinero en ningún caso.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">No se reemplazará la Tarjeta en caso de robo, pérdida, extravío o deterioro. Los productos adquiridos con la Tarjeta están sujetos a la política de cambios y devoluciones de BIMBA Y LOLA.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Asimismo, se aceptará la devolución de la Tarjeta Regalo que no haya sido utilizada en un plazo máximo de 30 días, siempre y cuando tenga el protector del código de seguridad sin manipular, respetando las condiciones de devolución establecidas en bimbaylola.com.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Para cualquier cambio o devolución de artículos pagados con la Tarjeta, es imprescindible su conservación y presentación en el momento de dicha operación.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Por favor, compruebe que el saldo de la Tarjeta es el que figura en el ticket vinculado a la misma.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">La adquisición y uso de la Tarjeta implica la aceptación de las condiciones para el uso de la misma disponibles en www.bimbaylola.com.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Esta garantía es adicional y no afecta a los derechos del consumidor.</texto> </linea>
+		#end

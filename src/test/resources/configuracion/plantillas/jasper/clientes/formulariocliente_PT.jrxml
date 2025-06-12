@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="formulariofidelizado" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isSummaryWithPageHeaderAndFooter="true" whenResourceMissingType="Empty" uuid="ee215489-9482-449b-bb38-5ebd3146261d">
+	<property name="ireport.zoom" value="1.0245201830476065"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="342"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+		<defaultValueExpression><![CDATA[".//"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="LOGO" class="java.io.InputStream"/>
+	<parameter name="FIRMA" class="java.io.InputStream"/>
+	<parameter name="ES_ALTA" class="java.lang.Boolean"/>
+	<parameter name="factura" class="com.comerzzia.pos.persistence.tickets.datosfactura.DatosFactura"/>
+	<queryString>
+		<![CDATA[select 1]]>
+	</queryString>
+	<field name="desCliente" class="java.lang.String">
+		<fieldDescription><![CDATA[desCliente]]></fieldDescription>
+	</field>
+	<field name="tipoIdentificacion" class="java.lang.String">
+		<fieldDescription><![CDATA[tipoIdentificacion]]></fieldDescription>
+	</field>
+	<field name="cif" class="java.lang.String">
+		<fieldDescription><![CDATA[cif]]></fieldDescription>
+	</field>
+	<field name="nombreComercial" class="java.lang.String">
+		<fieldDescription><![CDATA[nombreComercial]]></fieldDescription>
+	</field>
+	<field name="domicilio" class="java.lang.String">
+		<fieldDescription><![CDATA[domicilio]]></fieldDescription>
+	</field>
+	<field name="localidad" class="java.lang.String">
+		<fieldDescription><![CDATA[localidad]]></fieldDescription>
+	</field>
+	<field name="poblacion" class="java.lang.String">
+		<fieldDescription><![CDATA[poblacion]]></fieldDescription>
+	</field>
+	<field name="provincia" class="java.lang.String">
+		<fieldDescription><![CDATA[provincia]]></fieldDescription>
+	</field>
+	<field name="cp" class="java.lang.String">
+		<fieldDescription><![CDATA[cp]]></fieldDescription>
+	</field>
+	<field name="pais" class="java.lang.String">
+		<fieldDescription><![CDATA[pais]]></fieldDescription>
+	</field>
+	<field name="telefono1" class="java.lang.String">
+		<fieldDescription><![CDATA[telefono1]]></fieldDescription>
+	</field>
+	<field name="telefono2" class="java.lang.String">
+		<fieldDescription><![CDATA[telefono2]]></fieldDescription>
+	</field>
+	<field name="fax" class="java.lang.String">
+		<fieldDescription><![CDATA[fax]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[email]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="59">
+			<image onErrorType="Blank">
+				<reportElement uuid="b176941c-032c-4e11-bfaa-db8c40f7ac88" x="0" y="0" width="555" height="50"/>
+				<imageExpression><![CDATA[$P{LOGO}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="309" splitType="Stretch">
+			<textField>
+				<reportElement uuid="5bfb31d1-a4a7-446c-8bc8-cb0cb7626b6b" x="0" y="0" width="555" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Tahoma" size="11" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ES_ALTA} != null && $P{ES_ALTA} == true ? "FORMULARIO DE ALTA DE DATOS DE FACTURACIÓN" : "FORMULARIO DE MODIFICACIÓN DE DATOS DE FACTURACIÓN"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="79e57e0c-e2df-4e79-9e92-4c08017981be" x="0" y="36" width="128" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[DESCRIPCIÓN:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1e42de41-98a9-405d-a72a-5398b59f14de" x="0" y="76" width="128" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[NOMBRE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="53fa33d5-b494-4636-a6b4-a0edb70fe848" x="0" y="56" width="128" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[TIPO DE DOCUMENTO:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="986f9937-931a-4042-89ef-a78d4d4d3d61" x="0" y="116" width="128" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[LOCALIDAD:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="aa01e3d7-ff1e-4f0f-999f-e933df984507" x="0" y="136" width="128" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[POBLACIÓN:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="26af3605-9630-4b98-863a-6b3d8050a283" x="0" y="156" width="128" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[PROVINCIA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5006c986-c94f-41e9-a3da-e1b2fe695410" x="0" y="176" width="128" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[CP:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="58673a78-4e7e-466f-ae7d-bc2ea880413d" x="0" y="196" width="128" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[PAÍS:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1588aff5-eb7b-4106-8f86-62f90936c8fc" x="128" y="36" width="427" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{desCliente}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="324462ab-cd4e-4225-8a1d-03d37188f191" x="128" y="76" width="427" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{factura}.getNombre()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="5bbbc400-302f-4259-8f5c-a7d16f4b1685" x="128" y="56" width="61" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{factura}.getTipoIdentificacion()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="5bbbc400-302f-4259-8f5c-a7d16f4b1685" x="189" y="56" width="366" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{factura}.getCif()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="9d3a74e1-770b-4b14-83ca-2e1db0419c04" x="0" y="302" width="555" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="1e42de41-98a9-405d-a72a-5398b59f14de" x="0" y="96" width="128" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[DOMICILIO:]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="324462ab-cd4e-4225-8a1d-03d37188f191" x="128" y="96" width="427" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{factura}.getDomicilio()]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="324462ab-cd4e-4225-8a1d-03d37188f191" x="128" y="116" width="427" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{factura}.getLocalidad()]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="324462ab-cd4e-4225-8a1d-03d37188f191" x="128" y="136" width="427" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{factura}.getPoblacion()]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="324462ab-cd4e-4225-8a1d-03d37188f191" x="128" y="156" width="160" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{factura}.getProvincia()]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="324462ab-cd4e-4225-8a1d-03d37188f191" x="128" y="176" width="160" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{factura}.getCp()]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="324462ab-cd4e-4225-8a1d-03d37188f191" x="128" y="196" width="160" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{factura}.getPais()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="58673a78-4e7e-466f-ae7d-bc2ea880413d" x="0" y="216" width="128" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[TELÉFONO 1:]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="324462ab-cd4e-4225-8a1d-03d37188f191" x="128" y="216" width="427" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{factura}.getTelefono()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="58673a78-4e7e-466f-ae7d-bc2ea880413d" x="0" y="236" width="128" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[TELÉFONO 2:]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="324462ab-cd4e-4225-8a1d-03d37188f191" x="128" y="236" width="427" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefono2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="58673a78-4e7e-466f-ae7d-bc2ea880413d" x="0" y="276" width="128" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[EMAIL:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="58673a78-4e7e-466f-ae7d-bc2ea880413d" x="0" y="256" width="128" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[FAX:]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="324462ab-cd4e-4225-8a1d-03d37188f191" x="127" y="276" width="428" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="324462ab-cd4e-4225-8a1d-03d37188f191" x="128" y="256" width="428" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fax}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="79e57e0c-e2df-4e79-9e92-4c08017981be" x="0" y="20" width="555" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Tahoma" size="8" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Empresa y Particulares]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="324462ab-cd4e-4225-8a1d-03d37188f191" x="317" y="156" width="238" height="60">
+					<printWhenExpression><![CDATA[$P{ES_ALTA}!=null && $P{ES_ALTA}==Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font fontName="Tahoma" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["SOLICITO que BRICO DEPOT me emita una factura por la compra realizada y que registre los datos aquí introducidos en su base de datos para poder emitir otras facturas en el futuro con estos datos."]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="324462ab-cd4e-4225-8a1d-03d37188f191" x="317" y="156" width="238" height="60">
+					<printWhenExpression><![CDATA[$P{ES_ALTA}!=null && $P{ES_ALTA}==Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font fontName="Tahoma" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["SOLICITO que BRICO DEPOT modifique o complete en su base de datos los datos que ya facilité en su momento para la emisión de la factura."]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement uuid="3db32480-a7c4-4750-afd6-3b37b2645c8a" x="290" y="160" width="14" height="14"/>
+			</rectangle>
+			<line direction="BottomUp">
+				<reportElement uuid="b006a00c-9846-4980-9989-846fa597160c" x="296" y="162" width="7" height="10"/>
+			</line>
+			<line>
+				<reportElement uuid="349711de-40e9-4737-8021-850c50b9e564" x="293" y="170" width="3" height="3"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="420" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="33ab9ab6-3986-4640-b277-d77ba595487c" x="0" y="0" width="555" height="30" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SOLICITAÇÃO DE FATURA / MODIFICAÇÃO DE DADOS DE FATURA
+Empresas e particulares]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ddc2be9f-4881-492f-8499-ebd161c07a44" x="0" y="30" width="555" height="41"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Tahoma" size="8"/>
+					<paragraph leftIndent="2" rightIndent="2"/>
+				</textElement>
+				<text><![CDATA[Solicito que a Brico Depôt emita uma fatura da compra realizada, e que registe os dados aqui introduzidos na sua base de dados, para no futuro poder emitir outras faturas com estes dados;
+
+Solicito que a Brico Depôt modifique ou complete na sua base de dados, os dados que forneci para a emissão de fatura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f2f72491-76d1-44e5-8ddd-2e43ac100935" x="0" y="81" width="555" height="45"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Tahoma" size="8"/>
+					<paragraph leftIndent="2" rightIndent="2"/>
+				</textElement>
+				<text><![CDATA[Os dados solicitados são obrigatórios para a emissão da fatura / modificação dos dados de faturação.
+
+Veracidade dos dados: mediante a assinatura do presente documento, declaro que sou a pessoa titular dos dados pessoais, ou outros dados incluídos neste formulário, e que esses dados são verídicos. Caso contrário, assumirei as responsabilidades inerentes.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f2f72491-76d1-44e5-8ddd-2e43ac100935" x="0" y="126" width="555" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="8" isBold="true"/>
+					<paragraph leftIndent="2" rightIndent="2"/>
+				</textElement>
+				<text><![CDATA[    INFORMAÇÃO BÁSICA SOBRE PROTEÇÃO DE DADOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f2f72491-76d1-44e5-8ddd-2e43ac100935" x="0" y="146" width="555" height="270"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Tahoma" size="8"/>
+					<paragraph leftIndent="2" rightIndent="2"/>
+				</textElement>
+				<text><![CDATA[O responsável de tratamento dos dados pessoais é BRICO DEPOT PORTUGAL S.A., com a direção em R. Elias Garcia 249 Km14, 2635-008 Rio de Mouro, Portugal, NIF 510359612.
+
+As finalidades do tratamento dos dados pessoais são: Poder emitir a fatura, registar os dados no sistema para emitir faturas solicitadas pelo cliente, bem como modificar os dados de faturação e registar as correções no sistema.
+
+A autorização do tratamento dos dados pessoais é um cumprimento de uma obrigação legal.
+
+Destinatários e transferências internacionais: os seus dados podem ser comunicados a Kingfisher Plc, com direção no Reino Único, 3 Sheldon Square, Paddington, London, W2 6PX, do Grupo Kingfisher, onde pertence a Brico Depôt, em caso de necessidade para gestão administrativa interna.
+
+A Brico Depôt como entidade de proteção internacional, tem fornecedores internacionais que podem prestar os seus serviços desde fora do Espaço Económico Europeu. Asseguramo-nos de que o tratamento de dados seja sempre protegido com as garantias indicadas na normativa aplicável.
+
+Prazo de conservação dos dados pessoais: durante o tempo necessário para gerir as emissões de fatura. Decorrido esse prazo, os dados pessoais serão posteriormente conservados, devidamente bloqueados, pelo período de tempo necessário ao cumprimento das responsabilidades que deles possam decorrer.
+
+Direitos: pode exercer os seus direitos de acesso, retificação, apagamento, limitação do tratamento, portabilidade, oposição, ou retirar o consentimento perante o responsável do tratamento de dados, Brico Depôt, mediante envio de email, dirigido a lopd.bricodepot.com, acompanhado por uma cópia do documento de identificação ou passaporte.
+
+Informação adicional: para mais informações pode contactar com o Departamento de Proteção de dados da Brico Depôt (lpd.portugal@bricodepot.com) e, caso não obtenha uma resposta dentro de um prazo razoável, poderá apresentar uma reclamação junto da CNPD – Comissão Nacional de Proteção de Dados.
+]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<summary>
+		<band height="227" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="986f9937-931a-4042-89ef-a78d4d4d3d61" x="36" y="11" width="519" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="2" rightIndent="2"/>
+				</textElement>
+				<text><![CDATA[Firma de Términos y Condiciones Generales:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="986f9937-931a-4042-89ef-a78d4d4d3d61" x="0" y="199" width="555" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="11" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[¡GRACIAS!]]></text>
+			</staticText>
+			<image onErrorType="Blank">
+				<reportElement uuid="d5925ff3-c146-47f7-b282-34c7409f8117" x="82" y="31" width="398" height="155"/>
+				<imageExpression><![CDATA[$P{FIRMA}]]></imageExpression>
+			</image>
+		</band>
+	</summary>
+</jasperReport>

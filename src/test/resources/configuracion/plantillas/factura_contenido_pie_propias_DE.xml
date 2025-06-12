@@ -1,0 +1,94 @@
+	#set ($esPagoTRTA = false)	
+	#foreach ($pago in $ticket.getPagos())       
+		#if(${pago.isPagoTarjetaRegalo()})
+			#set ($esPagoTRTA = true)
+		#end
+	#end
+	#if($ticket.getCabecera().getCodTipoDocumento() == "DE")
+		#if(${ticket.getCabecera().getTarjetaRegalo().getNumTarjetaRegalo()} || ${ticket.isDevolucionTarjetaRegalo()})
+		    <!-- devolucion de tarjeta regalo -->
+			
+			<linea line-size="4"> <texto align="center" style="1">Vielen Dank für Ihren Besuch</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Umtausch sowie Rückgabe sind nur innerhalb von 30 Tagen ab Kaufdatum und unter Vorlage eines gültigen Kassenbons möglich.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Waren, die zurückgegeben oder umgetauscht werden, müssen sich in einem perfekten Zustand befinden und das Etikett darf nicht beschädigt sein.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Badekleidung kann nur zurückgegeben oder umgetauscht werden, wenn alle hygienischen Schutzaufkleber unbeschädigt sind.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Der Betrag wird mit der gleichen Methode zurückerstattet, mit der die Zahlung erfolgt ist, falls der Original-Kassenbon vorgelegt wird, oder, falls anwendbar, nach Vorlage der Karte und des Transaktionsbelegs. Wenn ein Geschenkbeleg vorgelegt wird, dann wird eine Gutschriftkarte zur Rückerstattung ausgestellt.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">***Gutschriftkarte Rückerstattung***</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Die Karte ist nur für Einkäufe in den Geschäften von BIMBA Y LOLA in Deutschland gültig (außer e-shop www.bimbaylola.com) und solange, bis der volle Betrag der Karte erreicht wurde.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Der nicht in Anspruch genommene Betrag auf der Karte wird unter keinen Umständen zurückerstattet oder bar ausgezahlt.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Wir haften nicht bei Verlust, Diebstahl oder Beschädigung der Karte. Alle Produkte, die mit der Karte gekauft wurden, unterliegen den Richtlinien von BIMBA Y LOLA für den Umtausch und die Rückgabe. </texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Wenn ein Geschenkbeleg vorgelegt wird, dann wird eine Gutschriftkarte zur Rückerstattung ausgestellt.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Bei einem Umtausch oder Rückgabe von Waren, die mit der Karte gekauft wurden, muss die Karte vorgelegt werden. </texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1"></texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Bitte überprüfen Sie, ob das Saldo auf der Karte mit dem des entsprechenden Belegs übereinstimmt.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1"></texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Ihre gesetzlichen Rechte bleiben davon unberührt.</texto> </linea>
+			
+		#elseif(${esPagoTRTA})
+		    <!-- TICKET DE DEVOLUCION DE TARJETA-->
+			
+			<linea line-size="4"> <texto align="center" style="1">***Geschenkbeleg***</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Vielen Dank für Ihren Besuch</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Umtausch sowie Rückgabe sind nur innerhalb von 30 Tagen ab Kaufdatum und unter Vorlage eines gültigen Kassenbons möglich.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Waren, die zurückgegeben oder umgetauscht werden, müssen sich in einem perfekten Zustand befinden und das Etikett darf nicht beschädigt sein.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Badekleidung kann nur zurückgegeben oder umgetauscht werden, wenn alle hygienischen Schutzaufkleber unbeschädigt sind.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Im Falle einer Rückerstattung wird der Einkaufspreis mit der gleichen Methode zurückerstattet, mit der die Zahlung erfolgt ist, falls der Original-Kassenbon vorgelegt wird, oder, falls anwendbar, nach Vorlage der Karte und des Transaktionsbelegs. Wenn ein Geschenkbeleg vorgelegt wird, dann wird eine Gutschriftkarte zur Rückerstattung ausgestellt.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Ihre gesetzlichen Rechte bleiben davon unberührt.</texto> </linea>
+			
+			
+		#else
+		    <!-- ticket de devolucion normal -->
+			
+			<linea line-size="4"> <texto align="center" style="1">Vielen Dank für Ihren Besuch</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Umtausch sowie Rückgabe sind nur innerhalb von 30 Tagen ab Kaufdatum und unter Vorlage eines gültigen Kassenbons möglich.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Waren, die zurückgegeben oder umgetauscht werden, müssen sich in einem perfekten Zustand befinden und das Etikett darf nicht beschädigt sein.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Badekleidung kann nur zurückgegeben oder umgetauscht werden, wenn alle hygienischen Schutzaufkleber unbeschädigt sind.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Im Falle einer Rückerstattung wird der Einkaufspreis mit der gleichen Methode zurückerstattet, mit der die Zahlung erfolgt ist, falls der Original-Kassenbon vorgelegt wird, oder, falls anwendbar, nach Vorlage der Karte und des Transaktionsbelegs. Wenn ein Geschenkbeleg vorgelegt wird, dann wird eine Gutschriftkarte zur Rückerstattung ausgestellt.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Ihre gesetzlichen Rechte bleiben davon unberührt.</texto> </linea>
+
+		#end
+	#else
+	    <!-- DOCUMENTOS QUE NO SON DEVOLUCION -->
+		#if($ticket.getCabecera().getCodTipoDocumento() == "TR" && $!{ticket.isDevolucionTarjetaRegalo()})
+		    <!-- venta de tarjeta regalo -->
+		
+			<linea line-size="4"> <texto align="center" style="1">***Geschenkbeleg***</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Vielen Dank für Ihren Besuch</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Umtausch sowie Rückgabe sind nur innerhalb von 30 Tagen ab Kaufdatum und unter Vorlage eines gültigen Kassenbons möglich.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Waren, die zurückgegeben oder umgetauscht werden, müssen sich in einem perfekten Zustand befinden und das Etikett darf nicht beschädigt sein.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Badekleidung kann nur zurückgegeben oder umgetauscht werden, wenn alle hygienischen Schutzaufkleber unbeschädigt sind.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Im Falle einer Rückerstattung wird der Einkaufspreis mit der gleichen Methode zurückerstattet, mit der die Zahlung erfolgt ist, falls der Original-Kassenbon vorgelegt wird, oder, falls anwendbar, nach Vorlage der Karte und des Transaktionsbelegs. Wenn ein Geschenkbeleg vorgelegt wird, dann wird eine Gutschriftkarte zur Rückerstattung ausgestellt.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Ihre gesetzlichen Rechte bleiben davon unberührt.</texto> </linea>
+
+		#elseif(${esPagoTRTA})
+		    <!-- venta en la que interviene una tarjeta -->
+		
+			<linea line-size="4"> <texto align="center" style="1">Vielen Dank für Ihren Besuch</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Umtausch sowie Rückgabe sind nur innerhalb von 30 Tagen ab Kaufdatum und unter Vorlage eines gültigen Kassenbons möglich.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Waren, die zurückgegeben oder umgetauscht werden, müssen sich in einem perfekten Zustand befinden und das Etikett darf nicht beschädigt sein.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Badekleidung kann nur zurückgegeben oder umgetauscht werden, wenn alle hygienischen Schutzaufkleber unbeschädigt sind.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Der Betrag wird mit der gleichen Methode zurückerstattet, mit der die Zahlung erfolgt ist, falls der Original-Kassenbon vorgelegt wird, oder, falls anwendbar, nach Vorlage der Karte und des Transaktionsbelegs. Wenn ein Geschenkbeleg vorgelegt wird, dann wird eine Gutschriftkarte zur Rückerstattung ausgestellt.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">***Gutschriftkarte Rückerstattung***</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Die Karte ist nur für Einkäufe in den Geschäften von BIMBA Y LOLA in Deutschland gültig (außer e-shop www.bimbaylola.com) und solange, bis der volle Betrag der Karte erreicht wurde.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Der nicht in Anspruch genommene Betrag auf der Karte wird unter keinen Umständen zurückerstattet oder bar ausgezahlt.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Wir haften nicht bei Verlust, Diebstahl oder Beschädigung der Karte. Alle Produkte, die mit der Karte gekauft wurden, unterliegen den Richtlinien von BIMBA Y LOLA für den Umtausch und die Rückgabe. </texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Wenn ein Geschenkbeleg vorgelegt wird, dann wird eine Gutschriftkarte Rückerstattung ausgestellt.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Bei einem Umtausch oder Rückgabe von Waren, die mit der Karte gekauft wurden, muss die Karte vorgelegt werden. </texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1"></texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Bitte überprüfen Sie, ob das Saldo auf der Karte mit dem des entsprechenden Belegs übereinstimmt.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1"></texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Ihre gesetzlichen Rechte bleiben davon unberührt.</texto> </linea>
+
+
+		#else
+		    <!-- Pie para un ticket de venta normal -->
+		
+			<linea line-size="4"> <texto align="center" style="1">Vielen Dank für Ihren Besuch</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Umtausch sowie Rückgabe sind nur innerhalb von 30 Tagen ab Kaufdatum und unter Vorlage eines gültigen Kassenbons möglich.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Waren, die zurückgegeben oder umgetauscht werden, müssen sich in einem perfekten Zustand befinden und das Etikett darf nicht beschädigt sein.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Badekleidung kann nur zurückgegeben oder umgetauscht werden, wenn alle hygienischen Schutzaufkleber unbeschädigt sind.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Im Falle einer Rückerstattung wird der Einkaufspreis mit der gleichen Methode zurückerstattet, mit der die Zahlung erfolgt ist, falls der Original-Kassenbon vorgelegt wird, oder, falls anwendbar, nach Vorlage der Karte und des Transaktionsbelegs. Wenn ein Geschenkbeleg vorgelegt wird, dann wird eine Gutschriftkarte zur Rückerstattung ausgestellt.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Ihre gesetzlichen Rechte bleiben davon unberührt.</texto> </linea>
+			
+		#end
+	#end

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="147.0" prefHeight="300.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.comerzzia.brico.pos.selfcheckout.dispositivo.comun.tarjeta.SelfCheckoutCodigoTarjetaController">
+  <children>
+    <HBox prefHeight="200.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <AnchorPane minHeight="119.0" prefHeight="119.0" prefWidth="600.0" HBox.hgrow="ALWAYS">
+          <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="mainFxmlClass, pantalla-detalle" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <AnchorPane minHeight="30.0" prefHeight="37.0" prefWidth="600.0" styleClass="titulo-ventana" VBox.vgrow="NEVER">
+                  <children>
+                    <Label fx:id="lbTitulo" alignment="CENTER" prefHeight="37.0" prefWidth="479.0" text="%Lea o escriba el código de barras de la tarjeta" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+                </AnchorPane>
+                <AnchorPane minHeight="52.0" prefHeight="52.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+                  <children>
+                    <VBox minHeight="43.5" prefHeight="52.0" prefWidth="700.0" AnchorPane.bottomAnchor="209.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <children>
+                        <AnchorPane id="AnchorPane" prefHeight="52.0" prefWidth="700.0">
+                          <children>
+                            <Label alignment="CENTER_RIGHT" layoutX="36.0" layoutY="11.0" prefWidth="108.0" text="%Número de tarjeta" />
+                            <TextField id="tfNumTarjetaRegalo" fx:id="tfNumero" layoutX="156.0" layoutY="8.0" onKeyReleased="#accionAceptarIntro" prefHeight="30.0" prefWidth="520.0" />
+                          </children>
+                        </AnchorPane>
+                      </children>
+                    </VBox>
+                    <HBox id="panelTecladoNumerico" alignment="CENTER" layoutX="10.0" layoutY="67.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="700.0" />
+                  </children>
+                </AnchorPane>
+                <AnchorPane minHeight="51.999900000002526" prefHeight="51.999900000002526" prefWidth="578.0" VBox.vgrow="NEVER">
+                  <children>
+                    <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+                      <children>
+                        <Button fx:id="btnAltaFidelizado" disable="true" minWidth="1.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="1.0" styleClass="btAlta" text="%Alta Fidelizado" visible="false" />
+                        <Button mnemonicParsing="false" onAction="#accionAceptar" prefHeight="42.0" prefWidth="120.0" text="%Aceptar" />
+                        <Button mnemonicParsing="false" onAction="#accionCancelar" prefHeight="42.0" prefWidth="115.0" text="%Cancelar" />
+                      </children>
+                    </HBox>
+                  </children>
+                </AnchorPane>
+              </children>
+            </VBox>
+          </children>
+        </AnchorPane>
+      </children>
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@../../../../styles/styles.css" />
+  </stylesheets>
+</AnchorPane>

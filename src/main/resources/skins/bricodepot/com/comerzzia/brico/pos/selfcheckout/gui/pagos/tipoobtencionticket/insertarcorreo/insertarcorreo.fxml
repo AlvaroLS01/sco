@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.comerzzia.pos.core.gui.componentes.tecladonumerico.*?>
+<?import com.comerzzia.pos.core.gui.componentes.textField.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-classpath-element C:/Tier1/ExploradorApps/Aplicaciones/JPOS_3_0/jpos/lib/comerzzia-pos-core-3.0-SNAPSHOT.jar?>
+<?scenebuilder-classpath-element C:/Tier1/ExploradorApps/Aplicaciones/JPOS_3_0/jpos/lib?>
+
+<AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="392.0" prefHeight="421.0" prefWidth="700.0" styleClass="mainFxmlClass, pantalla-detalle" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.comerzzia.brico.pos.selfcheckout.gui.pagos.tipoobtencionticket.insertarcorreo.InsertarCorreoController">
+  <children>
+    <HBox id="HBox" alignment="CENTER" spacing="5.0" style="" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox prefHeight="350.0" prefWidth="700.0" spacing="10.0" HBox.hgrow="ALWAYS">
+          <children>
+            <HBox prefHeight="50.0" prefWidth="700.0" styleClass="titulo-ventana" VBox.vgrow="NEVER">
+              <children>
+                <Label fx:id="lbTitulo" alignment="CENTER" maxWidth="-1.0" minHeight="51.0" prefHeight="50.0" prefWidth="700.0" styleClass="intro-number" text="%Inserte su correo electrónico" />
+              </children>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-1.0" prefHeight="50.0" prefWidth="700.0" VBox.vgrow="ALWAYS">
+              <children>
+                <TextField fx:id="tfInsertarEmail" prefHeight="40.0" prefWidth="-1.0" styleClass="text-corp, art-number" HBox.hgrow="ALWAYS">
+                  <HBox.margin>
+                    <Insets left="15.0" right="15.0" />
+                  </HBox.margin>
+                </TextField>
+              </children>
+            </HBox>
+            <HBox fx:id="panelTecladoNumerico" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="700.0" VBox.vgrow="ALWAYS" />
+            <HBox fx:id="panelCorreo" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="62.0" prefWidth="700.0" spacing="5.0" VBox.vgrow="ALWAYS">
+              <children>
+                <Button fx:id="btnGmailEs" mnemonicParsing="false" style="" styleClass="boton-fondo-black" text="\@gmail.es" textAlignment="CENTER" textFill="WHITE" />
+                <Button fx:id="btnGmailCom" contentDisplay="LEFT" mnemonicParsing="false" styleClass="boton-fondo-black" text="\@gmail.com" textAlignment="CENTER" textFill="WHITE" />
+                <Button id="btnOutlookCom" fx:id="btnHotmail" mnemonicParsing="false" styleClass="boton-fondo-black" text="\@hotmail.com" textFill="WHITE" />
+                <Button fx:id="btnOutlookEs" mnemonicParsing="false" styleClass="boton-fondo-black" text="\@outlook.es" textFill="WHITE" />
+                <Button fx:id="btnOutlookCom" mnemonicParsing="false" styleClass="boton-fondo-black" text="\@outlook.com" textFill="WHITE" />
+                <Button id="btnOutlookCom" fx:id="btnSapo" mnemonicParsing="false" styleClass="boton-fondo-black" text="\@sapo.pt" textFill="WHITE" />
+                <Button fx:id="btnAt" mnemonicParsing="false" styleClass="boton-fondo-black" text="\@" textFill="WHITE" />
+              </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" VBox.vgrow="NEVER">
+              <children>
+                <Button fx:id="btAceptar" minHeight="42.0" minWidth="115.0" mnemonicParsing="false" onAction="#accionAceptar" prefHeight="42.0" prefWidth="-1.0" style="" styleClass="btAceptar, text-black" text="%Aceptar">
+                  <font>
+                    <Font size="16.0" fx:id="x1" />
+                  </font>
+                </Button>
+                <Button fx:id="btCancelar" mnemonicParsing="false" onAction="#accionCancelar" styleClass="btCancelar, text-black" text="%Cancelar">
+                  <HBox.margin>
+                    <Insets left="10.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+              <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+              </padding>
+            </HBox>
+          </children>
+        </VBox>
+      </children>
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@../../styles/styles.css" />
+    <URL value="@insertarcorreo.css" />
+  </stylesheets>
+</AnchorPane>

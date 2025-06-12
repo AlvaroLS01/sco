@@ -1,0 +1,304 @@
+.button {   
+    -fx-text-fill: #0082AA;     
+}
+.vertical-options {
+    -fx-padding: 10 10 10 40;
+    -fx-text-fill: #0082AA; 
+    -fx-font-size: 18;
+}
+.lb-total {
+	 -fx-text-fill: #0082AA; 
+}
+.column-header .label{
+    -fx-background-color: white;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #919191;
+    -fx-text-fill: #0082AA; 
+    -fx-padding: 8 0 8 0;
+    
+}
+.table-view .table-row-cell:focused:odd , .list-view .list-cell:focused:odd {
+    -fx-background-color: #0082AA;
+     -fx-text-fill: white; 
+}
+
+.table-view .table-row-cell:odd , .list-view .list-cell:odd {
+    -fx-background-color: #e6ecea;
+    -fx-text-fill: #0082AA;
+}
+.table-view .table-row-cell:odd:focused , .list-view .list-cell:odd:focused {
+    -fx-background-color: #0082AA;
+    -fx-text-fill: white; 
+}
+.table-view .table-row-cell:even:focused , .list-view .list-cell:even:focused {
+    -fx-background-color: #0082AA;
+    -fx-text-fill: white; 
+}
+
+
+.list-view .list-cell:odd {
+	-fx-text-fill: #0082AA; 
+}
+
+.item-added {
+	    -fx-font-size: 12;
+}
+.button.btCancelar {
+   	-fx-text-fill: #ffffff; 
+	     -fx-background-color: #c83434;
+	    -fx-background-color:
+        rgba(0,0,0,0.08),
+        linear-gradient(#c83434, #a90404),
+        linear-gradient( #c83434 53%, #a90404 54%, #930202 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-background-image: url("cancel-white.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 10px center;
+    -fx-padding: 10 10 10 40;
+    -fx-background-size: 25px;
+}
+.button.btCancelar:hover {
+       -fx-text-fill: #ffffff; 
+	     -fx-background-color: #e6102d;
+	    -fx-background-color:
+        rgba(0,0,0,0.08),
+        linear-gradient(#cf3d3d, #e6102d),
+        linear-gradient( #cf3d3d 53%, #a30606 54%, #e6102d 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-background-image: url("cancel-white.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 10px center;
+    -fx-padding: 10 10 10 40;
+
+}
+.button.btCancelar:focused {
+        -fx-text-fill: #ffffff; 
+	     -fx-background-color: #c83434;
+	    -fx-background-color:
+        rgba(0,0,0,0.08),
+        linear-gradient(#c83434, #a90404),
+        linear-gradient( #c83434 53%, #a90404 54%, #930202 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-background-image: url("cancel-white.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 10px center;
+    -fx-padding: 10 10 10 40;
+
+}
+.bots-column.bot-background-search {
+    -fx-background-image: url("search-lupa.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 30px center;
+    -fx-background-size: 55px;	
+  
+}
+.bots-column.bot-background-change {
+    -fx-background-image: url("change-account.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 30px center;
+    -fx-background-size: 55px;	
+  
+}
+.bots-column.bot-background-manual {
+    -fx-background-image: url("code-bar.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 30px center;
+    -fx-background-size: 55px;	
+  
+}
+.bots-column.delete-line {
+    -fx-background-image: url("delete-line.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 30px center;
+    -fx-background-size: 55px;  
+}
+.background-corporativo {	
+	-fx-background-color: #0082AA;	
+}
+.background-corporativo .lb-destacado {
+	-fx-text-fill: white;
+}
+.sinborde {
+	 -fx-border-width: 0;
+-fx-background-insets: 0, 0;
+	 
+}
+.button.goback {
+   	-fx-text-fill: #ffffff; 
+	     -fx-background-color: #c83434;
+	    -fx-background-color:
+        rgba(0,0,0,0.08),
+        linear-gradient(#c83434, #a90404),
+        linear-gradient( #c83434 53%, #a90404 54%, #930202 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-background-image: url("back.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 10px center;
+    -fx-padding: 10 10 10 40;
+    -fx-background-size: 25px;
+}
+.button.goback:hover {
+     -fx-text-fill: #ffffff; 
+	     -fx-background-color: #e6102d;
+	    -fx-background-color:
+        rgba(0,0,0,0.08),
+        linear-gradient(#cf3d3d, #e6102d),
+        linear-gradient( #cf3d3d 53%, #a30606 54%, #e6102d 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 10px center;
+    -fx-padding: 10 10 10 40;
+}
+.button.add-item { 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 60px center;	
+	-fx-text-fill: #ffffff; 
+	     -fx-background-color: #0082AA;
+	   /*  -fx-background-color:
+        rgba(0,0,0,0.08),
+        linear-gradient(#18894b, #157946),
+        linear-gradient( #18894b 53%, #157946 54%, #14703d 100%); */
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-background-image: url("additem.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 10px center;
+    -fx-padding: 10 10 10 40;
+    -fx-background-size: 30px;
+}
+.button.add-item:hover { 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 60px center;	
+    -fx-background-color: #0082AA;
+/* 	    -fx-background-color:
+        rgba(0,0,0,0.08),
+        linear-gradient(#18894b, #157946),
+        linear-gradient( #1a9552 54%, #14703d 54%, #116135 100%); */
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-background-image: url("additem.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 10px center;
+    -fx-padding: 10 10 10 40; 
+}
+.intro-number {
+	  -fx-background-color: #0082AA;
+}
+.lb-destacado {
+	-fx-text-fill: #0082AA;
+}
+.lb-boton-compuesto {
+	-fx-text-fill: white;
+	-fx-font-size: 14;
+	-fx-text-transform: uppercase;
+	-fx-background-color: #0082AA;
+}
+.text-corp {
+	-fx-text-fill: #0082AA;
+		 -fx-font-size: 18;
+}
+.text-corp {
+	 -fx-font-size:18;
+}
+.cant.text-corp {
+	 -fx-font-size:32;
+}
+.bt-categoria {
+	 -fx-text-fill: #0082AA;
+}
+.text-black{
+	-fx-text-fill: black;
+	-fx-font-size: 18;
+}
+.art-number, .myimput {
+	 -fx-font-size: 20;
+	 -fx-text-fill: #0082AA;
+}
+.art-view label {
+	 -fx-font-size: 22;
+	 -fx-text-fill: #0082AA;	
+}
+.cant.art-number {
+	 -fx-font-size:35;	
+}
+.button.btAceptar {
+   -fx-background-repeat: no-repeat;
+    -fx-background-position: 60px center;	
+	-fx-text-fill: #ffffff; 
+	     -fx-background-color: #0082AA;
+/* 	    -fx-background-color:
+        rgba(0,0,0,0.08),
+        linear-gradient(#18894b, #157946),
+        linear-gradient( #18894b 53%, #157946 54%, #14703d 100%); */
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-background-image: url("ok.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 10px center;
+    -fx-padding: 10 10 10 40;
+    -fx-background-size: 30px;
+}
+.button.btAceptar:hover {
+-fx-background-repeat: no-repeat;
+    -fx-background-position: 60px center;	
+    -fx-background-color: #0082AA;
+	/*     -fx-background-color:
+        rgba(0,0,0,0.08),
+        linear-gradient(#18894b, #157946),
+        linear-gradient( #1a9552 54%, #14703d 54%, #116135 100%); */
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-background-image: url("ok.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 10px center;
+    -fx-padding: 10 10 10 40; 
+
+}
+.button.btAceptar:focused {
+ -fx-background-repeat: no-repeat;
+    -fx-background-position: 60px center;	
+    -fx-background-color: #0082AA;
+	/*     -fx-background-color:
+        rgba(0,0,0,0.08),
+        linear-gradient(#18894b, #157946),
+        linear-gradient( #1a9552 54%, #14703d 54%, #116135 100%); */
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-background-image: url("ok.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 10px center;
+    -fx-padding: 10 10 10 40; 
+}
+.notengo {
+	-fx-background-image: url("notengo.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 110 center;
+    -fx-padding: 10 40 10 10; 
+      -fx-background-size: 25px;
+}
+.notengoleft {
+	-fx-background-image: url("notengoleft.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 5px center;
+    -fx-padding: 10 40 10 10; 
+      -fx-background-size: 25px;
+}
+.titulo-ventana {
+     -fx-background-color: #0082AA;
+    -fx-height: 42px;
+}
+#ventanaDialogo label {
+		-fx-text-fill: #0082AA; 
+}
+#lbTarjetaRegalo {
+	-fx-text-fill: #0082AA; 	
+}
+.textoResaltado {
+	-fx-text-fill: #0082AA; 	
+	-fx-font-size: 22;
+}

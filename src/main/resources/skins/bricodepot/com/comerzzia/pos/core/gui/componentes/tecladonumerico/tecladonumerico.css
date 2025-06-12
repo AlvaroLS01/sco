@@ -1,0 +1,41 @@
+/**
+ * ComerZZia 3.0
+ *
+ * Copyright (c) 2008-2015 Comerzzia, S.L.  All Rights Reserved.
+ *
+ * THIS WORK IS  SUBJECT  TO  SPAIN  AND  INTERNATIONAL  COPYRIGHT  LAWS  AND
+ * TREATIES.   NO  PART  OF  THIS  WORK MAY BE  USED,  PRACTICED,  PERFORMED
+ * COPIED, DISTRIBUTED, REVISED, MODIFIED, TRANSLATED,  ABRIDGED, CONDENSED,
+ * EXPANDED,  COLLECTED,  COMPILED,  LINKED,  RECAST, TRANSFORMED OR ADAPTED
+ * WITHOUT THE PRIOR WRITTEN CONSENT OF COMERZZIA, S.L. ANY USE OR EXPLOITATION
+ * OF THIS WORK WITHOUT AUTHORIZATION COULD SUBJECT THE PERPETRATOR TO
+ * CRIMINAL AND CIVIL LIABILITY.
+ *
+ * CONSULT THE END USER LICENSE AGREEMENT FOR INFORMATION ON ADDITIONAL
+ * RESTRICTIONS.
+ */
+.teclado-numerico .button {
+	-fx-background-color: rgba(255,255,255);
+	-fx-background-insets: 0, 1, 2 2 3 2, 3;
+	-fx-background-radius: 3, 2, 2, 2;
+	-fx-padding: 0;
+	-fx-border-color: rgba(0,0,0); 
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+	-fx-text-fill: rgba(0,0,0) !important;
+	-fx-font-size: 22px;
+	-fx-cursor: hand;
+}
+
+#btLimpiar {
+    -fx-background-image: url("reset.png");
+    -fx-background-size: 75px 30px; /* Puedes ajustar esto según tus necesidades */
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+#btBorrar {
+    -fx-background-image: url("delete.png");
+    -fx-background-size: 75px 30px; /* Puedes ajustar esto según tus necesidades */
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}

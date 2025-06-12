@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-stylesheet ../bienvenida/selfcheckoutbienvenida.css?>
+<?scenebuilder-stylesheet conversion.css?>
+
+<AnchorPane id="AnchorPane" prefHeight="276.0" prefWidth="758.0" styleClass="pantalla-modal" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.comerzzia.brico.pos.selfcheckout.gui.conversion.ConversionController">
+  <children>
+    <VBox prefHeight="700.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <AnchorPane minHeight="42.0" prefHeight="42.0" prefWidth="1000.0" styleClass="titulo-ventana" VBox.vgrow="NEVER">
+          <children>
+            <Label id="titulo-conversion" alignment="CENTER" prefHeight="52.0" prefWidth="528.0" text="%Convierte tu ticket en una factura completa" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="42.0" prefHeight="240.0" prefWidth="1000.0" VBox.vgrow="ALWAYS">
+          <children>
+            <HBox prefHeight="322.0" prefWidth="1000.0" AnchorPane.bottomAnchor="186.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <AnchorPane fx:id="panelMenuTabla" prefHeight="490.0" prefWidth="90.0" HBox.hgrow="ALWAYS">
+                  <padding>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" fx:id="x1" />
+                  </padding>
+                  <HBox.margin>
+                    <Insets />
+                  </HBox.margin>
+                </AnchorPane>
+                <VBox prefHeight="200.0" prefWidth="100.0" spacing="8.0">
+                  <children>
+                    <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                    <FlowPane prefHeight="200.0" prefWidth="200.0">
+                      <children>
+                        <FlowPane alignment="CENTER" hgap="5.0" prefHeight="55.0" prefWidth="200.0">
+                          <children>
+                            <Label alignment="CENTER" prefWidth="614.0" styleClass="etiqueta-titulo2" text="%Escanea o escribe el localizador del ticket">
+                              <FlowPane.margin>
+                                <Insets bottom="30.0" />
+                              </FlowPane.margin>
+                            </Label>
+                            <TextField id="tfOperacion" fx:id="tfLocalizador" alignment="CENTER" onKeyReleased="#keyReleased" prefHeight="42.0" prefWidth="423.0" />
+                          </children>
+                        </FlowPane>
+                      </children>
+                    </FlowPane>
+                    <FlowPane minHeight="34.0" prefHeight="34.0" prefWidth="616.0">
+                      <children>
+                        <Label fx:id="lbMensajeError" alignment="CENTER" prefHeight="51.0" prefWidth="616.0" styleClass="lbError" text="" />
+                      </children>
+                    </FlowPane>
+                    <FlowPane alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="200.0">
+                      <children>
+                        <AnchorPane prefHeight="42.0" prefWidth="180.0" />
+                        <Button fx:id="btAceptar" mnemonicParsing="false" onAction="#accionAceptar" prefHeight="42.0" prefWidth="132.0" styleClass="btAceptar, text-black" text="%Aceptar" wrapText="true">
+                          <FlowPane.margin>
+                            <Insets right="20.0" />
+                          </FlowPane.margin>
+                        </Button>
+                        <Button id="btAceptar" mnemonicParsing="false" onAction="#accionCancelar" prefHeight="42.0" prefWidth="132.0" styleClass="btCancelar, text-black" text="%Cancelar" wrapText="true" />
+                      </children>
+                    </FlowPane>
+                  </children>
+                </VBox>
+                <AnchorPane prefHeight="490.0" prefWidth="90.0" HBox.hgrow="ALWAYS" />
+              </children>
+            </HBox>
+          </children>
+        </AnchorPane>
+      </children>
+    </VBox>
+  </children>
+  <stylesheets>
+    <URL value="@../../core/styles/styles.css" />
+  </stylesheets>
+</AnchorPane>

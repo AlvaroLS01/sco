@@ -1,0 +1,27 @@
+<plantilla>
+	#set($tienePagoGiftcard = false)
+	#foreach ($pago in $ticket.getPagos())
+		#if (${pago.isPagoTarjetaRegalo()})
+			#set($tienePagoGiftcard = true)
+			#break
+		#end
+	#end
+
+	#if(!$paperLess || ( $paperLess && ($ticket.getCabecera().getDatosEnvio() || $tienePagoGiftcard)))
+		<documento salida="impresora1">
+		#set($esDuplicado = false)
+		#set($esCopia = false)
+			#parse("./plantillas/factura_contenido_pt.xml")
+		#set($esCopia = true)
+			#parse("./plantillas/factura_contenido_pt.xml")
+	   </documento>     
+	#end
+
+#if(($ticket.getCabecera().getCodTipoDocumento() == "FT") || $esImpresionA4 == true)
+	#set($esCopia = false)
+<!-- 	<documento salida="impresora2" procesador="JASPER" fichero="facturas\facturaA4_PT"> -->
+<!-- 	</documento> -->
+
+#end 
+  
+</plantilla>

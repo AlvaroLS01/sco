@@ -1,0 +1,134 @@
+<plantilla>
+	<documento>
+		<logo></logo>
+		<linea > 
+			<texto align="left" size="40">${empresa.getDesEmpresa()}</texto>
+		</linea>
+		<linea > 
+			<texto align="left" size="40">${domicilioTienda}</texto>
+		</linea>
+		
+		<linea>
+			<texto></texto>
+		</linea>
+		<linea > 
+			<texto align="left" size="40">RETIRADA</texto>
+		</linea>
+		<linea> <texto>----------------------------------------</texto> </linea>
+		<linea>
+			<texto></texto>
+		</linea>
+		<linea>
+			<texto size="20" align ="left">REGISTRADO A: ${movimiento.getFechaTicket()}</texto>
+		</linea>
+		<linea>
+			<texto size="20" align ="left">${tienda} ${caja}</texto>
+		</linea>
+		<linea>
+			<texto align = "left" size = "40">Empleado: ${empleado}</texto>
+		</linea>
+		<linea> <texto>----------------------------------------</texto> </linea>
+		<linea>
+			<texto></texto>
+		</linea>
+		<linea>
+			<texto size="40" align="center">Nº. movimiento: ${movimiento.getLinea()}</texto>
+		</linea>
+		<linea> <texto>----------------------------------------</texto> </linea>
+		<linea>
+			<texto></texto>
+		</linea>
+		#if(${movimiento.getCargoTicket()})
+		<linea>
+			<texto size="32" align="left">${movimiento.getConcepto()}</texto>
+			<texto size="8" align="right">${movimiento.getCargoTicket()}</texto>
+		</linea>
+		#end
+		#if(${movimiento.getAbonoTicket()})
+		<linea>
+			<texto size="32" align="left">${movimiento.getConcepto()}</texto>
+			<texto size="8" align="right">${movimiento.getAbonoTicket()}</texto>
+		</linea>
+		#end
+		<linea> <texto>----------------------------------------</texto> </linea>
+		<linea>
+			<texto size="40" align ="left">ESTUCHES ${estuche}</texto>
+		</linea>
+		<linea> <texto>----------------------------------------</texto> </linea>
+		<linea>
+			<texto size="40" align ="left">EFECTIVO</texto>
+		</linea>
+		<linea> <texto>----------------------------------------</texto> </linea>
+		<linea> <texto>FIRMA:----------------------------------</texto> </linea>
+		<linea> <texto>----------------------------------------</texto> </linea>
+		<corte></corte>
+		<logo></logo>
+		<linea> <texto> </texto> </linea>
+		<linea> <texto>               DUPLICADO                 </texto> </linea>
+		<linea> <texto> </texto> </linea>
+		<linea> <texto> </texto> </linea>
+		<linea> <texto>---------------------------------------- </texto> </linea>
+		<linea > 
+			<texto align="left" size="40">${empresa.getDesEmpresa()}</texto>
+		</linea>
+		<linea > 
+			<texto align="left" size="40">${domicilioTienda}</texto>
+		</linea>
+		
+		<linea>
+			<texto></texto>
+		</linea>
+		<linea > 
+			<texto align="left" size="40">RETIRADA</texto>
+		</linea>
+		<linea> <texto>----------------------------------------</texto> </linea>
+		<linea>
+			<texto></texto>
+		</linea>
+		<linea>
+			<texto size="20" align ="left">REGISTRADO A: ${movimiento.getFechaTicket()}</texto>
+		</linea>
+		<linea>
+			<texto size="20" align ="left">${tienda} ${caja}</texto>
+		</linea>
+		<linea>
+			<texto align = "left" size = "40">Empleado: ${empleado}</texto>
+		</linea>
+		<linea> <texto>----------------------------------------</texto> </linea>
+		<linea>
+			<texto></texto>
+		</linea>
+		<linea>
+			<texto size="40" align="center">Nº. movimiento: ${movimiento.getLinea()}</texto>
+		</linea>
+		<linea> <texto>----------------------------------------</texto> </linea>
+		<linea>
+			<texto></texto>
+		</linea>
+		#if(${movimiento.getCargoTicket()})
+		<linea>
+			<texto size="32" align="left">${movimiento.getConcepto()}</texto>
+			<texto size="8" align="right">${movimiento.getCargoTicket()}</texto>
+		</linea>
+		#end
+		#if(${movimiento.getAbonoTicket()})
+		<linea>
+			<texto size="32" align="left">${movimiento.getConcepto()}</texto>
+			<texto size="8" align="right">${movimiento.getAbonoTicket()}</texto>
+		</linea>
+		#end
+		<linea> <texto>----------------------------------------</texto> </linea>
+		<linea>
+			<texto size="40" align ="left">ESTUCHES</texto>
+		</linea>
+		<linea> <texto>----------------------------------------</texto> </linea>
+		<linea>
+			<texto size="40" align ="left">EFECTIVO ${estuche}</texto>
+		</linea>
+		<linea> <texto>----------------------------------------</texto> </linea>
+		<linea> <texto>FIRMA:----------------------------------</texto> </linea>
+		<linea> <texto>----------------------------------------</texto> </linea>
+		
+		<corte></corte>
+	</documento>
+</plantilla>

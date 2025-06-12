@@ -1,0 +1,32 @@
+.titulo-ventana{
+    -fx-background-color: rgba(227,6,19) !important;
+    -fx-text-fill: rgba(255,255,255) !important; 
+}
+.titulo-ventana .label{
+    -fx-background-color: rgba(227,6,19) !important;
+    -fx-text-fill: rgba(255,255,255) !important; 
+}
+
+.boton-fondo-black {
+    -fx-background-color: rgba(0, 0, 0);
+    -fx-text-fill: rgba(255, 255, 255) !important;
+}
+
+.boton-fondo-black:hover {
+    -fx-background-color: rgba(0, 0, 0);
+    -fx-text-fill: rgba(255, 255, 255) !important;
+}
+.texto-resaltado{
+    -fx-text-fill: rgba(0, 0, 0);
+}
+.label{
+    -fx-text-fill: rgba(0, 0, 0);
+}
+
+.text-input{
+    -fx-text-fill: rgba(0, 0, 0);
+}
+
+.text-black{
+    -fx-text-fill: rgba(0, 0, 0) !important;
+}

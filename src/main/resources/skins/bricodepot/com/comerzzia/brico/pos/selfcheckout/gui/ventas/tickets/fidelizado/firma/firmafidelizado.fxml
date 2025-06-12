@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minWidth="803.0" prefHeight="492.0" prefWidth="803.0" styleClass="mainFxmlClass, pantalla-modal" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.comerzzia.brico.pos.selfcheckout.gui.ventas.tickets.fidelizado.firma.FirmaFidelizadoController">
+  <children>
+    <VBox alignment="CENTER" minHeight="-1.0" minWidth="-1.0" prefHeight="480.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="450.0" styleClass="titulo-ventana" VBox.vgrow="NEVER">
+          <children>
+            <Label fx:id="lbTitulo" text="%Firme aquí" />
+          </children>
+        </HBox>
+        <HBox minHeight="372.0" minWidth="704.0" prefHeight="372.0" prefWidth="781.0" VBox.vgrow="ALWAYS">
+          <children>
+            <AnchorPane minHeight="380.0" prefHeight="380.0" prefWidth="753.0" HBox.hgrow="ALWAYS">
+              <children>
+                <Canvas fx:id="TheCanvas" height="453.0" layoutX="118.0" layoutY="-37.0" scaleX="1.430717296387208" scaleY="0.838820655378308" width="546.0" />
+                <Canvas fx:id="canvasGo" height="453.0" layoutX="117.0" layoutY="-37.0" onMouseDragged="#onMouseDraggedListener" onMouseExited="#onMouseExitedListener" onMousePressed="#onMousePressedListener" onMouseReleased="#onMouseReleaseListener" scaleX="1.4328125092224016" scaleY="0.8361527393898505" width="546.0" />
+              </children>
+            </AnchorPane>
+          </children>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="778.0">
+          <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="406.0">
+              <children>
+                <Button id="btRechazar" fx:id="btBorrarFirma" alignment="CENTER" mnemonicParsing="false" onAction="#accionBorrarFirma" prefHeight="42.0" prefWidth="157.0" text="%Borrar Firma" />
+              </children>
+            </VBox>
+            <VBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="424.0">
+              <children>
+                <Button id="btRechazar" fx:id="btFirmar" contentDisplay="LEFT" mnemonicParsing="false" onAction="#accionFirmar" prefHeight="40.0" prefWidth="110.0" text="%Aceptar" />
+              </children>
+            </VBox>
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

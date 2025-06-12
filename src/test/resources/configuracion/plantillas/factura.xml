@@ -1,0 +1,25 @@
+<plantilla>
+
+ ## #if( (!$ticket.getCabecera().getDatosDocOrigen() && $ticket.getCabecera().getCodTipoDocumento() != "FS") || ($ticket.getCabecera().getDatosDocOrigen() && $ticket.getCabecera().getDatosDocOrigen().getCodTipoDoc() != "FS"))
+
+	#set($tienePagoGiftcard = false)
+	#foreach ($pago in $ticket.getPagos())
+		#if (${pago.isPagoTarjetaRegalo()})
+			#set($tienePagoGiftcard = true)
+			#break
+		#end
+	#end
+	#if(!$paperLess || ( $paperLess && ($ticket.getCabecera().getDatosEnvio() || $tienePagoGiftcard)))
+		<documento salida="impresora1">
+		#parse("./plantillas/factura_contenido.xml")
+	   </documento>    
+	#end
+
+<!-- #if(($esImpresionA4 == $null && $ticket.getCabecera().getCodTipoDocumento() == "FT") || $esImpresionA4 == true) -->
+
+<!-- 	<documento salida="impresora2" procesador="JASPER" fichero="facturas\facturaA4"> -->
+<!-- 	</documento> -->
+
+<!-- #end  -->
+  
+</plantilla>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Panel>
+    <LineaBotones>
+    	<Boton><tipo>HUECO</tipo></Boton>
+    	<Boton><tipo>HUECO</tipo></Boton>
+    	<Boton><tipo>HUECO</tipo></Boton>
+    	<Boton><tipo>HUECO</tipo></Boton>
+    	<Boton><tipo>HUECO</tipo></Boton>
+        <Boton>
+			<texto></texto>
+            <clave>gotoLoginSelfCheckout</clave>
+            <tipo>METODO</tipo>
+			<teclaAccesoRapido>Ctrl + 6</teclaAccesoRapido>
+			<visible>S</visible>
+        </Boton>
+	</LineaBotones>
+</Panel>

@@ -1,0 +1,21 @@
+		#if(!${tarjetaRegalo})
+			<linea line-size="4"> <texto align="center" style="1">***Ticket Regal***</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Gràcies per la vostra visita</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Conserveu el vostre tiquet per a qualsevol canvi o devolució.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Termini màxim 30 dies.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Condicions vàlides per al territori nacional excepte Illes Canàries, Ceuta, El Corte Inglés i botigues Outlet.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Per al canvi o la devolució d'articles és imprescindible que es conservi intacte el precinte de seguretat.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">No s'admetran canvis ni devolucions d'articles de bany sense protecció higiènica intacta.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">L'import de la vostra compra serà reemborsat en la mateixa forma de pagament, sempre i quan presenteu el tiquet original i, si s’escau, la targeta i el resguard de l'operació. En cas de presentar tiquet regal, o quan la compra es faci a través dels mitjans de pagament Alipay o Wechat, el reemborsament corresponent es farà amb una targeta d’abonament.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Aquesta garantia és addicional i no afecta els drets legals del consumidor.</texto> </linea>
+
+		#else
+			<linea line-size="4"> <texto align="center" style="1">Gràcies per la vostra visita</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Conserveu el vostre tiquet per a qualsevol canvi o devolució.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Termini màxim 30 dies.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Condicions vàlides per al territori nacional excepte Illes Canàries, Ceuta, El Corte Inglés i botigues Outlet.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Per al canvi o la devolució d'articles és imprescindible que es conservi intacte el precinte de seguretat.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">No s'admetran canvis ni devolucions d'articles de bany sense la protecció higiènica intacta.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">L'import de la vostra compra serà reemborsat en la mateixa forma de pagament, sempre i quan presenteu el tiquet original i, si s’escau, la targeta i el resguard de l'operació. En cas de presentar tiquet regal, o quan la compra es faci a través dels mitjans de pagament Alipay o Wechat, el reemborsament corresponent es farà amb una targeta d’abonament.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Aquesta garantia és addicional i no afecta els drets legals del consumidor.</texto> </linea>
+		#end

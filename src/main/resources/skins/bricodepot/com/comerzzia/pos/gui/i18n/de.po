@@ -1,0 +1,1559 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-08 12:28+0200\n"
+"PO-Revision-Date: 2023-08-04 09:36+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: com/comerzzia/barreto/pos/core/gui/main/BarretoMainViewController.java:86
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/datosEnvio/BarretoDatosEnvioController.java:282
+msgid "La petición no se procesó correctamente."
+msgstr "Die Anfrage wurde nicht korrekt verarbeitet."
+
+#: com/comerzzia/barreto/pos/core/gui/main/BarretoMainViewController.java:89
+msgid "Error. dirección de servicio rest no encontrada (HTTP 404)"
+msgstr "Fehler Restdienstadresse nicht gefunden (HTTP 404)"
+
+#: com/comerzzia/barreto/pos/core/gui/main/BarretoMainViewController.java:92
+msgid "No se pudo conectar con los servicios rest (HTTP 400)"
+msgstr "Verbindung zu den übrigen Diensten konnte nicht hergestellt werden (HTTP 400)"
+
+#: com/comerzzia/barreto/pos/core/gui/main/BarretoMainViewController.java:95
+msgid "No se pudo conectar con los servicios rest (HTTP 500)"
+msgstr "Verbindung zu den übrigen Diensten konnte nicht hergestellt werden (HTTP 500)"
+
+#: com/comerzzia/barreto/pos/core/gui/main/BarretoMainViewController.java:98
+msgid "No se pudo conectar con los servicios rest"
+msgstr "Verbindung zu den restlichen Diensten konnte nicht hergestellt werden"
+
+#: com/comerzzia/barreto/pos/gui/ventas/cajas/BarretoCajasController.java:187
+#: com/comerzzia/barreto/pos/gui/ventas/cajas/cierre/BarretoCierreCajaController.java:175
+#: com/comerzzia/barreto/pos/gui/ventas/gestiontickets/detalle/BarretoDetalleGestionticketsController.java:247
+#: com/comerzzia/barreto/pos/gui/ventas/gestiontickets/detalle/BarretoDetalleGestionticketsController.java:305
+#: com/comerzzia/barreto/pos/gui/ventas/gestiontickets/detalle/BarretoDetalleGestionticketsController.java:702
+msgid "Lo sentimos, ha ocurrido un error al imprimir."
+msgstr "Leider ist beim Drucken ein Fehler aufgetreten."
+
+#: com/comerzzia/barreto/pos/gui/ventas/cajas/cierreParcial/CierreParcialController.java:137
+msgid "No se han encontrado resultados"
+msgstr "Keine Ergebnisse gefunden"
+
+#: com/comerzzia/barreto/pos/gui/ventas/cajas/cierreParcial/CierreParcialController.java:259
+msgid "Ha ocurrido un error al tratar de visualizar el detalle de caja"
+msgstr "Beim Versuch, die Boxdetails anzuzeigen, ist ein Fehler aufgetreten"
+
+#: com/comerzzia/barreto/pos/gui/ventas/cajas/recuento/BarretoRecuentoCajaController.java:68
+msgid "Cantidad"
+msgstr "Betrag"
+
+#: com/comerzzia/barreto/pos/gui/ventas/cajas/recuento/BarretoRecuentoCajaController.java:78
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:26
+msgid "Importe"
+msgstr "Betrag"
+
+#: com/comerzzia/barreto/pos/gui/ventas/cajas/recuento/SolicitarImporteRecuentoTarjetaController.java:63
+msgid "Se añadirán "
+msgstr "Sie werden hinzugefügt "
+
+#: com/comerzzia/barreto/pos/gui/ventas/credito/cobro/CobroCreditoController.java:182
+#: com/comerzzia/barreto/selfcheckout/gui/pagos/SelfCheckoutPagosController.java:235
+msgid "Error cargando pantalla pagos."
+msgstr "Fehler beim Laden von Bildschirmzahlungen."
+
+#: com/comerzzia/barreto/pos/gui/ventas/credito/cobro/CobroCreditoController.java:218
+msgid "No se encontraron documentos de identificación configurados para la tienda."
+msgstr "Es wurden keine Ausweisdokumente für das Geschäft gefunden."
+
+#: com/comerzzia/barreto/pos/gui/ventas/credito/cobro/CobroCreditoController.java:222
+#: com/comerzzia/barreto/pos/gui/ventas/credito/cobro/CobroCreditoController.java:226
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/factura/BarretoFacturaController.java:113
+msgid "Error consultando los documentos de identificación de la tienda."
+msgstr "Fehler beim Überprüfen der Ausweisdokumente des Geschäfts."
+
+#: com/comerzzia/barreto/pos/gui/ventas/credito/cobro/CobroCreditoController.java:332
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/clientes/BarretoBuscarClienteController.java:140
+msgid "No hay registros para los parámetros de búsqueda seleccionados"
+msgstr "Für die ausgewählten Suchparameter gibt es keine Datensätze"
+
+#: com/comerzzia/barreto/pos/gui/ventas/credito/cobro/CobroCreditoController.java:336
+msgid "No se ha encontrado ningún cliente con esta tarjeta."
+msgstr "Mit dieser Karte wurde kein Kunde gefunden."
+
+#: com/comerzzia/barreto/pos/gui/ventas/credito/cobro/CobroCreditoController.java:414
+#: com/comerzzia/barreto/pos/gui/ventas/credito/cobro/CobroCreditoController.java:423
+msgid "Debe seleccionar previamente un cliente."
+msgstr "Sie müssen einen Kunden vorwählen."
+
+#: com/comerzzia/barreto/pos/gui/ventas/credito/cobro/CobroCreditoController.java:419
+msgid "Ha habido un error al abrir la pantalla de pagos, contacte con el administrador."
+msgstr "Beim Öffnen des Zahlungsbildschirms ist ein Fehler aufgetreten. Wenden Sie sich an den Administrator."
+
+#: com/comerzzia/barreto/pos/gui/ventas/credito/cobro/CobroCreditoController.java:447
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/BarretoTicketManager.java:419
+msgid "Ha habido un error, no se podrá realizar el cobro de crédito. Compruebe su conexión con el servidor de SAP."
+msgstr "Es ist ein Fehler aufgetreten, Sie können den Einzug von Guthaben nicht vornehmen. Überprüfen Sie Ihre Verbindung zum SAP-Server."
+
+#: com/comerzzia/barreto/pos/gui/ventas/credito/cobro/CobroCreditoController.java:451
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/BarretoTicketManager.java:423
+msgid "Ha habido un error, no se podrá realizar el cobro de crédito."
+msgstr "Es ist ein Fehler aufgetreten, Sie können den Einzug von Guthaben nicht vornehmen."
+
+#: com/comerzzia/barreto/pos/gui/ventas/credito/cobro/CobroCreditoController.java:502
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:301
+msgid "No hay caja abierta. Se abrirá automáticamente."
+msgstr "Es gibt keine offene Box. Es wird automatisch geöffnet."
+
+#: com/comerzzia/barreto/pos/gui/ventas/credito/cobro/CobroCreditoController.java:506
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:304
+msgid "No hay caja abierta. Deberá ir a la gestión de caja para abrirla."
+msgstr "Es gibt keine offene Box. Sie müssen zum Cash Management gehen, um es zu öffnen."
+
+#: com/comerzzia/barreto/pos/gui/ventas/credito/cobro/CobroCreditoController.java:514
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:312
+#: com/comerzzia/barreto/selfcheckout/gui/bienvenida/SelfCheckoutBienvenidaController.java:130
+#, java-format
+msgid "No se puede realizar la venta. El día de apertura de la caja {0} no coincide con el del sistema {1}"
+msgstr "Der Verkauf kann nicht erfolgen. Der Tag des Öffnens der Box {0} stimmt nicht mit dem Tag des Systems {1} überein."
+
+#: com/comerzzia/barreto/pos/gui/ventas/gestiontickets/detalle/BarretoDetalleGestionticketsController.java:128
+#: com/comerzzia/barreto/pos/gui/ventas/gestiontickets/detalle/BarretoDetalleGestionticketsController.java:133
+msgid "No es posible visualizar este tipo de documento"
+msgstr "Es ist nicht möglich, diesen Dokumenttyp anzuzeigen"
+
+#: com/comerzzia/barreto/pos/gui/ventas/gestiontickets/detalle/BarretoDetalleGestionticketsController.java:146
+msgid "refrescarDatosPantalla() - No se ha encontrado el tipo de documento de recarga para el uidActividad: "
+msgstr "refreshDataScreen () - Die Art des Reload-Dokuments für uidActivity wurde nicht gefunden: "
+
+#: com/comerzzia/barreto/pos/gui/ventas/gestiontickets/detalle/BarretoDetalleGestionticketsController.java:154
+msgid "refrescarDatosPantalla() - No se ha encontrado el tipo de documento de cierre de caja para el uidActividad: "
+msgstr "refreshDataScreen () - Die Art des Abschlussdokuments für uidActivity wurde nicht gefunden: "
+
+#: com/comerzzia/barreto/pos/gui/ventas/gestiontickets/detalle/BarretoDetalleGestionticketsController.java:162
+msgid "refrescarDatosPantalla() - No se ha encontrado el tipo de documento de cierre parcial para el uidActividad: "
+msgstr "refreshDataScreen () - Die Art des Teilabschlussdokuments für uidActivity wurde nicht gefunden: "
+
+#: com/comerzzia/barreto/pos/gui/ventas/gestiontickets/detalle/BarretoDetalleGestionticketsController.java:170
+msgid "refrescarDatosPantalla() - No se ha encontrado el tipo de documento de premio de sorteo para el uidActividad: "
+msgstr "refreshDataScreen () - Die Art des Gewinnauslosungsdokuments für uidActivity wurde nicht gefunden: "
+
+#: com/comerzzia/barreto/pos/gui/ventas/gestiontickets/detalle/BarretoDetalleGestionticketsController.java:253
+msgid "Error leyendo información de ticket."
+msgstr "Fehler beim Lesen der Ticketinformationen."
+
+#: com/comerzzia/barreto/pos/gui/ventas/gestiontickets/detalle/BarretoDetalleGestionticketsController.java:260
+msgid "Error leyendo información de ticket"
+msgstr "Fehler beim Lesen der Ticketinformationen"
+
+#: com/comerzzia/barreto/pos/gui/ventas/gestiontickets/detalle/BarretoDetalleGestionticketsController.java:266
+msgid "No se ha podido imprimir el documento"
+msgstr "Das Dokument konnte nicht gedruckt werden"
+
+#: com/comerzzia/barreto/pos/gui/ventas/gestiontickets/detalle/BarretoDetalleGestionticketsController.java:478
+#: com/comerzzia/barreto/pos/gui/ventas/gestiontickets/detalle/BarretoDetalleGestionticketsController.java:482
+#: com/comerzzia/barreto/pos/gui/ventas/gestiontickets/detalle/BarretoDetalleGestionticketsController.java:486
+#: com/comerzzia/barreto/pos/gui/ventas/gestiontickets/detalle/BarretoDetalleGestionticketsController.java:490
+msgid "Fallo al imprimir ticket."
+msgstr "Ticket konnte nicht gedruckt werden."
+
+#: com/comerzzia/barreto/pos/gui/ventas/pedidos/sfs/detalle/DetallePedidoSfSController.java:151
+msgid "Ha habido un problema al cargar la pantalla de detalle de pedido Ship from Store. No se ha pasado el identificador del pedido."
+msgstr "Beim Laden des Details zum Versand von Filialbestellungen ist ein Fehler aufgetreten. Die Bestellkennung wurde nicht übergeben."
+
+#: com/comerzzia/barreto/pos/gui/ventas/pedidos/sfs/detalle/DetallePedidoSfSController.java:222
+msgid "Ha habido un problema al realizar a la consulta a la central del pedido. Consulte el log para más información"
+msgstr "Beim Durchführen der Abfrage an das Anforderungscenter ist ein Problem aufgetreten. Weitere Informationen finden Sie im Protokoll"
+
+#: com/comerzzia/barreto/pos/gui/ventas/pedidos/sfs/detalle/DetallePedidoSfSController.java:229
+msgid "Pedido Ship From Store: "
+msgstr "Versand aus dem Store bestellen: "
+
+#: com/comerzzia/barreto/pos/gui/ventas/pedidos/sfs/detalle/DetallePedidoSfSController.java:246
+#: com/comerzzia/barreto/pos/gui/ventas/pedidos/sfs/listado/PedidosSfSController.java:251
+msgid "El pedido ha sido marcado como entregado correctamente."
+msgstr "Die Bestellung wurde als korrekt gekennzeichnet markiert."
+
+#: com/comerzzia/barreto/pos/gui/ventas/pedidos/sfs/detalle/DetallePedidoSfSController.java:254
+#: com/comerzzia/barreto/pos/gui/ventas/pedidos/sfs/listado/PedidosSfSController.java:259
+msgid "No se ha podido marcar como entregado el pedido en la central. Consulte el log para más información."
+msgstr "Die Bestellung im Umtausch konnte nicht als geliefert gekennzeichnet werden. Weitere Informationen finden Sie im Protokoll."
+
+#: com/comerzzia/barreto/pos/gui/ventas/pedidos/sfs/listado/PedidosSfSController.java:238
+#: com/comerzzia/barreto/pos/gui/ventas/pedidos/sfs/listado/PedidosSfSController.java:265
+msgid "Debe seleccionar un pedido en la tabla si quiere seleccionarlo."
+msgstr "Sie müssen einen Auftrag in der Tabelle auswählen, wenn Sie ihn auswählen möchten."
+
+#: com/comerzzia/barreto/pos/gui/ventas/pedidos/sfs/listado/PedidosSfSController.java:280
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:840
+msgid "El tipo de documento indicado no existe en la base de datos."
+msgstr "Der angegebene Dokumenttyp ist in der Datenbank nicht vorhanden."
+
+#: com/comerzzia/barreto/pos/gui/ventas/pedidos/sfs/listado/PedidosSfSController.java:286
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:846
+msgid "El id introducido no es válido."
+msgstr "Die eingegebene ID ist ungültig."
+
+#: com/comerzzia/barreto/pos/gui/ventas/pedidos/sfs/listado/PedidosSfSController.java:330
+msgid "Ha habido un problema al realizar a la consulta a la central de los pedidos pendientes de entregar. Consulte el log para más información"
+msgstr "Es ist ein Problem aufgetreten, wenn Sie die Anfrage an die Zentrale von ausstehenden Bestellungen stellen. Weitere Informationen finden Sie im Protokoll"
+
+#: com/comerzzia/barreto/pos/gui/ventas/pedidos/tienda/ConsultarPedidoTiendaController.java:146
+msgid "El pedido consultado no contiene líneas con cantidad válida. Consulte con el administrador."
+msgstr "Die abgefragte Anforderung enthält keine Zeilen mit einer gültigen Menge. Wenden Sie sich an den Administrator."
+
+#: com/comerzzia/barreto/pos/gui/ventas/pedidos/tienda/ConsultarPedidoTiendaController.java:150
+msgid "No se ha encontrado el pedido indicado. Revise los parámetros introducidos o consulte con el administrador."
+msgstr "Die angegebene Reihenfolge wurde nicht gefunden. Überprüfen Sie die eingegebenen Parameter oder wenden Sie sich an den Administrator."
+
+#: com/comerzzia/barreto/pos/gui/ventas/pedidos/tienda/ConsultarPedidoTiendaController.java:158
+msgid "Ha habido un error al consultar el pedido en SAP: "
+msgstr "Beim Abfragen der Bestellung in SAP ist ein Fehler aufgetreten: "
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/cancelacion/CancelacionRecargasController.java:160
+msgid "--CANCELACION RECARGA--"
+msgstr "-CANCELATION RECHARGE--"
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/cancelacion/CancelacionRecargasController.java:215
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:347
+msgid "El documento %s no se ha encontrado"
+msgstr "Das %s Dokument wurde nicht gefunden"
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/cancelacion/CancelacionRecargasController.java:360
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:401
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:681
+msgid "Lo sentimos, ha ocurrido un error."
+msgstr "Entschuldigung, ein Fehler ist aufgetreten."
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/cancelacion/CancelacionRecargasController.java:377
+msgid "¿Desea cancelar la recarga para el móvil "
+msgstr "Möchten Sie das Aufladen des Mobiltelefons abbrechen? "
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/cancelacion/CancelacionRecargasController.java:381
+msgid "No se ha podido realizar la cancelación de la recarga de este ticket de"
+msgstr "Das Aufladen dieses Tickets konnte nicht abgebrochen werden"
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/cancelacion/CancelacionRecargasController.java:386
+msgid "No se ha encontrado ningún ticket de recarga con esos datos"
+msgstr "Mit diesen Daten wurde kein Aufladeticket gefunden"
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/cancelacion/CancelacionRecargasController.java:411
+msgid "La cancelación se ha realizado correctamente"
+msgstr "Die Stornierung war erfolgreich"
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/cancelacion/CancelacionRecargasController.java:444
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:774
+#, java-format
+msgid "El código {0} no es un localizador o un código de documento válido"
+msgstr "Code {0} ist kein gültiger Locator- oder Dokumentcode"
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/cancelacion/CancelacionRecargasController.java:455
+msgid "---CANCELACION RECARGA FINALIZADA---"
+msgstr "--- STORNIERUNGSABGABEN BEENDET ---"
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:226
+msgid "--NUEVA RECARGA--"
+msgstr "- NEUES ERSATZ--"
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:237
+msgid "No está configurado el tipo de documento nota de crédito en el entorno."
+msgstr "Der Typ des Gutschriftsbelegs in der Umgebung ist nicht konfiguriert."
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:279
+msgid "Cerrar"
+msgstr "Schließen"
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:288
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:19
+msgid "Cancelar"
+msgstr "Abbrechen"
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:364
+msgid "El número de móvil no es correcto."
+msgstr "Die Handynummer ist nicht korrekt."
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:367
+msgid "Los números de teléfono introducidos no son iguales. Por favor, vuelta a introducirlos."
+msgstr "Die eingegebenen Telefonnummern stimmen nicht überein. Bitte kehren Sie zurück, um sie einzugeben."
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:370
+msgid "Se debe de seleccionar un operador."
+msgstr "Ein Operator muss ausgewählt werden."
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:398
+msgid "Tiempo de conexión agotado"
+msgstr "Verbindungszeit erschöpft"
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:419
+msgid "Recarga realizada correctamente."
+msgstr "Das Aufladen wurde korrekt durchgeführt."
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:492
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:496
+msgid "Fallo en autenticación"
+msgstr "Authentifizierung fehlgeschlagen"
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:500
+msgid "Error en recarga"
+msgstr "Fehler beim Aufladen"
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:700
+msgid "Este ticket ya ha sido utilizado para una recarga anteriormente, no puede utilizarse de nuevo."
+msgstr "Dieses Ticket wurde bereits für ein vorheriges Aufladen verwendet. Es kann nicht erneut verwendet werden."
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:727
+msgid "Ha habido un error al recuperar el ticket de la recarga."
+msgstr "Beim Abrufen des Aufladetickets ist ein Fehler aufgetreten."
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:730
+msgid "No se ha encontrado ningún ticket de recarga con esos datos."
+msgstr "Mit diesen Daten wurde kein Aufladeticket gefunden."
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:738
+msgid "Seleccione una opción"
+msgstr "Wähle eine Option"
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:824
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:835
+msgid "El documento seleccionado no es válido."
+msgstr "Das ausgewählte Dokument ist ungültig."
+
+#: com/comerzzia/barreto/pos/gui/ventas/recargas/RecargasController.java:866
+msgid "---RECARGA FINALIZADA---"
+msgstr "--- ERSATZ FERTIG ---"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:148
+msgid "Tarjeta de autorizado"
+msgstr "Autorisierte Karte"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:148
+msgid "Esta tarjeta es de autorizado. El autorizado es: "
+msgstr "Diese Karte ist autorisiert. Der Berechtigte ist: "
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:204
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:264
+#, java-format
+msgid "La tarjeta de fidelización {0} no está activa"
+msgstr "Die Kundenkarte {0} ist nicht aktiv"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:342
+msgid "Ha habido un problema al cambiar el cliente de la venta, por favor contacte con el administrador."
+msgstr "Beim Ändern des Verkaufskunden ist ein Problem aufgetreten. Wenden Sie sich an den Administrator."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:445
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:856
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:881
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:918
+msgid "La línea seleccionada no se puede modificar."
+msgstr "Die ausgewählte Zeile kann nicht geändert werden."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:483
+msgid "La línea no se puede modificar."
+msgstr "Die Zeile kann nicht geändert werden."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:494
+msgid "No tiene permisos para realizar una devolución"
+msgstr "Sie haben keine Erlaubnis, eine Rückerstattung vorzunehmen"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:544
+msgid "No se ha podido añadir la línea porque el importe total de este artículo en el ticket es negativo."
+msgstr "Die Zeile konnte nicht hinzugefügt werden, da der Gesamtbetrag dieses Artikels im Ticket negativ ist."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:563
+msgid "No se pueden añadir más líneas a una venta de recarga de móvil."
+msgstr "Es können keine weiteren Leitungen zu einem mobilen Aufladeverkauf hinzugefügt werden."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:742
+msgid "El cupón se ha añadido correctamente."
+msgstr "Der Gutschein wurde korrekt hinzugefügt."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:745
+msgid "El artículo se ha añadido correctamente."
+msgstr "Der Artikel wurde korrekt hinzugefügt."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:822
+msgid "¿Está seguro de querer eliminar esta línea del ticket?"
+msgstr "Möchten Sie diese Zeile wirklich aus dem Ticket löschen?"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:840
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:958
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:1398
+#: com/comerzzia/barreto/selfcheckout/gui/ventas/SelfCheckoutFacturacionArticulosController.java:115
+msgid "---NUEVO CLIENTE---"
+msgstr "--- NEUER KUNDEN ---"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:863
+msgid "No tiene permisos para borrar una línea"
+msgstr "Sie haben keine Berechtigung zum Löschen einer Zeile"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:927
+msgid "No tiene permisos para modificar una línea"
+msgstr "Sie haben keine Berechtigung zum Ändern einer Zeile"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:939
+#: com/comerzzia/barreto/selfcheckout/gui/ventas/SelfCheckoutFacturacionArticulosController.java:96
+msgid "¿Estás seguro de querer eliminar todas las líneas del ticket?"
+msgstr "Möchten Sie wirklich alle Zeilen des Tickets löschen?"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:1063
+msgid "No se ha podido insertar la línea"
+msgstr "Die Zeile konnte nicht eingefügt werden"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:1142
+msgid "Ha habido un error al recuperar la venta anterior, contacte con el administrador."
+msgstr "Beim Abrufen des vorherigen Verkaufs ist ein Fehler aufgetreten. Wenden Sie sich an den Administrator."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:1151
+msgid "Ya existe una venta en curso. ¿Está seguro de que desea recuperar la devolución? En ese caso, se borrará la venta actual."
+msgstr "Es ist bereits ein Verkauf im Gange. Möchten Sie die Rückerstattung wirklich zurückfordern? In diesem Fall wird der aktuelle Verkauf gelöscht."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:1202
+msgid "Se debe seleccionar un cliente antes de continuar la venta."
+msgstr "Ein Kunde muss ausgewählt werden, bevor der Verkauf fortgesetzt wird."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:1297
+msgid "No se pudo ejecutar la acción seleccionada."
+msgstr "Die ausgewählte Aktion konnte nicht ausgeführt werden."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:1337
+msgid "No se puede recuperar el pedido durante una venta. Termine la actual venta e inténtelo de nuevo."
+msgstr "Die Bestellung kann während eines Verkaufs nicht wiederhergestellt werden. Beenden Sie den aktuellen Verkauf und versuchen Sie es erneut."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:1363
+#, java-format
+msgid "Ha habido un error al introducir el pedido consultado. El cliente {0} con NIF {1} no existe en la tienda."
+msgstr "Bei der Eingabe der angeforderten Bestellung ist ein Fehler aufgetreten. Der Kunde {0} mit NIF {1} ist im Geschäft nicht vorhanden."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:1370
+msgid "No se ha podido insertar una de las líneas del pedido. Consulte con el administrador."
+msgstr "Es war nicht möglich, eine der Zeilen der Bestellung einzufügen. Wenden Sie sich an den Administrator."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:1372
+#, java-format
+msgid "El artículo {0} no existe en la tienda. Consulte con el administrador."
+msgstr "Artikel {0} ist nicht im Geschäft vorhanden. Wenden Sie sich an den Administrator."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/BarretoFacturacionArticulosController.java:1381
+msgid "Ha habido un error al introducir el pedido consultado, por la siguiente razón: "
+msgstr "Bei der Eingabe der angeforderten Bestellung ist aus folgendem Grund ein Fehler aufgetreten: "
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/confirmacionPrecio/ConfirmacionPrecioController.java:94
+msgid "No se ha encontrado la línea a confirmar."
+msgstr "Die zu bestätigende Zeile wurde nicht gefunden."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/confirmacionPrecio/ConfirmacionPrecioController.java:153
+#: com/comerzzia/barreto/selfcheckout/gui/pagos/tarjetaregalo/SelfCheckoutImporteTarjetaRegaloController.java:115
+msgid "El importe introducido no es correcto."
+msgstr "Der eingegebene Betrag ist nicht korrekt."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/edicion/BarretoEdicionArticuloController.java:89
+msgid "Este artículo solo permite cantidades enteras."
+msgstr "Dieser Artikel erlaubt nur ganze Beträge."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/edicion/BarretoEdicionArticuloController.java:96
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/articulos/edicion/BarretoEdicionArticuloController.java:101
+#, java-format
+msgid "El campo debe ser menor que {0}"
+msgstr "Das Feld muss kleiner als {0}"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/BarretoTicketManager.java:170
+msgid "El código de barras no es un código EAN13 correcto."
+msgstr "Der Barcode ist kein korrekter EAN13-Code."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/BarretoTicketManager.java:238
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/BarretoTicketManager.java:256
+msgid "Este artículo solo permite cantidades enteras. Por favor, introduzca una cantidad entera."
+msgstr "Dieser Artikel erlaubt nur ganze Beträge. Bitte geben Sie einen Gesamtbetrag ein."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/BarretoTicketManager.java:247
+#, java-format
+msgid "La cantidad total de la línea debe ser menor que {0}"
+msgstr "Der Gesamtbetrag der Zeile muss kleiner als {0}"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/factura/BarretoFacturaController.java:157
+msgid "El documento indicado no es válido, ¿desea guardar el cliente de todas formas?"
+msgstr "Das angegebene Dokument ist ungültig. Möchten Sie den Client trotzdem speichern?"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/factura/BarretoFacturaController.java:161
+msgid "Ha habido un error al intentar validar el documento, ¿desea guardar el cliente de todas formas?"
+msgstr "Beim Überprüfen des Dokuments ist ein Fehler aufgetreten. Möchten Sie den Client trotzdem speichern?"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/BarretoPagosController.java:414
+msgid "No hay ninguna forma de pago seleccionada."
+msgstr "Es ist keine Zahlungsweise ausgewählt."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/BarretoPagosController.java:423
+msgid "Ya existe un pago con crédito, no se podrá realizar un pago con otro medio de pago."
+msgstr "Es gibt bereits eine Zahlung mit Guthaben, Sie können keine Zahlung mit einem anderen Zahlungsmittel vornehmen."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/BarretoPagosController.java:429
+msgid "El medio de pago seleccionado no permite introducir un importe superior al total del documento"
+msgstr "Mit dem ausgewählten Zahlungsmittel können Sie keinen Betrag eingeben, der die Summe des Belegs übersteigt"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/BarretoPagosController.java:444
+msgid "El importe introducido supera el crédito disponible."
+msgstr "Der eingegebene Betrag übersteigt das verfügbare Guthaben."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/BarretoPagosController.java:444
+msgid "Importe límite: "
+msgstr "Grenzbetrag: "
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/BarretoPagosController.java:445
+msgid "Importe comprometido: "
+msgstr "Zugesagter Betrag: "
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/BarretoPagosController.java:456
+msgid "El cliente no tiene crédito disponible para realizar la venta."
+msgstr "Der Kunde hat kein Guthaben für den Verkauf."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/BarretoPagosController.java:462
+msgid "Ha habido un error, no se podrá realizar el pago a crédito. Compruebe su conexión con el servidor de SAP."
+msgstr "Es ist ein Fehler aufgetreten, Sie können die Zahlung nicht auf Kredit machen. Überprüfen Sie Ihre Verbindung zum SAP-Server."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/BarretoPagosController.java:467
+msgid "Ha habido un error, no se podrá realizar el pago a crédito."
+msgstr "Es ist ein Fehler aufgetreten, Sie können die Zahlung nicht auf Kredit machen."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/BarretoPagosController.java:477
+msgid "Hay partidas abiertas más tiempo del máximo permitido."
+msgstr "Es gibt mehr als die maximal zulässige Zeit für offene Posten."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/BarretoPagosController.java:542
+#, java-format
+msgid "No se puede realizar el cobro. El día de apertura de la caja {0} no coincide con el del sistema {1}"
+msgstr "Die Zahlung kann nicht erfolgen. Der Tag des Öffnens der Box {0} stimmt nicht mit dem Tag des Systems {1} überein."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/BarretoPagosController.java:584
+msgid "Los pagos han de cubrir el importe a pagar."
+msgstr "Die Zahlungen müssen den zu zahlenden Betrag abdecken."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/BarretoPagosController.java:613
+msgid "Ha habido un error al crear el documento de cobro de crédito, contacte con el administrador."
+msgstr "Bei der Erstellung des Einzugsdokuments ist ein Fehler aufgetreten. Wenden Sie sich an den Administrator."
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/BarretoPagosController.java:687
+msgid "Esta venta ha sido premiada en la promoción: "
+msgstr "Dieser Verkauf wurde in der Promotion vergeben: "
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/BarretoPagosController.java:697
+msgid "Ha habido un error al confirmar un premio recibido por un sorteo. Por favor, contacte con el administrador"
+msgstr "Bei der Bestätigung eines von einer Verlosung erhaltenen Preises ist ein Fehler aufgetreten. Bitte wenden Sie sich an den Administrator"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/BarretoPagosController.java:753
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/BarretoPagosController.java:757
+msgid "Ha habido un error al guardar el documento del premio del sorteo"
+msgstr "Beim Speichern des Preisdokuments der Auslosung ist ein Fehler aufgetreten"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/BarretoPagosController.java:763
+#: com/comerzzia/barreto/selfcheckout/gui/pagos/SelfCheckoutPagosController.java:444
+msgid "¿Desea recuperar el contenido de la devolución para hacer la venta de nuevo?"
+msgstr "Möchten Sie den Inhalt der Rücksendung wiederherstellen, um den Verkauf erneut zu tätigen?"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/datosEnvio/BarretoDatosEnvioController.java:285
+msgid "Error. Dirección de servicio rest no encontrada (HTTP 404)"
+msgstr "Fehler Restdienstadresse nicht gefunden (HTTP 404)"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/datosEnvio/BarretoDatosEnvioController.java:288
+msgid "No se pudo conectar con los servicios REST (HTTP 400)"
+msgstr "Verbindung zu REST-Diensten konnte nicht hergestellt werden (HTTP 400)"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/datosEnvio/BarretoDatosEnvioController.java:291
+msgid "No se pudo conectar con los servicios REST (HTTP 500)"
+msgstr "Verbindung zu REST-Diensten konnte nicht hergestellt werden (HTTP 500)"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/datosEnvio/BarretoDatosEnvioController.java:294
+msgid "No se pudo conectar con los servicios REST de la central"
+msgstr "Es konnte keine Verbindung zu den REST-Diensten der Zentrale hergestellt werden"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/datosEnvio/BarretoDatosEnvioController.java:298
+#, java-format
+msgid "El cliente con el documento {0}, el tipo de documento {1} y el país {2} no existe en el sistema"
+msgstr "Der Kunde mit dem Dokument {0} , der Dokumentart {1} und dem Land {2} ist im System nicht vorhanden"
+
+#: com/comerzzia/barreto/pos/gui/ventas/tickets/pagos/datosEnvio/BarretoDatosEnvioController.java:302
+#, java-format
+msgid "El cliente con el documento {0} no existe en el sistema"
+msgstr "Der Mandant mit dem Dokument {0} ist nicht im System vorhanden"
+
+#: com/comerzzia/barreto/selfcheckout/core/gui/SelfCheckoutCabeceraController.java:120
+msgid "No se ha podido volver a la pantalla de Self Checkout, contacte con el administrador."
+msgstr "Wenden Sie sich an den Administrator, um nicht zum Self Checkout-Bildschirm zurückzukehren."
+
+#: com/comerzzia/barreto/selfcheckout/gui/bienvenida/SelfCheckoutBienvenidaController.java:68
+msgid "La máquina de pago en efectivo no está activa, por lo que no podrá pagar con ella."
+msgstr "Der Geldautomaten ist nicht aktiv, Sie können also nicht damit bezahlen."
+
+#: com/comerzzia/barreto/selfcheckout/gui/bienvenida/SelfCheckoutBienvenidaController.java:80
+msgid "NO SE HA PODIDO ABRIR LA CAJA. CONTACTE CON EL PERSONAL DE TIENDA."
+msgstr "DIE BOX WURDE NICHT GEÖFFNET. KONTAKTIEREN SIE DAS STOREPERSONAL."
+
+#: com/comerzzia/barreto/selfcheckout/gui/bienvenida/SelfCheckoutBienvenidaController.java:84
+msgid "LA CAJA NO ESTÁ ABIERTA. NO SE PUEDE COMPRAR."
+msgstr "Die Box ist nicht geöffnet. Sie können nicht kaufen."
+
+#: com/comerzzia/barreto/selfcheckout/gui/bienvenida/SelfCheckoutBienvenidaController.java:119
+msgid "Ha habido un error al abrir la pantalla de ventas. Contacte con el personal de tienda para solucionar el problema."
+msgstr "Beim Öffnen des Verkaufsbildschirms ist ein Fehler aufgetreten. Wenden Sie sich an das Verkaufspersonal, um das Problem zu lösen."
+
+#: com/comerzzia/barreto/selfcheckout/gui/bienvenida/SelfCheckoutBienvenidaController.java:131
+msgid "Contacte con el personal de tienda."
+msgstr "Wenden Sie sich an das Ladenpersonal."
+
+#: com/comerzzia/barreto/selfcheckout/gui/dispositivos/efectivo/GestionDispositivoEfectivoController.java:69
+msgid "ACTIVO"
+msgstr "AKTIV"
+
+#: com/comerzzia/barreto/selfcheckout/gui/dispositivos/efectivo/GestionDispositivoEfectivoController.java:72
+msgid "INACTIVO"
+msgstr "INAKTIV"
+
+#: com/comerzzia/barreto/selfcheckout/gui/dispositivos/efectivo/GestionDispositivoEfectivoController.java:120
+msgid "No se ha podido reiniciar la máquina, inténtelo otra vez."
+msgstr "Die Maschine konnte nicht neu gestartet werden. Versuchen Sie es erneut."
+
+#: com/comerzzia/barreto/selfcheckout/gui/dispositivos/efectivo/GestionDispositivoEfectivoController.java:153
+msgid "Por favor, introduzca un importe para recoger el efectivo."
+msgstr "Bitte geben Sie einen Betrag ein, um das Geld abzuheben."
+
+#: com/comerzzia/barreto/selfcheckout/gui/dispositivos/efectivo/GestionDispositivoEfectivoController.java:180
+msgid "Se ha reiniciado correctamente la máquina."
+msgstr "Die Maschine wurde erfolgreich neu gestartet."
+
+#: com/comerzzia/barreto/selfcheckout/gui/dispositivos/efectivo/GestionDispositivoEfectivoController.java:193
+msgid "No se ha podido reiniciar la máquina, ha ocurrido un error: "
+msgstr "Der Computer kann nicht neu gestartet werden, es ist ein Fehler aufgetreten: "
+
+#: com/comerzzia/barreto/selfcheckout/gui/dispositivos/efectivo/GestionDispositivoEfectivoController.java:223
+msgid "La recogida del efectivo ha sido efectuada."
+msgstr "Die Abholung von Bargeld wurde vorgenommen."
+
+#: com/comerzzia/barreto/selfcheckout/gui/dispositivos/efectivo/GestionDispositivoEfectivoController.java:232
+msgid "No se ha podido recoger el efectivo, ha ocurrido un error: "
+msgstr "Das Bargeld konnte nicht abgeholt werden, es ist ein Fehler aufgetreten: "
+
+#: com/comerzzia/barreto/selfcheckout/gui/dispositivos/efectivo/GestionDispositivoEfectivoController.java:241
+msgid "La máquina de efectivo no está disponible, se desactivará el pago en efectivo."
+msgstr "Der Geldautomat ist nicht verfügbar, die Barzahlung wird deaktiviert."
+
+#: com/comerzzia/barreto/selfcheckout/gui/pagos/efectivo/errores/ErrorCashGuardController.java:65
+msgid "Estamos intentando reconectar con la máquina. Espere, por favor."
+msgstr "Wir versuchen, die Verbindung zur Maschine wiederherzustellen. Warten Sie bitte."
+
+#: com/comerzzia/barreto/selfcheckout/gui/pagos/efectivo/errores/ErrorCashGuardController.java:77
+msgid "Es necesario desactivar el dispositivo de efectivo, ya que no se puede asegurar que esté funcionando correctamente."
+msgstr "Das Bargeldgerät muss deaktiviert werden, da nicht garantiert werden kann, dass es ordnungsgemäß funktioniert."
+
+#: com/comerzzia/barreto/selfcheckout/gui/pagos/efectivo/errores/ErrorCashGuardController.java:80
+msgid "Será necesario revisar el dispositivo en la pantalla interna de gestión del dispositivo."
+msgstr "Das Gerät muss im internen Verwaltungsbildschirm des Geräts überprüft werden."
+
+#: com/comerzzia/barreto/selfcheckout/gui/pagos/efectivo/errores/ErrorCashGuardController.java:165
+msgid "Dispositivo de efectivo reiniciado correctamente."
+msgstr "Bargeldgerät wurde ordnungsgemäß neu gestartet."
+
+#: com/comerzzia/barreto/selfcheckout/gui/pagos/efectivo/errores/ErrorCashGuardController.java:174
+msgid "No se ha podido reiniciar el dispositivo de efectivo: "
+msgstr "Das Bargeldgerät konnte nicht neu gestartet werden: "
+
+#: com/comerzzia/barreto/selfcheckout/gui/pagos/efectivo/PagoEfectivoMaquinaController.java:106
+msgid "No se ha podido recuperar el estado de la máquina, el efectivo será desactivado hasta que el personal de tienda lo solucione."
+msgstr "Der Status des Automaten konnte nicht wiederhergestellt werden. Das Bargeld wird deaktiviert, bis das Ladenpersonal es löst."
+
+#: com/comerzzia/barreto/selfcheckout/gui/pagos/efectivo/PagoEfectivoMaquinaController.java:177
+msgid "En estos momentos no tenemos cambio disponible para este pago."
+msgstr "Zum jetzigen Zeitpunkt stehen für diese Zahlung keine Änderungen zur Verfügung."
+
+#: com/comerzzia/barreto/selfcheckout/gui/pagos/efectivo/PagoEfectivoMaquinaController.java:179
+msgid "Inténtelo de nuevo con otra combinación de monedas y billetes, o seleccione otro medio de pago."
+msgstr "Versuchen Sie es erneut mit einer anderen Kombination von Münzen und Banknoten oder wählen Sie ein anderes Zahlungsmittel aus."
+
+#: com/comerzzia/barreto/selfcheckout/gui/pagos/efectivo/PagoEfectivoMaquinaController.java:182
+msgid "En estos momentos no se puede realizar el pago en efectivo."
+msgstr "Zu diesem Zeitpunkt können Sie die Zahlung nicht in bar vornehmen."
+
+#: com/comerzzia/barreto/selfcheckout/gui/pagos/efectivo/PagoEfectivoMaquinaController.java:184
+msgid "Inténtelo de nuevo o seleccione otro medio de pago y contacte con el personal de tienda."
+msgstr "Versuchen Sie es erneut oder wählen Sie eine andere Zahlungsmethode aus, und wenden Sie sich an das Verkaufspersonal."
+
+#: com/comerzzia/barreto/selfcheckout/gui/pagos/efectivo/PagoEfectivoMaquinaController.java:205
+msgid "Se ha producido un error en el pago con efectivo. Contacte con el personal de tienda."
+msgstr "Bei der Zahlung mit Bargeld ist ein Fehler aufgetreten. Wenden Sie sich an das Ladenpersonal."
+
+#: com/comerzzia/barreto/selfcheckout/gui/pagos/efectivo/PagoEfectivoMaquinaController.java:218
+msgid "Ha habido un error al cerrar la ventana, contacte con el personal de tienda."
+msgstr "Beim Schließen des Fensters ist ein Fehler aufgetreten. Wenden Sie sich an das Ladenpersonal."
+
+#: com/comerzzia/barreto/selfcheckout/gui/pagos/SelfCheckoutPagosController.java:349
+msgid "No se ha podido realizar el pago de efectivo. Contacte con el personal de tienda o seleccione otro medio de pago."
+msgstr "Die Barzahlung konnte nicht geleistet werden. Wenden Sie sich an das Ladenpersonal oder wählen Sie ein anderes Zahlungsmittel."
+
+#: com/comerzzia/barreto/selfcheckout/gui/pagos/SelfCheckoutPagosController.java:402
+msgid "Ha habido un problema al devolver su dinero en efectivo. Contacte con el personal de tienda."
+msgstr "Es gab ein Problem bei der Rückgabe Ihres Geldes in bar. Wenden Sie sich an das Ladenpersonal."
+
+#: com/comerzzia/barreto/selfcheckout/gui/ventas/busqueda/SelfCheckoutBuscarArticulosController.java:154
+msgid "No hay artículos en esta sección."
+msgstr "In diesem Abschnitt befinden sich keine Artikel."
+
+#: com/comerzzia/barreto/selfcheckout/gui/ventas/busqueda/SelfCheckoutBuscarArticulosController.java:170
+msgid "No se ha podido añadir el artículo. Contacte con el personal de tienda."
+msgstr "Der Artikel konnte nicht hinzugefügt werden. Wenden Sie sich an das Ladenpersonal."
+
+#: com/comerzzia/barreto/selfcheckout/gui/ventas/busqueda/SelfCheckoutBuscarArticulosController.java:228
+#: com/comerzzia/barreto/selfcheckout/gui/ventas/busqueda/SelfCheckoutBuscarArticulosController.java:241
+msgid "No hay artículos insertados. ¿Está seguro de que desea salir?"
+msgstr "Es sind keine Artikel eingefügt. Möchten Sie wirklich gehen?"
+
+#: com/comerzzia/barreto/selfcheckout/gui/ventas/cantidad/SelfCheckoutModificarCantidadController.java:77
+msgid "No se ha encontrado la línea a la que se desea modificar la cantidad."
+msgstr "Die Zeile, in der Sie die Menge ändern möchten, wurde nicht gefunden."
+
+#: com/comerzzia/barreto/selfcheckout/gui/ventas/cantidad/SelfCheckoutModificarCantidadController.java:123
+msgid "La cantidad introducida no es correcto."
+msgstr "Der eingegebene Betrag ist nicht korrekt."
+
+#: com/comerzzia/barreto/selfcheckout/gui/ventas/codigo/SelfCheckoutIntroducirCodigoController.java:71
+msgid "No se ha podido abrir la pantalla. Contacte con el personal de tienda."
+msgstr "Der Bildschirm konnte nicht geöffnet werden Wenden Sie sich an das Ladenpersonal."
+
+#: com/comerzzia/barreto/selfcheckout/gui/ventas/codigo/SelfCheckoutIntroducirCodigoController.java:95
+msgid "El artículo introducido no existe. Compruebe el código, por favor."
+msgstr "Der vorgestellte Artikel existiert nicht. Bitte überprüfen Sie den Code."
+
+#: com/comerzzia/barreto/selfcheckout/gui/ventas/codigo/SelfCheckoutIntroducirCodigoController.java:102
+msgid "Introduzca el código del artículo, por favor."
+msgstr "Bitte geben Sie den Code des Artikels ein."
+
+#: com/comerzzia/barreto/selfcheckout/gui/ventas/introduccionmanual/IntroduccionManualController.java:60
+msgid "No se ha introducido ningún código"
+msgstr "Es wurde kein Code eingegeben"
+
+#: com/comerzzia/barreto/selfcheckout/gui/ventas/SelfCheckoutFacturacionArticulosController.java:219
+msgid "¿Son correctos los datos?"
+msgstr "Sind die Daten korrekt?"
+
+#: com/comerzzia/barreto/selfcheckout/gui/ventas/SelfCheckoutFacturacionArticulosController.java:222
+msgid "Escanea tu TARJETA DE FIDELIZACIÓN"
+msgstr "Scannen Sie Ihre FIDELIZATIONSKARTE"
+
+#: com/comerzzia/barreto/selfcheckout/gui/ventas/SelfCheckoutFacturacionArticulosController.java:256
+msgid "El código introducido no es una tarjeta de fidelizado correcta."
+msgstr "Der eingegebene Code ist keine korrekte Kundenkarte."
+
+#: com/comerzzia/barreto/selfcheckout/gui/ventas/SelfCheckoutFacturacionArticulosController.java:264
+msgid "El código introducido no es un cupón correcto."
+msgstr "Der eingegebene Code ist kein korrekter Gutschein."
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:8
+msgid "TALLA"
+msgstr "GRÖSSE"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:9
+msgid "COLOR"
+msgstr "FARBE"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:10
+msgid "Talla"
+msgstr "Größe"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:11
+msgid "Color"
+msgstr "Farbe"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:12
+msgid "Configuración Recargas Euronet"
+msgstr "Konfiguration füllt Euronet auf"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:13
+msgid "Usuario"
+msgstr "Benutzer"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:14
+msgid "Contraseña"
+msgstr "Passwort"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:15
+msgid "Terminal Id"
+msgstr "Terminal Id"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:16
+msgid "Cod. Tipo Moneda"
+msgstr "Cod. Währungstyp"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:17
+msgid "Tiempo espera (ms)"
+msgstr "Wartezeit (ms)"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:18
+msgid "Aceptar"
+msgstr "Akzeptieren"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:20
+msgid "Cierres de caja parciales"
+msgstr "Partielle Boxverschlüsse"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:21
+msgid "UID Caja"
+msgstr "UID-Box"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:22
+msgid "Buscar Caja"
+msgstr "Suchfeld"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:23
+msgid "Caja"
+msgstr "Box"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:24
+msgid "Fecha apertura"
+msgstr "Eröffnungsdatum"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:25
+msgid "Descuadre en los pagos con tarjeta"
+msgstr "Ungleichgewichtige Kartenzahlungen"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:27
+msgid "Buscar Cliente para Cobro de Crédito"
+msgstr "Kunden nach Kreditsammlung suchen"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:28
+msgid "Número Tarjeta"
+msgstr "Kartennummer"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:29
+msgid "Tipo Documento"
+msgstr "Dokumenttyp"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:30
+msgid "Num. Documento"
+msgstr "Dokumentnummer"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:31
+msgid "Descripción"
+msgstr "Beschreibung"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:32
+msgid "Teléfono "
+msgstr "Telefon "
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:33
+msgid "Buscar"
+msgstr "Suche"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:34
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:172
+msgid "CLIENTE"
+msgstr "KUNDEN"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:35
+msgid "CIF"
+msgstr "CIF"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:36
+msgid "POBLACION"
+msgstr "BEVÖLKERUNG"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:37
+msgid "PROVINCIA"
+msgstr "PROVINZ"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:38
+msgid "Cobrar"
+msgstr "Ladung"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:39
+msgid "Pedido Ship From Store:"
+msgstr "Versand aus dem Store bestellen:"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:40
+msgid "Cod. ticket"
+msgstr "Cod. Ticket"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:41
+msgid "Fecha"
+msgstr "Datum"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:42
+msgid "Cliente"
+msgstr "Client"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:43
+msgid "Total"
+msgstr "Gesamt"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:44
+msgid "CODART"
+msgstr "CODART"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:45
+msgid "DESCRIPCIÓN"
+msgstr "BESCHREIBUNG"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:46
+msgid "CANTIDAD"
+msgstr "MENGE"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:47
+msgid "IMPORTE"
+msgstr "BETRAG"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:48
+msgid "Entregar a cliente"
+msgstr "Liefern Sie an den Kunden"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:49
+msgid "Pedidos Ship From Store"
+msgstr "Aus Store-Bestellungen versenden"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:50
+msgid "Cod. ticket / localizador"
+msgstr "Cod. Ticket / Locator"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:51
+msgid "ID. PEDIDO"
+msgstr "ID ANFRAGE"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:52
+msgid "COD. TICKET"
+msgstr "COD. TICKET"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:53
+msgid "FECHA"
+msgstr "DATUM"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:54
+msgid "TOTAL"
+msgstr "GESAMT"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:55
+msgid "Recuperar pedido de tienda"
+msgstr "Laden Sie die Bestellung wieder her"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:56
+msgid "Cod. barras"
+msgstr "Cod. Bars"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:57
+msgid "Parámetros de búsqueda"
+msgstr "Suchparameter"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:58
+msgid "Nº cliente"
+msgstr "Kundennummer"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:59
+msgid "NIF cliente"
+msgstr "NIF-Client"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:60
+msgid "Nº operación"
+msgstr "Vorgangsnummer"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:61
+msgid "Cancelación de recargas"
+msgstr "Stornierung von Nachfüllungen"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:62
+msgid "Nº operación recarga / Localizador"
+msgstr "Nr. Nachladen / Locator"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:63
+msgid "CANCELAR RECARGA"
+msgstr "ABBRECHEN AUFNEHMEN"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:64
+msgid "Recargas"
+msgstr "Nachfüllen"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:65
+msgid "Tipo de documento"
+msgstr "Art des Dokuments"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:66
+msgid "Cod. documento / Localizador"
+msgstr "Cod. Dokument / Locator"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:67
+msgid "BUSCAR DOCUMENTO"
+msgstr "DOKUMENT FINDEN"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:68
+msgid "Núm. Ticket"
+msgstr "Nr. Ticket"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:69
+msgid "Importe de la recarga"
+msgstr "Menge der Aufladung"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:70
+msgid "Operador"
+msgstr "Betreiber"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:71
+msgid "Número de teléfono"
+msgstr "Telefonnummer"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:72
+msgid "Confirme el número"
+msgstr "Bestätigen Sie die Nummer"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:73
+msgid "INICIAR RECARGA"
+msgstr "STARTEN SIE AUFLADEN"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:74
+msgid "Confirmación de precio"
+msgstr "Preis Bestätigung"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:75
+msgid "Articulo"
+msgstr "Artikel"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:76
+msgid "Importe total"
+msgstr "Gesamtbetrag"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:77
+msgid "Administración"
+msgstr "Verwaltung"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:78
+msgid "¡Gracias por su visita!"
+msgstr "Danke für Ihren Besuch!"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:79
+msgid "Gestión del dispositivo de efectivo"
+msgstr "Cash Device Management"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:80
+msgid "El pago en efectivo está:"
+msgstr "Die Barzahlung ist:"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:81
+msgid "Estado"
+msgstr "Zustand"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:82
+msgid "Modo"
+msgstr "Modus"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:83
+msgid "Último error"
+msgstr "Letzter Fehler"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:84
+msgid "Últimos mensajes"
+msgstr "Letzte Nachrichten"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:85
+msgid "Reiniciar el dispositivo de efectivo"
+msgstr "Starten Sie das Bargeldgerät neu"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:86
+msgid "Reiniciar"
+msgstr "Neustart"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:87
+msgid "Ha habido un error al pagar con efectivo"
+msgstr "Bei der Bezahlung mit Bargeld ist ein Fehler aufgetreten"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:88
+msgid "Ha ocurrido el siguiente error:"
+msgstr "Der folgende Fehler ist aufgetreten:"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:89
+msgid "Cod. error:"
+msgstr "Fehlercode:"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:90
+msgid "Mensaje:"
+msgstr "Nachricht:"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:91
+msgid "Contacte con el personal de tienda para solucionar el error."
+msgstr "Wenden Sie sich an das Ladenpersonal, um den Fehler zu beheben."
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:92
+msgid "Reiniciar máquina"
+msgstr "Maschine neu starten"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:93
+msgid "Deshabilitar pago con efectivo"
+msgstr "Deaktivieren Sie die Zahlung mit Bargeld"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:94
+msgid "Introduzca su efectivo en la caja"
+msgstr "Geben Sie Ihr Bargeld in das Feld ein"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:95
+msgid "Introduzca su efectivo en la máquina. Por favor, asegúrese de que la luz del dispositivo este verde antes de comenzar a insertar el dinero."
+msgstr "Geben Sie Ihr Geld in den Automaten ein. Stellen Sie sicher, dass die Geräteleuchte grün leuchtet, bevor Sie das Geld einsetzen."
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:96
+msgid "PENDIENTE"
+msgstr "PENDING"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:97
+msgid "ENTREGADO"
+msgstr "GELIEFERT"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:98
+msgid "TOTAL A PAGAR"
+msgstr "GESAMT ZU ZAHLEN"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:99
+msgid "ARTÍCULO"
+msgstr "ARTIKEL"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:100
+msgid "UND."
+msgstr "MENGE."
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:101
+msgid "PVP"
+msgstr "PVP"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:102
+msgid "DTO."
+msgstr "DTO."
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:103
+msgid "Vendedor"
+msgstr "Verkäufer"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:104
+msgid "FORMA DE PAGO"
+msgstr "ZAHLUNGSFORM"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:105
+msgid "Seleccione su medio de pago"
+msgstr "Wählen Sie Ihre Zahlungsart"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:106
+msgid "A PAGAR"
+msgstr "ZAHLEN"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:107
+msgid "CAMBIO"
+msgstr "ÄNDERN"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:108
+msgid "Pagos"
+msgstr "Zahlungen"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:109
+msgid "Medio de Pago"
+msgstr "Zahlungsmittel"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:110
+msgid "Anotar pago"
+msgstr "Schreibe die Anzahlung ein"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:111
+msgid "Efectivo"
+msgstr "Bargeld"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:112
+msgid "Tarjeta"
+msgstr "Karte"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:113
+msgid "Otros"
+msgstr "Andere"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:114
+msgid "A CUENTA"
+msgstr "ZUM KONTO"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:115
+msgid "FORMA PAGO CAMBIO:"
+msgstr "FORMULAR ZAHLUNGSÄNDERUNG:"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:116
+msgid "¿Qué importe desea pagar?"
+msgstr "Welchen Betrag möchten Sie bezahlen?"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:117
+msgid "OK"
+msgstr "OK"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:118
+msgid "Borrar"
+msgstr "Löschen"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:119
+msgid "Recuento de Caja"
+msgstr "Cash Count"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:120
+msgid "MONEDA"
+msgstr "WÄHRUNG"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:121
+msgid "Anotar recuento"
+msgstr "Schreibzählung"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:122
+msgid "Contado"
+msgstr "Gezählt"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:123
+msgid "Buscar Clientes"
+msgstr "Kunden suchen"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:124
+msgid "Otros     "
+msgstr "Andere     "
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:125
+msgid "Artículos añadidos"
+msgstr "Artikel hinzugefügt"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:126
+msgid "Añadir artículos"
+msgstr "Elemente hinzufügen"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:127
+msgid "Volver atrás"
+msgstr "Geh zurück"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:128
+msgid "Introduzca la cantidad que va a comprar"
+msgstr "Geben Sie den Betrag ein, den Sie kaufen"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:129
+msgid "Introduzca el código del artículo"
+msgstr "Geben Sie den Code des Artikels ein"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:130
+msgid "El artículo consultado es:"
+msgstr "Der aufgerufene Artikel ist:"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:131
+msgid "Añadir a la compra"
+msgstr "Zum Kauf hinzufügen"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:132
+msgid "Introduzca el código"
+msgstr "Geben Sie den Code ein"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:133
+msgid "Pagar"
+msgstr "Zahlen Sie"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:134
+msgid "Selección rápida de artículos"
+msgstr "Schnelle Auswahl von Artikeln"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:135
+msgid "Modificar cantidad de la línea"
+msgstr "Betrag der Linie ändern"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:136
+msgid "Introducir código manualmente"
+msgstr "Code manuell eingeben"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:137
+msgid "Borrar línea seleccionada"
+msgstr "Ausgewählte Zeile löschen"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:138
+msgid "Escanee su tarjeta de fidelización"
+msgstr "Scannen Sie Ihre Treuekarte"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:139
+msgid "¿Problemas para leer el código?"
+msgstr "Probleme beim Lesen des Codes?"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:140
+msgid "Continuar"
+msgstr "Fortfahren"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:141
+msgid "¿Tienes algún cupón promocional? Escanee el código que aparece en él"
+msgstr "Haben Sie einen Aktionsgutschein? Scannen Sie den darauf angezeigten Code"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:142
+msgid "Ventas"
+msgstr "Verkäufe"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:143
+msgid "/ Peso"
+msgstr "/ Gewicht"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:144
+msgid "CLIENTE FIDELIZADO:"
+msgstr "FIDELIZED CLIENT:"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:145
+msgid "SALDO:"
+msgstr "BALANCE:"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:146
+msgid "Nº TARJETA:"
+msgstr "Kartennummer:"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:147
+msgid "Cancelar compra"
+msgstr "Kauf abbrechen"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:148
+msgid "Lea o escriba el código de barras de la tarjeta"
+msgstr "Lesen oder schreiben Sie den Barcode der Karte"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:149
+msgid "Número de tarjeta"
+msgstr "Kartennummer"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:150
+msgid "Alta Fidelizado"
+msgstr "Hohe Loyalität"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:151
+msgid "EFECTIVO"
+msgstr "WIRKSAM"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:152
+msgid "TARJETA"
+msgstr "KARTE"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:153
+msgid "TARJETA REGALO"
+msgstr "GESCHENKKARTE"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:154
+msgid "APERTURA"
+msgstr "ÖFFNEN"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:155
+msgid "IMPRIMIR ULT. CIERRE"
+msgstr "ULT DRUCKEN. VERSCHLUSS"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:156
+msgid "ABRIR CAJÓN"
+msgstr "ÖFFNEN SIE CAJÓN"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:157
+msgid "CIERRE"
+msgstr "VERSCHLUSS"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:158
+msgid "INSERTAR APUNTE"
+msgstr "APUNTE EINFÜGEN"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:159
+msgid "RECUENTO CAJA"
+msgstr "BOX COUNT"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:160
+msgid "CAMBIAR CAJERO"
+msgstr "KASSIERER ÄNDERN"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:161
+msgid "abrir cajón (no visible)"
+msgstr "offene Schublade (nicht sichtbar)"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:162
+msgid "APARCAR TICKET"
+msgstr "PARKPLATZ"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:163
+msgid "RECUPERAR TICKET"
+msgstr "TICKET ERHALTEN"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:164
+msgid "ANULAR TICKET"
+msgstr "TICKET ABBRECHEN"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:165
+msgid "SALDO GIFTCARD"
+msgstr "BALANCE GIFTCARD"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:166
+msgid "PAGOS"
+msgstr "ZAHLUNGEN"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:167
+msgid "RECUPERAR PEDIDO"
+msgstr "WIEDERHERSTELLEN"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:168
+msgid "GESTIÓN DOCUMENTOS"
+msgstr "DOKUMENTENMANAGEMENT"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:169
+msgid "RECARGA MÓVIL"
+msgstr "MOBILE AUFLADUNG"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:170
+msgid "BÚSQUEDA"
+msgstr "SUCHEN"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:171
+msgid "OMNICANAL"
+msgstr "OMNICANAL"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:173
+msgid "CATÁLOGO ONLINE"
+msgstr "ONLINE-KATALOG"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:174
+msgid "Factura"
+msgstr "Rechnung"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:175
+msgid "Datos envío"
+msgstr "Versanddaten"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:176
+msgid "aceptar (no visible)"
+msgstr "akzeptieren (nicht sichtbar)"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:177
+msgid "FIDELIZACION"
+msgstr "LOYALITÄT"
+
+#: com/comerzzia/pos/gui/i18n/gen/AdditionalMessages.java:178
+msgid "La longitud del campo no puede superar los 9 caracteres."
+msgstr "Die Länge des Feldes darf 9 Zeichen nicht überschreiten."
+
+#: BRICO-441
+msgid "Escanee su TARJETA DE FIDELIZACIÓN o introduzca EMAIL o DOCUMENTO DE IDENTIDAD"
+msgstr "Scannen Sie Ihre Treuekarte oder geben Sie Ihre E-Mail-Adresse oder Ausweisdokument ein"
+
+msgid "Recuperar fidelizado"
+msgstr "Kundenbindungsinformationen abrufen"
+
+msgid "Nombre"
+msgstr "Name"
+
+msgid "Documento"
+msgstr "Dokument"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Error al consultar afiliado(s) en el sistema: No se ha encontrado la tarjeta con identificador {0}"
+msgstr "Fehler beim Abfragen des Affiliates im System: Karte mit Kennung {0} nicht gefunden"
+
+msgid "Introduzca sus datos"
+msgstr "Geben Sie Ihre Daten"
+
+msgid "FIDELIZADO NO ENCONTRADO"
+msgstr "KUNDENBINGUNG NICHT GEFUNDEN"
+
+msgid "El cliente con el documento {0}, el tipo de documento {1}, no se encuentra registrado en la BBDD. Para obtener su factura completa diríjase a una de nuestras cajas asistidas"
+msgstr "Der Kunde mit dem Dokument {0}, Dokumenttyp {1}, ist nicht in der Datenbank registriert. Um Ihre vollständige Rechnung zu erhalten, begeben Sie sich bitte zu einem unserer betreuten Kassen"
+
+msgid "Error al consultar tarjeta regalo en el sistema: No se ha encontrado la tarjeta con identificador: {0}"
+msgstr "Fehler beim Abfragen der Geschenkkarte im System: Karte mit Kennung {0} nicht gefunden"
+
+msgid "No es una tarjeta regalo, por favor, compruebe que ha introducido el número correctamente"
+msgstr "Es handelt sich nicht um eine Geschenkkarte. Bitte überprüfen Sie, ob Sie die Nummer korrekt eingegeben haben"
+
+msgid "OTROS DESCUENTOS"
+msgstr "ANDERE RABATE"
+
+msgid "DESCRIPCIÓN DE OTROS DESCUENTOS"
+msgstr "BESCHREIBUNG ANDERER RABATTE"
+
+msgid "¿Cómo quiere su factura?"
+msgstr "Wie möchten Sie Ihre Rechnung haben?"
+
+msgid "Papel"
+msgstr "Papier"
+
+msgid "Correo"
+msgstr "Email"
+
+msgid "Ambos"
+msgstr "Beide"
+
+msgid "Inserte su correo electrónico"
+msgstr "Geben Sie Ihre E-Mail-Adresse ein"
+
+msgid "Domicilio"
+msgstr "Addresse"
+
+msgid "Población"
+msgstr "Stadt"
+
+msgid "Provincia"
+msgstr "Bundesland"
+
+msgid "Localidad"
+msgstr "Ort"
+
+msgid "C.P."
+msgstr "Postleitzahl"
+
+msgid "Teléfono"
+msgstr "Telefon"
+
+msgid "Pais"
+msgstr "Land"
+
+msgid "CCC"
+msgstr "Kundenkontonummer"
+
+msgid "Debes rellenar el campo documento"
+msgstr "Bitte füllen Sie das Dokumentenfeld aus"
+
+msgid "Si cancela, su ticket será entregado en papel"
+msgstr "Wenn Sie stornieren, wird Ihr Ticket auf Papier ausgestellt"
+
+msgid "Introduzca el código postal"
+msgstr "Geben Sie die Postleitzahl ein"
+
+msgid "Lea o escriba el código de barras de la tarjeta de regalo"
+msgstr "Lesen oder geben Sie den Barcode der Geschenkkarte ein"
+
+msgid "Campo requerido"
+msgstr "Obligatorisches Feld"
+
+msgid "No puede dejar el campo vacío"
+msgstr "Das Feld darf nicht leer bleiben"
+
+msgid "Debe de ser un correo electrónico válido"
+msgstr "Muss eine gültige E-Mail-Adresse sein"
+
+msgid "Formato incorrecto"
+msgstr "Fehlerhaftes Format"
+
+msgid "Datos del cliente para la factura"
+msgstr "Kundendaten für die Rechnung"
+
+msgid "Ver Detalle"
+msgstr "Details anzeigen"
+
+msgid "Pulse Escape para continuar"
+msgstr "Drücken Sie ESC, um fortzufahren"
+
+msgid "Date de alta como fidelizado escaneando este QR"
+msgstr "Melden Sie sich als Stammkunde an, indem Sie diesen QR-Code scannen"
+
+msgid "Selecciona el tipo de comprobante que necesitas:"
+msgtr "Wählen Sie die Art der Quittung aus, die Sie benötigen:"
+
+msgid "¿Estás fidelizado?"
+msgtr "Bist du loyal?"
+
+msgid "Introduzca su"
+msgtr "Geben Sie Ihren "
+
+msgid "o"
+msgtr "o"
+
+msgid "Escanee su tarjeta"
+msgtr "Scannen Sie Ihre Karte"

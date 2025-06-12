@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="50.0" minHeight="50.0" minWidth="300.0" prefHeight="50.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.comerzzia.pos.core.gui.main.cabecera.CabeceraController">
+  <children>
+    <HBox alignment="CENTER_RIGHT" maxHeight="50.0" minHeight="50.0" minWidth="50.0" prefHeight="50.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <AnchorPane fx:id="panelCabeceraBotonera" prefHeight="50.0" prefWidth="408.0">
+          <HBox.margin>
+            <Insets right="40.0" />
+          </HBox.margin>
+        </AnchorPane>
+      </children>
+    </HBox>
+    <HBox id="logoBrico" layoutX="1.0" layoutY="0.0" prefHeight="50.0" prefWidth="128.0">
+      <stylesheets>
+        <URL value="@cabecera.css" />
+      </stylesheets>
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@../../../../gui/styles/styles.css" />
+    <URL value="@cabecera.css" />
+  </stylesheets>
+</AnchorPane>

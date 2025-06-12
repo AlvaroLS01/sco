@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuracion fecha="10/02/2014"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<!-- CENTRAL -->
+	<BaseDatos>
+	
+		<Driver>com.mysql.jdbc.Driver</Driver>
+		<URL>jdbc:mysql://172.16.102.35:33062/czz_bricodepot</URL>
+		<Usuario>czz_bricodepot</Usuario>
+		<Password>czz_bricodepot</Password>
+	</BaseDatos>
+	
+	
+	
+<!-- 	Caja ESPAÑA -->
+<!-- 	<BaseDatos> -->
+<!-- 		<Driver>com.mysql.jdbc.Driver</Driver> -->
+<!-- 		<URL>jdbc:mysql://localhost:3306/czzes</URL> -->
+<!--         <Usuario>czzpos</Usuario> -->
+<!-- 		<Password>czzpos</Password> -->
+<!-- 	</BaseDatos> -->
+	
+<!-- 	caja PORTUGAL -->
+<!-- 	<BaseDatos> -->
+<!-- 		<Driver>com.mysql.jdbc.Driver</Driver> -->
+<!-- 		<URL>jdbc:mysql://localhost:3306/czzpt</URL> -->
+<!--         <Usuario>czzpos</Usuario> -->
+<!-- 		<Password>czzpos</Password> -->
+<!-- 	</BaseDatos> -->
+
+	<Localizacion>
+		<pais>PT</pais>
+		<idioma>pt</idioma>
+	</Localizacion>
+
+	<Desarrollo>
+		<Usuario>administrador</Usuario>
+		<Password>cmz</Password>
+	</Desarrollo>
+
+	<Interfaz>
+		<Ancho>1024</Ancho>
+		<Alto>780</Alto>
+		<PantallaCompleta>false</PantallaCompleta>
+		<EfectoFondoVentanaModales>true</EfectoFondoVentanaModales>
+		<MostrarTecladoAlfanumerico>true</MostrarTecladoAlfanumerico>
+		<OcultarConfiguracion>
+			<Opcion>btRecargaMovil</Opcion>
+		</OcultarConfiguracion>
+		<ShowLoggedIn>false</ShowLoggedIn>
+	</Interfaz>
+
+	<login>LOGIN</login>
+	<Skin>bricodepot</Skin>
+	
+<!-- 	comentar para arrancar desde BBDD local -->
+	<Menu>SCO-BRICO</Menu>
+
+	<AccionInicio>700000</AccionInicio>
+
+	<InStoreEngine>
+		<RestUrl></RestUrl>
+		<SegundosPeticionNotificaciones></SegundosPeticionNotificaciones>
+	</InStoreEngine>
+
+	<SystemProperties>
+		<!-- <prism.verbose>true</prism.verbose> -->
+		<!-- <prism.order>j2d</prism.order> -->
+	</SystemProperties>
+
+</configuracion>

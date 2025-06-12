@@ -1,0 +1,26 @@
+ /* codigotarjeta.css*/
+ 
+.titulo-ventana .label {
+    -fx-background-color: rgba(227,6,19) !important;
+    -fx-text-fill: rgba(255,255,255) !important; 
+}
+
+.label {
+    -fx-text-fill: rgba(0,0,0) !important; 
+}
+
+.text-input {
+    -fx-text-fill: rgba(0, 0, 0);
+}
+
+.text-black {
+    -fx-text-fill: rgba(0, 0, 0) !important;
+}
+
+.button.btAceptar {
+	-fx-text-fill: rgba(0, 0, 0) !important;
+}
+
+.button.btCancelar {
+	-fx-text-fill: rgba(0, 0, 0) !important;
+}

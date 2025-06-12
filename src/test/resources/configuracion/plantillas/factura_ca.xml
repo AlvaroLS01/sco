@@ -1,0 +1,37 @@
+<plantilla>
+
+
+
+ ## #if( (!$ticket.getCabecera().getDatosDocOrigen() && $ticket.getCabecera().getCodTipoDocumento() != "FS") || ($ticket.getCabecera().getDatosDocOrigen() && $ticket.getCabecera().getDatosDocOrigen().getCodTipoDoc() != "FS") )
+
+	
+	#set($tienePagoGiftcard = false)
+	#foreach ($pago in $ticket.getPagos())
+		#if (${pago.isPagoTarjetaRegalo()})
+			#set($tienePagoGiftcard = true)
+			#break
+		#end
+	#end
+	#if(!$paperLess || ( $paperLess && ($ticket.getCabecera().getDatosEnvio() || $tienePagoGiftcard)))
+		<documento salida="impresora1">
+		#parse("./plantillas/factura_contenido_ca.xml")
+	   </documento>    
+	#end
+
+#if($esImpresionA4 && $esImpresionA4 == true)
+
+	<documento salida="impresora2" procesador="JASPER" fichero="facturas\facturaA4">
+	</documento>
+
+
+	##    #foreach ($pago in $ticket.getPagos())
+	##	#set($esBoletaCompleta = true)
+	##		#parse("./plantillas/detalle_pagos_boletas.xml")
+	##	#end
+	##	#parse("./plantillas/detalle_comprobantes_giftcard.xml")
+
+
+#end 
+
+  
+</plantilla>

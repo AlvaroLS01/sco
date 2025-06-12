@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Panel>
+    <LineaBotones>
+		<Boton>
+			<texto>TARJETA</texto>
+            <clave>seleccionarMedioPagoSelfCheckout</clave>
+            <tipo>METODO</tipo>
+			<rutaImagen>importes/creditcard.png</rutaImagen>
+			<parametros>
+				<entry>
+					<key>codMedioPago</key>
+					<value>0010</value>
+				</entry>				
+			</parametros>
+		</Boton>
+		<Boton>
+			<texto>GIFTCARD/VALE</texto>
+            <clave>seleccionarMedioPagoSelfCheckout</clave>
+            <tipo>METODO</tipo>
+			<rutaImagen>importes/giftcard.png</rutaImagen>
+			<parametros>
+				<entry>
+					<key>codMedioPago</key>
+					<value>0060</value>
+				</entry>				
+			</parametros>
+		</Boton>
+	</LineaBotones>
+</Panel>

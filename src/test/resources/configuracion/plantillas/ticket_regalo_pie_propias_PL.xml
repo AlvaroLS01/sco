@@ -1,0 +1,48 @@
+		#if(!${tarjetaRegalo})
+			<linea> <texto> </texto> </linea>
+		#else
+			<linea line-size="4"> <texto align="center" style="1">"***KARTA PODARUNKOWA/REFUNDACYJNA***</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Dziękujemy za wizytę w naszym sklepie!</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Okres ważności karty wynosi trzy lata,</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1"> licząc od daty jej zakupu.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Karta umożliwia dokonywanie zakupów</texto> </linea> 
+			<linea line-size="4"> <texto align="center" style="1">wyłącznie w sklepach BIMBA Y LOLA</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">na terenie Polski (z wyjątkiem sklepu</texto> </linea> 
+			<linea line-size="4"> <texto align="center" style="1">online: www.bimbaylola.com) aż do</texto> </linea> 
+			<linea line-size="4"> <texto align="center" style="1">wykorzystania w całości istniejących</texto> </linea> 
+			<linea line-size="4"> <texto align="center" style="1">na niej środków.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Niewykorzystane saldo karty nie zostanie</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">w żadnym wypadku zwrócone ani wymienione</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">na gotówkę.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Zrzekamy się wszelkiej odpowiedzialności</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">za zgubioną, skradzioną lub zniszczoną</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">kartę. Zakupione przy użyciu karty towary</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">podlegają polityce zwrotów obowiązującej</texto> </linea> 
+			<linea line-size="4"> <texto align="center" style="1">w firmie BIMBA Y LOLA.</texto> </linea> 
+			<linea line-size="4"> <texto align="center" style="1">Zgodnie z polityką zwrotów firmy</texto> </linea> 
+			<linea line-size="4"> <texto align="center" style="1">BIMBA Y LOLA, kartę podarunkową można</texto> </linea> 
+			<linea line-size="4"> <texto align="center" style="1">zwrócić w maksymalnym terminie 30 dni,</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">pod warunkiem, że nie była ona używana i</texto> </linea> 
+			<linea line-size="4"> <texto align="center" style="1">pieczęć ochronna jej kodu</texto> </linea> 
+			<linea line-size="4"> <texto align="center" style="1">zabezpieczającego pozostaje nienaruszona.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Wymiana lub zwrot dowolnego artykułu,</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">do którego nabycia karta została użyta,</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">wymaga jej okazania.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Proszę upewnić się, że dostępne na karcie</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">środki są zgodne z figurującymi na</texto> </linea> 
+			<linea line-size="4"> <texto align="center" style="1">odpowiednim paragonie.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Nabycie i używanie karty jest równoznaczne</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">ze zrozumieniem i akceptacją obowiązujących</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">warunków dokonywania zakupów, z którymi</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">można zapoznać się na stronie:</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">www.bimbaylola.com</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Nie ma to wpływu na ustawowe prawa</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">konsumenta</texto> </linea>
+		#end
+		
+
+
+
+
+
+		

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-stylesheet login.css?>
+
+<AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minWidth="-1.0" prefHeight="700.0" prefWidth="1024.0" style="" styleClass="mainFxmlClass, login, pantalla-detalle" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.comerzzia.brico.pos.selfcheckout.core.gui.login.SelfCheckoutLoginController">
+  <children>
+    <VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="600.0" prefWidth="800.0" style="" styleClass="fondo-login" VBox.vgrow="ALWAYS">
+          <children>
+            <VBox prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <HBox id="HBox" alignment="CENTER" spacing="5.0">
+                  <children>
+                    <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="71.0" prefWidth="798.0" styleClass="login-top, backlog" HBox.hgrow="ALWAYS">
+                      <children>
+                        <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="71.0" prefWidth="300.0" styleClass="logo-login" />
+                        <HBox id="logoBrico" layoutX="292.0" layoutY="0.0" prefHeight="64.00009999999747" prefWidth="200.0">
+                          <stylesheets>
+                            <URL value="@login.css" />
+                          </stylesheets>
+                        </HBox>
+                      </children>
+                    </AnchorPane>
+                  </children>
+                </HBox>
+                <AnchorPane prefHeight="511.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+                  <children>
+                    <HBox prefHeight="520.0" prefWidth="800.0" styleClass="wrapper-login" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <children>
+                        <AnchorPane minWidth="-1.0" prefHeight="500.0" prefWidth="215.0" styleClass="login-left" HBox.hgrow="NEVER">
+                          <children>
+                            <VBox prefHeight="524.0" prefWidth="186.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <children>
+                                <AnchorPane prefHeight="209.0" prefWidth="191.0" styleClass="personaje" VBox.vgrow="NEVER" />
+                                <AnchorPane prefHeight="323.0" prefWidth="185.0" styleClass="columLeft-login" VBox.vgrow="ALWAYS">
+                                  <children>
+                                    <Button fx:id="botonConsultarArticulos" mnemonicParsing="false" onAction="#abrirBusquedaArticulos" prefHeight="35.0" prefWidth="160.0" styleClass="btStock" text="%Consultar Artículos" visible="true" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                    <Label alignment="CENTER_RIGHT" prefWidth="60.0" style="-fx-font-size: 14px;&#10;-fx-font-weight: bold;" styleClass="texto-negrita" text="%Tienda" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="5.0" />
+                                    <Label alignment="CENTER_RIGHT" prefWidth="60.0" style="-fx-font-size: 14px;&#10;-fx-font-weight: bold;" styleClass="texto-negrita" text="%Caja" textAlignment="RIGHT" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="5.0" />
+                                    <Label fx:id="lbTienda" maxWidth="135.0" prefWidth="135.0" style="-fx-font-size: 14px;" text="" textOverrun="WORD_ELLIPSIS" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="76.0" />
+                                    <Label fx:id="lbCaja" maxWidth="135.0" prefWidth="135.0" style="-fx-font-size: 14px;" text="" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="76.0" />
+                                  </children>
+                                </AnchorPane>
+                              </children>
+                            </VBox>
+                          </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="520.0" prefWidth="630.0" HBox.hgrow="ALWAYS">
+                          <children>
+                            <VBox alignment="CENTER" prefHeight="523.0" prefWidth="598.0" styleClass="wrappCentral-login" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+                              <children>
+                                <AnchorPane prefHeight="366.0" prefWidth="556.0" VBox.vgrow="ALWAYS">
+                                  <children>
+                                    <GridPane alignment="CENTER" hgap="8.0" prefHeight="106.0" prefWidth="312.0" vgap="8.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="5.0">
+                                      <children>
+                                        <TextField fx:id="tfUsuario" maxHeight="2530.0" minHeight="30.0" onAction="#actionBtAceptar" prefHeight="30.0" prefWidth="156.0" promptText="%Usuario" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.vgrow="NEVER">
+                                          <GridPane.margin>
+                                            <Insets />
+                                          </GridPane.margin>
+                                        </TextField>
+                                        <Label alignment="CENTER_RIGHT" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="128.0" text="%Usuario" GridPane.columnIndex="0" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.vgrow="NEVER" />
+                                        <Label alignment="CENTER_RIGHT" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="128.0" text="%Contraseña" GridPane.columnIndex="0" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.vgrow="NEVER" />
+                                        <PasswordField fx:id="tfPassword" maxHeight="30.0" minHeight="30.0" onAction="#actionBtAceptar" prefHeight="30.0" prefWidth="138.0" promptText="%Contraseña" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.vgrow="NEVER" />
+                                        <Label fx:id="lbLoggedIn" alignment="CENTER" prefWidth="705.0" styleClass="lbError, texto-centrado" text="" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" />
+                                      </children>
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="96.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="357.0" minWidth="10.0" prefWidth="223.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="NEVER" />
+                                        <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="NEVER" />
+                                        <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="NEVER" />
+                                        <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="NEVER" />
+                                      </rowConstraints>
+                                    </GridPane>
+                                  </children>
+                                  <padding>
+                                    <Insets left="100.0" right="100.0" />
+                                  </padding>
+                                </AnchorPane>
+                                <AnchorPane minHeight="-1.0" prefHeight="126.0" prefWidth="598.0000999999975" VBox.vgrow="NEVER">
+                                  <children>
+                                    <VBox prefHeight="126.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="0.0">
+                                      <children>
+                                        <AnchorPane prefHeight="33.0" prefWidth="615.0" VBox.vgrow="NEVER">
+                                          <children>
+                                            <Label fx:id="lbError" alignment="CENTER" prefHeight="30.0" prefWidth="633.0" styleClass="lbError" text="" textAlignment="LEFT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                          </children>
+                                        </AnchorPane>
+                                        <AnchorPane minHeight="-1.0" prefHeight="95.0" prefWidth="598.0" VBox.vgrow="NEVER">
+                                          <children>
+                                            <HBox prefHeight="94.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="0.0">
+                                              <children>
+                                                <AnchorPane prefHeight="95.0" prefWidth="188.0" HBox.hgrow="ALWAYS" />
+                                                <AnchorPane prefHeight="99.0" prefWidth="429.0" HBox.hgrow="NEVER">
+                                                  <children>
+                                                    <HBox alignment="BOTTOM_RIGHT" minWidth="182.0" prefHeight="75.0" prefWidth="368.0" spacing="0.0" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="47.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                                      <children>
+                                                        <Button fx:id="btAceptar" minHeight="42.0" minWidth="115.0" mnemonicParsing="false" onAction="#actionBtAceptar" prefWidth="115.0" styleClass="btAceptar" text="%Aceptar" HBox.hgrow="ALWAYS">
+                                                          <HBox.margin>
+                                                            <Insets bottom="5.0" right="5.0" />
+                                                          </HBox.margin>
+                                                        </Button>
+                                                        <Button fx:id="btCancelar" minHeight="42.0" minWidth="115.0" mnemonicParsing="false" onAction="#accionCancelar" prefWidth="118.0" styleClass="btCancelar" text="%Cancelar" HBox.hgrow="ALWAYS">
+                                                          <HBox.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                          </HBox.margin>
+                                                        </Button>
+                                                      </children>
+                                                    </HBox>
+                                                  </children>
+                                                </AnchorPane>
+                                              </children>
+                                            </HBox>
+                                          </children>
+                                        </AnchorPane>
+                                      </children>
+                                    </VBox>
+                                  </children>
+                                </AnchorPane>
+                              </children>
+                            </VBox>
+                          </children>
+                        </AnchorPane>
+                      </children>
+                    </HBox>
+                  </children>
+                </AnchorPane>
+              </children>
+            </VBox>
+          </children>
+        </AnchorPane>
+      </children>
+    </VBox>
+  </children>
+  <stylesheets>
+    <URL value="@login.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,76 @@
+/**
+ * ComerZZia 3.0
+ *
+ * Copyright (c) 2008-2015 Comerzzia, S.L.  All Rights Reserved.
+ *
+ * THIS WORK IS  SUBJECT  TO  SPAIN  AND  INTERNATIONAL  COPYRIGHT  LAWS  AND
+ * TREATIES.   NO  PART  OF  THIS  WORK MAY BE  USED,  PRACTICED,  PERFORMED
+ * COPIED, DISTRIBUTED, REVISED, MODIFIED, TRANSLATED,  ABRIDGED, CONDENSED,
+ * EXPANDED,  COLLECTED,  COMPILED,  LINKED,  RECAST, TRANSFORMED OR ADAPTED
+ * WITHOUT THE PRIOR WRITTEN CONSENT OF COMERZZIA, S.L. ANY USE OR EXPLOITATION
+ * OF THIS WORK WITHOUT AUTHORIZATION COULD SUBJECT THE PERPETRATOR TO
+ * CRIMINAL AND CIVIL LIABILITY.
+ *
+ * CONSULT THE END USER LICENSE AGREEMENT FOR INFORMATION ON ADDITIONAL
+ * RESTRICTIONS.
+ */
+.wrap-login-user {
+	-fx-background-color: #fff;
+}
+
+.boton-seleccion-usuario {
+	-fx-font-size: 8px;
+	-fx-text-fill: #223768;
+}
+
+.boton-seleccion-usuario-linea1 {
+	-fx-font-size: 18px;
+	-fx-font-weight: bold;
+	-fx-text-fill: #0082aa;
+	
+}
+
+.boton-seleccion-usuario-linea2 {
+	-fx-font-size: 15px;
+	-fx-text-fill: #993333;
+}
+
+.seleccionaUser-top {
+	-fx-border-width: 0 0 3 0;
+	-fx-border-color: #a1b5ce;
+	-fx-border-radius: 15 15 0 0;
+	-fx-background-radius: 5;
+
+		
+	
+}
+.personaje {
+	-fx-background-image: url("../../../../gui/imagenes/iconos/personaje.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+.login-left {
+	-fx-border-width: 0 1 0 0;
+	-fx-border-color: #436b9e;
+}
+
+.nombre-accion {
+	-fx-font-size: 22px;
+	-fx-font-weight: bold;
+	-fx-text-fill: #0082aa;
+	-fx-background-color: rgba(0,0,0,0);
+	
+}
+.wrap-central-seleccionUsuarios {
+	-fx-background-color: white;
+}
+.wrap-interno-seleccionUsuarios{
+	-fx-background-color: transparent;
+	
+}
+.background-botonera {
+	-fx-background-color: transparent;
+}
+.botonera {
+	-fx-background-color: transparent;
+}

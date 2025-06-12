@@ -1,0 +1,418 @@
+<plantilla>
+		#if(!$paperLess)
+			## Comprobar si es necesario abrir el cajón
+			#set($abrirCajon = false)
+			#set($hayBoletasTef = false)
+			#if(!${salida.equals("pantalla")} and !$esCopia)
+				#foreach ($pago in $ticket.getPagos())
+					#if($pago.getCodMedioPago() == "0000")
+						#set($abrirCajon = true)
+					#end
+				#end
+			#end
+			
+			#if($abrirCajon)
+				<apertura-cajon/>
+			#end
+			<logo/>
+			#if ($esDuplicado || $esCopia)
+			<linea> <texto>_______________________________________ </texto> </linea>
+			<linea> <texto>               DUPLICADO                </texto> </linea>
+			<linea> <texto>_______________________________________ </texto> </linea>
+			#end
+			
+			#set( $imprimirDatosFacturacion =  $ticket.getCabecera().getCliente().getDatosFactura())
+			#parse("./plantillas/datos_cabecera_pt.xml")
+		
+	#if (${ticket.getCabecera().getDatosDocOrigen().getCodTicket()})
+		<linea>
+			<texto>Nº DA FATURA DE ORIGEM: </texto>
+		</linea>
+		<linea>
+		<texto>${ticket.getCabecera().getDatosDocOrigen().getCodTicket()}</texto>
+		</linea>
+		<linea>
+			<texto>DATA DO FATURA DE ORIGEM: ${ticket.getCabecera().getFechaTicketOrigen()}</texto>
+		</linea>
+		<linea>
+			<texto>LOJA DE ORIGEM: ${ticket.getCabecera().getTienda().getCodAlmacen()}</texto>
+			<texto> ${ticket.getCabecera().getTienda().getDesAlmacen()}</texto>
+		</linea>
+	#end
+	
+	#if ($ticket.getCabecera().getCodTipoDocumento()== "FR" || $ticket.getCabecera().getCodTipoDocumento()== "NC")
+		<linea>
+			<texto align="left" size="20">DEVOLUÇÃO</texto>
+			<texto align="left">${ticket.getCabecera().getFechaAsLocale()}</texto>
+		</linea>
+	#else
+	<linea>
+		<texto align="left">${ticket.getCabecera().getFechaAsLocale()}</texto>
+	</linea>
+			#end
+	<linea>
+		<texto align="left" fontsize="6">${ticket.getCabecera().getDesTipoDocumento()}:</texto>
+	</linea>
+
+	<linea>
+		<texto align="left" fontsize="6">${ticket.getCabecera().getCodTicket()}</texto>
+	</linea>
+
+	<linea>
+		<texto style="1">CÓDIGO        ARTIGO  </texto>
+	</linea>
+	<linea>
+		<texto style="1">Q.      PREÇO UNI. PREÇO APL. VALOR</texto>
+	</linea>
+	<linea>
+		<texto>_______________________________________</texto>
+	</linea>
+	## LINEAS
+	#foreach ($linea in $ticket.getLineasAgrupadas())
+		<linea>
+            <texto size="15" align="left" fontsize="5">${linea.getCodArticulo()}</texto>
+            <texto size="25" align="left" fontsize="5">${linea.getDesArticulo()}</texto>
+        </linea>
+        <linea>
+        	#set($importeLineas = $linea.getCantidad().intValue() * $linea.getImporteTotalConDto())
+            <texto size="10" align="left" fontsize="5">${linea.getCantidad().intValue()}</texto>
+            <texto size="10" align="left" fontsize="5">${linea.getPrecioTotalTarifaOrigen()}€</texto>
+			<texto size="10" align="left" fontsize="5">${linea.getPrecioTotalConDto()}€</texto>
+            <texto size="10" align="right" fontsize="5">${linea.getImporteTotalConDto()}€</texto>
+		</linea>
+		
+			 #foreach ($numeroSerie in $linea.getNumerosSerie())
+		<linea>
+		<texto size="40" align="left">   *NS:${numeroSerie}</texto>
+		</linea>
+				#end
+	#end
+			<linea>
+		<texto>Total Unidades: ${ticket.getCabecera().getCantidadArticulosAsString()} </texto>
+	</linea>
+	<linea>
+		<texto> </texto>
+	</linea>
+	## TOTALES    
+			<linea line-size="1">
+		<texto size="29" align="right" fontweight="bold">TOTAL A PAGAR: </texto>
+		<texto size="11" align="right">${ticket.getTotales().getTotalAPagarAsString()}€</texto>
+	</linea>
+			#if(${ticket.getTotales().isHayEntregaCuenta()})
+			 <linea line-size="1">
+		<texto size="29" align="right" fontweight="bold">ENTREGUE: </texto>
+		<texto size="11" align="right">${ticket.getTotales().getEntregadoACuentaAsString()}€</texto>
+	</linea>
+			#end
+			<linea line-size="1">
+		<texto size="29" align="right" fontweight="bold">ENTREGUE: </texto>
+		<texto size="11" align="right">${ticket.getTotales().getEntregadoAsString()}€</texto> 
+	</linea>
+	<linea line-size="1">
+		<texto>                              ----------</texto>
+	</linea>
+	<linea line-size="1">
+		<texto size="29" align="right" fontweight="bold">   TROCO: </texto>
+		<texto size="11" align="right">${ticket.getTotales().getCambioAsString()}€</texto>
+	</linea>
+
+	<linea>
+		<texto>________________________________________</texto>
+	</linea>
+	<linea>
+		<texto style="1" fontweight="bold">         (IVA INCLUÍDO)          </texto>
+	</linea>
+	<linea>
+		<texto>_______________________________________</texto>
+	</linea>
+	<linea>
+		<texto style="1" fontweight="bold">PAGAMENTO</texto>
+	</linea>
+	<linea>
+		<texto>_______________________________________</texto>
+	</linea>
+			#parse("./plantillas/detalle_pagos_pt.xml")
+
+	#foreach ($pago in $ticket.getPagos())
+		
+		#if ($pago.getMedioPago().getDesMedioPago().equals("GIFTCARD")))
+			<linea> <texto style ="1" size="39" align="center">***************************************</texto> </linea>
+			<linea> <texto style ="1" size="39" align="center">PROVA DE USO GIFTCARD</texto> </linea>
+			<linea> <texto style ="1" size="39" align="center">***************************************</texto> </linea>
+			#foreach ($giftcard in $pago.getGiftcards())
+			<linea> <texto size="39" align="left" style ="1">REFERÊNCIA GIFTCARD:	${giftcard.getNumTarjetaRegalo()}</texto> </linea>
+
+			<linea>
+				<texto style="1">SALDO REMANESCENTE GIFTCARD: </texto>
+				<texto size="11" align="left">${giftcard.getSaldoDisponibleAsString()}€</texto>
+			</linea>
+			<linea> <texto> </texto> </linea>
+			<codbar align="center" tipo-leyenda="0" >${giftcard.getNumTarjetaRegalo()}</codbar>
+			#end
+		#end
+		#if ($pago.getMedioPago().getDesMedioPago().equals("VALE"))
+			<linea>
+				<texto>_______________________________________</texto>
+			</linea>
+			<linea>
+				<texto style="1" fontweight="bold">PROVA DE USO VALE</texto>
+			</linea>
+			<linea>
+				<texto>_______________________________________</texto>
+			</linea>
+			#foreach ($giftcard in $pago.getGiftcards())
+			<linea> <texto size="39" align="left" style ="1">N. Vale:	${giftcard.getNumTarjetaRegalo()}</texto> </linea>
+			<linea>
+				<texto align="left" style ="1" size="10">PAGAMENTO:</texto>
+				<texto size="29" align="right">${pago.getImporteAsString()}€</texto>
+			</linea>
+			#set($saldoProvisional = $giftcard.getSaldoProvisional().abs())
+			<linea> 
+				<texto align="left" style ="1" size="17">Saldo disponível:</texto>
+				<texto size="22" align="right">${giftcard.getSaldoDisponibleAsString()}€</texto>
+			</linea>
+			<linea><texto size="39" align="left">OP:${giftcard.getUidTransaccion()}</texto></linea>
+			<linea> <texto> </texto> </linea>
+		<codbar align="center" tipo-leyenda="0" >${giftcard.getNumTarjetaRegalo()}</codbar>
+			#end
+		#end
+	#end
+	
+	<linea>
+		<texto>_______________________________________</texto>
+	</linea>
+	<linea>
+		<texto style="1" fontweight="bold"> RESUMO DE TAXAS</texto>
+	</linea>
+	<linea>
+		<texto>_______________________________________</texto>
+	</linea>
+	<linea>
+		<texto style ="1" fontweight="bold">VALOR SEM IVA   TIPO     IVA       TOTAL</texto>
+	</linea>
+	<linea>
+		<texto>_______________________________________</texto>
+	</linea>
+			#foreach ($impuesto in $ticket.getCabecera().getSubtotalesIva())
+				<linea>
+			<texto size="11" align="left">${impuesto.getBaseAsString()}€ </texto>
+			<texto size="8" align="left">  ${impuesto.getPorcentajeAsString()}% </texto>
+			<texto size="10" align="left"> ${impuesto.getCuotaAsString()}€</texto>
+			<texto size="11" align="left"> ${impuesto.getTotalAsString()}€</texto>
+	</linea>
+			#end
+	<linea>
+		<texto>_______________________________________</texto>
+	</linea>
+	<linea>
+		<texto size="29" align="left" fontweight="bold">OPERADOR: ${ticket.getCabecera().getCajero()}</texto>
+		<texto size="11" align="left" fontweight="bold">CAIXA: ${ticket.getCabecera().getCodCaja()}</texto>
+	</linea>
+	#PROMOCIONES
+	#if(${ticket.tienePromocionesAhorroMayor0()})
+	<linea>
+		<texto>_______________________________________</texto>
+	</linea>
+	<linea>
+		<texto style="1" fontweight="bold">PROMOÇOÊS EMPREGADAS</texto>
+	</linea>
+	<linea>
+		<texto>_______________________________________</texto>
+	</linea>
+				#foreach ($promocion in $ticket.getPromociones())
+					#if(${promocion.getImporteTotalAhorro()} > 0 && !${promocion.isDescuentoAFuturo()})
+	<linea>
+		<texto size="34" align="left">P${promocion.getIdPromocion()} ${promocion.getTextoPromocion()}</texto>
+		<texto size="1" align="left"> </texto>
+		<texto size="5" align="right">${promocion.getImporteTotalAhorroAsString()}€</texto>
+	</linea>
+					#end
+				#end
+	   
+	
+	<linea></linea>
+	<linea line-size="1">
+		<texto size="29" align="right" fontweight="bold">TOTAL PROMOÇOÊS: </texto>
+		<texto size="11" align="right">${ticket.getTotales().getTotalPromocionesAsString()}€</texto>
+	</linea>
+	<linea><texto>_______________________________________</texto></linea>
+	<linea></linea>
+			#end
+	#FIDELIZADO y PUNTOS
+	#if(${ticket.getCabecera().getDatosFidelizado()})
+		#if(${ticket.getCabecera().getDatosFidelizado().getNumTarjetaFidelizado()})
+	<linea>
+		<texto>CARTÃO PARTNER: ${ticket.getCabecera().getDatosFidelizado().getNumTarjetaFidelizado()}</texto>
+	</linea>
+				#end
+				#if ( !${esCopia} && !${esGestion})
+	<linea>
+		<texto>SALDO ACUMULADO:  ${ticket.getCabecera().getDatosFidelizado().getSaldoTotalAsString()}€</texto>
+	</linea>
+				#end
+				#if(${ticket.getTotales().getPuntos()} > 0)
+	<linea>
+		<texto>Obtido ${ticket.getTotales().getPuntos()} pontos nesta compra.</texto>
+	</linea>
+				#end
+				#if(${ticket.getPuntosDevueltos()} > 0)
+	<linea>
+		<texto>Retornou ${ticket.getPuntosDevueltos()} pontos nesta compra.</texto>
+	</linea>
+				#end
+			#end
+			#if (${ticket.getCabecera().getNumAnticipo()})
+	<linea><texto>_______________________________________</texto></linea>
+	<linea> 
+		<texto>NÚMERO DE ANTECIPO: ${ticket.getCabecera().getNumAnticipo()}</texto>
+	</linea>														   
+	<linea><texto>_______________________________________</texto></linea>
+			#end
+																				  
+									
+																		  
+	<linea><texto>${ticket.getCabecera().getFirma().getFirma().charAt(0)}${ticket.getCabecera().getFirma().getFirma().charAt(10)}${ticket.getCabecera().getFirma().getFirma().charAt(20)}${ticket.getCabecera().getFirma().getFirma().charAt(30)}-Processado por programa certificado</texto></linea>
+	<linea><texto>n.º2175/AT</texto></linea>
+
+#end
+
+		#if(${ticket.getCabecera().getDatosEnvio()})
+	<linea>
+		<texto align="center" size="40">DADOS ENVÍO</texto>
+	</linea>
+	<linea>
+		<texto>_______________________________________</texto>
+	</linea>
+	<linea>
+		<texto size="50" align="left">${ticket.getCabecera().getDesTipoDocumento()} : ${ticket.getCabecera().getCodTicket()}</texto>
+	</linea>
+	#if (${ticket.getCabecera().getDatosEnvio().getNombreComercial()})
+	  <linea>
+		  <texto>Nome: </texto>
+		  <texto align="left">${ticket.getCabecera().getDatosEnvio().getNombreComercial()}</texto>
+	  </linea>
+	#end
+	#if (${ticket.getCabecera().getDatosEnvio().getTipoIdentificacion()})
+	  #if(${ticket.getCabecera().getDatosEnvio().getCif()})
+		  <linea>
+			  <texto>${ticket.getCabecera().getDatosEnvio().getTipoIdentificacion()}: </texto>
+			  <texto align="left">${ticket.getCabecera().getDatosEnvio().getCif()}</texto>
+		  </linea>
+	  #end
+	#end
+	#if (${ticket.getCabecera().getDatosEnvio().getDomicilio()})
+		<linea>
+			<texto>Endereço: </texto>
+			<texto align="left">${ticket.getCabecera().getDatosEnvio().getDomicilio()}</texto>
+		</linea>
+	#end
+	#if (${ticket.getCabecera().getDatosEnvio().getPoblacion()})
+		<linea>
+			<texto>População: </texto>
+			<texto align="left">${ticket.getCabecera().getDatosEnvio().getPoblacion()}</texto>
+		</linea>
+	#end
+	#if (${ticket.getCabecera().getDatosEnvio().getProvincia()})
+		<linea>
+			<texto>Distrito: </texto>
+			<texto align="left">${ticket.getCabecera().getDatosEnvio().getProvincia()}</texto>
+		</linea>
+	#end
+	#if (${ticket.getCabecera().getDatosEnvio().getLocalidad()})
+		<linea>
+			<texto>Localidade: </texto>
+			<texto align="left">${ticket.getCabecera().getDatosEnvio().getLocalidad()}</texto>
+		</linea>
+	#end
+	#if (${ticket.getCabecera().getDatosEnvio().getPais()})
+		<linea>
+			<texto>Pais: </texto>
+			<texto align="left">${ticket.getCabecera().getDatosEnvio().getPais()}</texto>
+		</linea>
+	#end
+	#if (${ticket.getCabecera().getDatosEnvio().getCp()})
+		<linea>
+			<texto>Código postal: </texto>
+			<texto align="left">${ticket.getCabecera().getDatosEnvio().getCp()}</texto>
+		</linea>
+	#end
+	#if (${ticket.getCabecera().getDatosEnvio().getTelefono1()})
+		<linea>
+			<texto>Telemóvel: </texto>
+			<texto align="left">${ticket.getCabecera().getDatosEnvio().getTelefono1()}</texto>
+		</linea>
+	#end
+	<linea>
+		<texto/>
+	</linea>
+#end
+#if(!$paperLess)
+	<codbar align="center" tipo-leyenda="2" >${ticket.getCabecera().getLocalizador()}</codbar>	
+	#if (${ticket.getCabecera().getFiscalData().getProperties()})
+        #if (${ticket.getCabecera().getFiscalData().getProperty("ATCUD")})
+<linea><texto size="40" align="center">ATCUD: ${ticket.getCabecera().getFiscalData().getProperty("ATCUD").getValue()}</texto></linea>
+        #end    
+
+        #if (${ticket.getCabecera().getFiscalData().getProperty("QR")})
+<codbar type="QR">$base64Coder.decodeBase64(${ticket.getCabecera().getFiscalData().getProperty("QR").getValue()})</codbar>
+        #end
+    #else
+<codbar type="QR">$base64Coder.decodeBase64(${ticket.getCabecera().getFiscalData().getData()})</codbar>
+    #end
+		
+	<linea> </linea>
+	#parse("./plantillas/promocion_texto.xml")
+	#if(${apartado})
+	   <corte></corte>
+		
+	   <linea><texto size="40" align="center">Comprovante de entrega de itens separados</texto> </linea>
+		
+	   <linea><texto>Separado:${apartado}</texto> </linea>
+		 
+	   #if ((${ticket.getCabecera().getCliente().getDatosFactura()}) && (${ticket.getCabecera().getCliente().getDatosFactura().getNombre()}))
+		   
+		<linea><texto>Cliente:${ticket.getCabecera().getCliente().getDatosFactura().getNombre()}</texto> </linea>
+		 
+	   #else
+			 
+		  <linea><texto>Cliente:${ticket.getCliente().getNombreComercial()}</texto> </linea>
+		 
+	   #end
+			 
+	   <linea><texto>Fecha:${ticket.getCabecera().getFechaAsLocale()}</texto></linea>    
+		 
+		
+	 <linea><texto>${ticket.getCabecera().getDesTipoDocumento()}:${ticket.getCabecera().getCodTicket()}</texto> </linea>
+		 
+	<linea>
+		<texto>Importe:${ticket.getTotales().getTotalAPagarAsString()}€</texto>
+	</linea>		 
+		
+	   <linea> <texto> </texto> </linea>
+		 
+		
+	   <linea> <texto style ="1" >PAGAMENTO</texto> </linea>
+	 <linea> <texto>_______________________________________</texto> </linea>
+		
+														 
+		 
+	   #parse("./plantillas/detalle_pagos_PT.xml")
+			
+	   <linea> <texto> </texto> </linea>
+			
+		
+	   <linea><texto size="40" align="center">Cópia para o estabelecimento</texto> </linea>
+		 
+	   	<!-- <linea></linea>  --> 
+	#end
+#end
+	<linea>
+		<texto align="center" size="39">OBRIGADO PELA SUA VISITA</texto>
+	</linea>
+#parse("./plantillas/datos_pie_pt.xml")
+<corte></corte>
+		#if(${ticket.getCabecera().getTarjetaRegalo()})
+			#parse("./plantillas/ticket_regalo_PT.xml")
+		#end
+</plantilla>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				   

@@ -1,0 +1,37 @@
+		#if(!${tarjetaRegalo})
+			<linea line-size="4"> <texto align="center" style="1">***Talao de Oferta***</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Obrigado pela sua visita.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Conserve seu talao para qualquer troca ou devoluçao</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Prazo máximo 30 dias.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Condiçoes válidas apenas em territorio nacional com exceçao das lojas em El Corte Inglés e lojas Outlet.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Para trocas ou devoluçoes de artigos é imprescindível que concerve intacto a etiqueta de uso.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Não são permitidas trocas nem devoluções de artigos de banho sem que tenham a protecção higiénica intacta.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">O valor da sua compra será reembolsado no mesmo meio de pagamento sempre e quando apresente o ticket original e, se for o caso, o cartão e o comprovativo da operação. Caso apresente o talão de oferta, o reembolso correspondente será feito com um cartão de pagamento.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Esta garantia é adicional e não afecta os direitos do consumidor.</texto> </linea>
+		#else
+			<linea line-size="4"> <texto align="center" style="1">Obrigado pela sua visita.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Conserve seu talao para qualquer troca ou devoluçao</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Prazo máximo 30 dias.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Condiçoes válidas apenas em territorio nacional com exceçao das lojas em El Corte Inglés e lojas Outlet. </texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Para trocas ou devoluçoes de artigos é imprescindível que concerve intacto a etiqueta de uso.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Não são permitidas trocas nem devoluções de artigos de banho sem que tenham a protecção higiénica intacta.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">O valor da sua compra será reembolsado no mesmo meio de pagamento sempre e quando apresente o ticket original e, se for o caso, o cartão e o comprovativo da operação. Caso apresente o talão de oferta, o reembolso correspondente será feito com um cartão de pagamento.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">***Cartão Oferta/Pagamento***</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">O Cartão é válido por três anos a contar da data do seu carregamento.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">O Cartão só é válido para a compra de artigos à venda nos pontos de venda da BIMBA Y LOLA presentes no território português (excepto El Corte Inglés e loja online www.bimbaylola.com) até esgotar o saldo do Cartão.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">O referido saldo não será reembolsável, nem pode ser trocado por dinheiro em nenhuma circunstância.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">O Cartão não será substituído em caso de roubo, perda, extravio ou danificação. Os produtos adquiridos com o Cartão estão sujeitos às políticas de trocas de devoluções da BIMBA Y LOLA.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Deste modo, será aceite a devolução do Cartão Oferta não usado num prazo máximo de 30 dias, desde que o protetor do codigo de segurança esteja intacto, respeitando as condições de devolução estabelecidas em bimbaylola.com.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Para qualquer troca ou devolução de artigos pagos com o Cartão, é imprescindível a sua conservação e apresentação no momento da referida operação.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Por favor, verifique se o saldo do seu Cartão é o que consta no talão anexado ao mesmo.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">A aquisição e utilização do Cartão implica a aceitação das condições para a utilização do mesmo e que estão disponíveis em www.bimbaylola.com.</texto> </linea>
+			<linea line-size="4"> <texto align="center" style="1">Esta garantia é adicional e não afecta os direitos do consumidor.</texto> </linea>
+
+		#end
+		
+
+
+
+
+
+		

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.comerzzia.pos.core.gui.componentes.tecladonumerico.*?>
+<?import com.comerzzia.pos.core.gui.componentes.textField.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-classpath-element ../../../../../../../../../../target/comerzzia-pos-gui-3.0-jar-with-dependencies.jar?>
+<?scenebuilder-stylesheet selfcheckoutpagos.css?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1024.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.comerzzia.brico.pos.selfcheckout.gui.pagos.SelfCheckoutPagosController">
+  <children>
+    <HBox id="HBox" alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox prefHeight="200.0" prefWidth="100.0">
+          <children>
+            <AnchorPane fx:id="panelMenuTabla" maxHeight="-1.0" maxWidth="50.0" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="50.0" visible="true" />
+          </children>
+          <padding>
+            <Insets bottom="10.0" left="10.0" right="5.0" top="10.0" />
+          </padding>
+        </VBox>
+        <VBox minWidth="400.0" prefHeight="-1.0" prefWidth="-1.0" spacing="0.0" visible="true" HBox.hgrow="ALWAYS">
+          <children>
+            <TextFieldImporte fx:id="tfCantidadIntro" maxHeight="0.0" prefHeight="0.0" minHeight="0.0" prefWidth="-1.0" styleClass="input-warn-not-focused, input-invisible" />
+            <TableView fx:id="tbLineas" focusTraversable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-1.0" pickOnBounds="false" prefHeight="-1.0" prefWidth="-1.0" tableMenuButtonVisible="false" VBox.vgrow="ALWAYS">
+              <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" fx:id="x4" />
+              </columnResizePolicy>
+              <columns>
+                <TableColumn minWidth="80.0" prefWidth="75.0" text="" visible="false" fx:id="tcLineasArticulo" />
+                <TableColumn maxWidth="5000.0" minWidth="200.0" prefWidth="200.0" text="%DESCRIPCIÓN" fx:id="tcLineasDescripcion" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="40.0" text="Talla" visible="false" fx:id="tcLineasDesglose1" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="56.0" text="Color" visible="false" fx:id="tcLineasDesglose2" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="53.0" styleClass="texto-right" text="%UND." fx:id="tcLineasCantidad" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="63.0" styleClass="texto-right" text="%PVP" visible="false" fx:id="tcLineasPVP" />
+                <TableColumn prefWidth="80.0" styleClass="texto-right" text="%DTO." visible="false" fx:id="tcLineasDescuento" />
+                <TableColumn minWidth="40.0" prefWidth="0.0" styleClass="texto-right" text="%IMPORTE" fx:id="tcLineasImporte" />
+                <TableColumn minWidth="85.0" prefWidth="75.0" text="%Vendedor" visible="false" fx:id="tcVendedor" />
+              </columns>
+              <VBox.margin>
+                <Insets bottom="10.0" fx:id="x5" />
+              </VBox.margin>
+            </TableView>
+            <TableView fx:id="tbPagos" columnResizePolicy="$x4" maxHeight="0.0" minHeight="0.0" minWidth="-1.0" pickOnBounds="false" prefHeight="0.0" prefWidth="-1.0" tableMenuButtonVisible="false" visible="false" VBox.vgrow="NEVER">
+              <columns>
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="500.0" text="FORMA DE PAGO" fx:id="tcPagosFormaPago" />
+                <TableColumn maxWidth="5000.0" minWidth="100.0" prefWidth="200.0" styleClass="texto-right" text="%IMPORTE" fx:id="tcPagosImporte" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tbCoupons" columnResizePolicy="$x4" maxHeight="318.0" minHeight="0.0" minWidth="-1.0" pickOnBounds="false" prefHeight="318.0" prefWidth="559.0" tableMenuButtonVisible="false" visible="true">
+              <columns>
+                <TableColumn maxWidth="5000.0" minWidth="200.0" prefWidth="200.0" text="%DESCRIPCIÓN" fx:id="tcLineasDescripcionCoupons" />
+                <TableColumn minWidth="40.0" prefWidth="0.0" styleClass="texto-right" text="%IMPORTE" fx:id="tcLineasImporteCoupons" />
+              </columns>
+            </TableView>
+          </children>
+          <padding>
+            <Insets bottom="10.0" right="10.0" top="10.0" />
+          </padding>
+          <HBox.margin>
+            <Insets right="30.0" />
+          </HBox.margin>
+        </VBox>
+        <VBox maxWidth="400.0" minWidth="400.0" prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="NEVER">
+          <children>
+            <VBox fx:id="a" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+              <children>
+                <Label id="tf" fx:id="lbSeleccionMedioPago" styleClass="lb-destacado" text="%SeleccionMedioPago">
+                  <VBox.margin>
+                    <Insets bottom="30.0" top="20.0" />
+                  </VBox.margin>
+                </Label>
+                <HBox id="panelMediosPago" fx:id="panelBotoneraMediosPago" alignment="CENTER_RIGHT" minWidth="200.0" prefHeight="200.0" prefWidth="-1.0" spacing="20.0">
+                  <padding>
+                    <Insets right="10.0" />
+                  </padding>
+                  <VBox.margin>
+                    <Insets bottom="15.0" top="20.0" />
+                  </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="200.0" styleClass="contenedor-total, entregado" visible="false">
+                  <children>
+                    <Label id="lbEntregado" fx:id="lbTextEntregado" alignment="CENTER_RIGHT" prefWidth="142.0" styleClass="label-total" text="%ENTREGADO" />
+                    <Label fx:id="lbEntregado" alignment="CENTER_RIGHT" minWidth="-1.0" prefHeight="-1.0" prefWidth="210.0" style="" styleClass="lb-total" text="" textAlignment="RIGHT" />
+                  </children>
+                  <padding>
+                    <Insets right="15.0" fx:id="x1" />
+                  </padding>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" padding="$x1" prefHeight="80.0" prefWidth="200.0" styleClass="contenedor-total, thechange" visible="false">
+                  <children>
+                    <Label id="lbEntregado" fx:id="lbTextCambio" alignment="CENTER_RIGHT" prefWidth="142.0" styleClass="label-total, cambio" text="%CAMBIO" />
+                    <Label id="lbEntregado" fx:id="lbCambio" alignment="CENTER_RIGHT" minWidth="-1.0" prefWidth="210.0" style="" styleClass="lb-total, cambio" text="" textAlignment="RIGHT" />
+                  </children>
+                  <VBox.margin>
+                    <Insets bottom="10.0" fx:id="x5" />
+                  </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" VBox.margin="$x5" />
+                <HBox alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="200.0" styleClass="contenedor-total">
+                  <children>
+                    <Label id="lbAPagar" fx:id="lbTotalArticulosMensaje" alignment="CENTER_RIGHT" prefWidth="183.0" styleClass="label-total" text="%Nº UNIDADES" />
+                    <Label id="lbTotal" fx:id="lbTotalArticulos" alignment="CENTER_RIGHT" contentDisplay="RIGHT" minHeight="-1.0" prefHeight="-1.0" prefWidth="181.0" style="" styleClass="lb-total, tot" text="0" textAlignment="LEFT" textFill="#003d99" wrapText="false">
+                      <font>
+                        <Font size="52.0" fx:id="x2" />
+                      </font>
+                    </Label>
+                  </children>
+                  <padding>
+                    <Insets right="15.0" fx:id="x1" />
+                  </padding>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="200.0" styleClass="contenedor-total">
+                  <children>
+                    <Label id="lbAPagar" fx:id="lbTextDescuentos" alignment="CENTER_RIGHT" prefWidth="183.0" styleClass="label-total" text="%OTROS DESCUENTOS" />
+                    <Label id="lbTotal" fx:id="lbDescuentos" alignment="CENTER_RIGHT" contentDisplay="RIGHT" font="$x2" minHeight="-1.0" prefHeight="-1.0" prefWidth="181.0" style="" styleClass="lb-total, tot" text="0,00" textAlignment="LEFT" wrapText="false">
+                      <textFill>
+                        <Color blue="0.600" green="0.239" red="0.000" fx:id="x3" />
+                      </textFill>
+                    </Label>
+                  </children>
+                  <padding>
+                    <Insets right="15.0" fx:id="x1" />
+                  </padding>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="200.0" styleClass="contenedor-total" VBox.vgrow="NEVER">
+                  <children>
+                    <Label id="lbAPagar" fx:id="lbTextAPagar" alignment="CENTER_RIGHT" prefWidth="108.0" styleClass="label-total" text="%A PAGAR" />
+                    <Label fx:id="lbTotal" alignment="CENTER_RIGHT" contentDisplay="RIGHT" font="$x2" minHeight="-1.0" prefHeight="-1.0" prefWidth="210.0" style="" styleClass="lb-total, tot" text="0,00" textAlignment="LEFT" textFill="$x3" wrapText="false" />
+                  </children>
+                  <padding>
+                    <Insets right="15.0" fx:id="x1" />
+                  </padding>
+                </HBox>
+              </children>
+              <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+              </padding>
+            </VBox>
+            <HBox alignment="BOTTOM_RIGHT" maxWidth="400.0" minWidth="-1.0" prefHeight="44.0" prefWidth="400.0">
+              <children>
+                <Button fx:id="btCancelar" focusTraversable="false" maxWidth="129.0" mnemonicParsing="false" onAction="#accionCancelar" prefHeight="60.0" prefWidth="185.0" styleClass="text-black" text="%Cancelar">
+                  <HBox.margin>
+                    <Insets right="129.0" />
+                  </HBox.margin>
+                </Button>
+                <Button id="btAtras" focusTraversable="false" maxWidth="129.0" mnemonicParsing="false" onAction="#volverAtras" prefHeight="60.0" prefWidth="185.0" styleClass="text-black, btAtras" text="%Volver atrás" />
+              </children>
+            </HBox>
+            <VBox id="VBox" alignment="CENTER" maxHeight="0.0" minHeight="0.0" prefHeight="0.0" prefWidth="-1.0" spacing="0.0" visible="false">
+              <children>
+                <AnchorPane maxHeight="0.0" minHeight="0.0" prefHeight="-1.0" prefWidth="-1.0" styleClass="titulo-ventana" VBox.vgrow="NEVER">
+                  <children>
+                    <Label fx:id="lbTitulo" alignment="CENTER" prefHeight="25.999908447265625" prefWidth="800.0" text="%Pagos" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+                </AnchorPane>
+                <HBox maxHeight="0.0" minHeight="0.0" prefHeight="-1.0" prefWidth="-1.0" spacing="8.0" VBox.vgrow="ALWAYS">
+                  <children>
+                    <VBox prefHeight="-1.0" prefWidth="-1.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                      <children>
+                        <AnchorPane id="AnchorPane" minHeight="77.0" minWidth="316.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="NEVER">
+                          <children>
+                            <VBox minHeight="209.0" prefHeight="-1.0" prefWidth="-1.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <children>
+                                <HBox minHeight="60.0" prefHeight="64.0" prefWidth="-1.0" VBox.vgrow="NEVER">
+                                  <children>
+                                    <AnchorPane prefHeight="64.0" prefWidth="376.0" HBox.hgrow="NEVER">
+                                      <children>
+                                        <TextFieldImporte fx:id="tfImporte" alignment="CENTER_RIGHT" layoutX="128.0" layoutY="28.0" onKeyReleased="#actionTfImporte" prefWidth="109.0" />
+                                        <Label fx:id="lbTituloMedioPago" alignment="CENTER_RIGHT" layoutX="8.0" layoutY="-5.0" prefHeight="30.0" prefWidth="106.0" styleClass="texto-negrita" text="%Medio de Pago" textAlignment="LEFT" />
+                                        <Label fx:id="lbImporte" alignment="CENTER_RIGHT" layoutX="8.0" layoutY="24.0" prefHeight="30.0" prefWidth="106.0" styleClass="texto-negrita" text="%Importe" textAlignment="LEFT" />
+                                        <Label fx:id="lbMedioPago" alignment="CENTER_LEFT" layoutX="129.0" layoutY="-4.0" prefHeight="30.0" prefWidth="250.0" styleClass="textoResaltado" text="EFECTIVO">
+                                          <font>
+                                            <Font size="13.0" />
+                                          </font>
+                                        </Label>
+                                        <Label fx:id="lbSaldo" layoutX="251.0" layoutY="-1.0" prefHeight="30.0" prefWidth="115.0" styleClass="textoResaltado" text="" />
+                                      </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="85.0" prefWidth="9.0" HBox.hgrow="ALWAYS" />
+                                    <AnchorPane prefHeight="57.0" prefWidth="235.0" HBox.hgrow="NEVER">
+                                      <children>
+                                        <Button fx:id="btAnotarPago" layoutX="-2.0" layoutY="5.0" mnemonicParsing="false" onAction="#actionBtAnotarPago" prefHeight="47.0" prefWidth="153.0" styleClass="anotar-pago-but" text="%Anotar pago" wrapText="true" />
+                                      </children>
+                                    </AnchorPane>
+                                  </children>
+                                </HBox>
+                                <AnchorPane fx:id="panelMediosPago" minHeight="169.0" prefHeight="191.0" prefWidth="-1.0">
+                                  <children>
+                                    <TabPane fx:id="panelPagos" disable="false" focusTraversable="false" layoutX="0.0" layoutY="-1.0" minHeight="169.0" pickOnBounds="false" prefHeight="188.0" prefWidth="525.0" rotateGraphic="false" side="BOTTOM" styleClass="tab-forma-pago" tabClosingPolicy="UNAVAILABLE" visible="true">
+                                      <tabs>
+                                        <Tab fx:id="panelPestanaPagoEfectivo" text="%Efectivo">
+                                          <content>
+                                            <AnchorPane id="Content" fx:id="panelPagoEfectivo" focusTraversable="false" minHeight="0.0" minWidth="0.0" prefHeight="133.0" prefWidth="-1.0" />
+                                          </content>
+                                        </Tab>
+                                        <Tab fx:id="panelPestanaPagoTarjeta" text="%Tarjeta">
+                                          <content>
+                                            <AnchorPane id="Content" fx:id="panelPagoTarjeta" focusTraversable="true" minHeight="0.0" minWidth="0.0" prefHeight="147.0" prefWidth="-1.0" />
+                                          </content>
+                                        </Tab>
+                                        <Tab fx:id="panelPestanaPagoContado" text="%Otros">
+                                          <content>
+                                            <AnchorPane id="Content" fx:id="panelPagoContado" focusTraversable="true" minHeight="0.0" minWidth="0.0" prefHeight="155.0" prefWidth="512.0" style="&#10;" />
+                                          </content>
+                                        </Tab>
+                                      </tabs>
+                                    </TabPane>
+                                  </children>
+                                </AnchorPane>
+                              </children>
+                            </VBox>
+                          </children>
+                        </AnchorPane>
+                        <HBox prefHeight="72.0" prefWidth="751.0" VBox.vgrow="NEVER">
+                          <children>
+                            <AnchorPane fx:id="panelBotoneraDatosAdicionales" minHeight="39.0" prefHeight="91.0" prefWidth="404.0" HBox.hgrow="NEVER" />
+                            <AnchorPane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                          </children>
+                        </HBox>
+                      </children>
+                    </VBox>
+                    <VBox prefHeight="489.0" prefWidth="265.0">
+                      <children>
+                        <AnchorPane fx:id="panelNumberPad" prefHeight="282.0" prefWidth="265.0" VBox.vgrow="NEVER">
+                          <children>
+                            <TecladoNumerico fx:id="tecladoNumerico" prefHeight="265.0" prefWidth="215.0" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                          </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" prefHeight="29.0" prefWidth="265.0" VBox.vgrow="ALWAYS" />
+                        <AnchorPane prefHeight="281.0" prefWidth="265.0" VBox.vgrow="NEVER">
+                          <children>
+                            <VBox prefHeight="200.0" prefWidth="100.0" spacing="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <children>
+                                <AnchorPane prefHeight="79.0" prefWidth="265.0" />
+                                <FlowPane fx:id="panelEntregaCuenta" alignment="CENTER_LEFT" hgap="12.0" prefHeight="26.0" prefWidth="129.0" VBox.vgrow="NEVER">
+                                  <children>
+                                    <Label fx:id="lbTextACuenta" alignment="CENTER_RIGHT" prefWidth="110.0" text="%A CUENTA" />
+                                    <Label fx:id="lbACuenta" alignment="CENTER_RIGHT" minWidth="129.0" prefWidth="129.0" styleClass="total-sub" text="" />
+                                  </children>
+                                </FlowPane>
+                                <GridPane gridLinesVisible="false" prefHeight="78.0" prefWidth="265.0" VBox.vgrow="NEVER">
+                                  <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                      <children>
+                                        <Label fx:id="lbPendiente" alignment="CENTER_RIGHT" contentDisplay="LEFT" layoutY="4.0" minWidth="129.0" prefWidth="129.0" style="" styleClass="total-sub, texto-right" text="" textAlignment="RIGHT" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="14.0" />
+                                      </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                                      <children>
+                                        <Label fx:id="lbTextoCambio" alignment="TOP_RIGHT" layoutY="4.0" prefWidth="108.0" text="%CAMBIO" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="14.0" />
+                                      </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                                      <children>
+                                        <Label fx:id="lbTextoPendiente" alignment="CENTER_RIGHT" layoutY="5.0" prefWidth="108.0" text="%PENDIENTE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="14.0" />
+                                      </children>
+                                    </AnchorPane>
+                                  </children>
+                                  <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="112.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.0" minWidth="10.0" prefWidth="133.0" />
+                                  </columnConstraints>
+                                  <rowConstraints>
+                                    <RowConstraints maxHeight="52.0" minHeight="0.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="56.0" minHeight="8.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="55.0" minHeight="3.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                                  </rowConstraints>
+                                </GridPane>
+                              </children>
+                            </VBox>
+                            <FlowPane layoutX="0.0" prefHeight="19.0" prefWidth="265.0" AnchorPane.bottomAnchor="30.0">
+                              <children>
+                                <Label fx:id="lbFormaPagoCambio" prefWidth="215.0" text="%FORMA PAGO CAMBIO:" />
+                              </children>
+                            </FlowPane>
+                            <FlowPane layoutX="0.0" minHeight="30.0" prefHeight="30.0" prefWidth="265.0" AnchorPane.bottomAnchor="0.0">
+                              <children>
+                                <Label fx:id="lbMedioPagoVuelta" prefWidth="155.0" text="N/D" />
+                                <Button fx:id="btCambio" minHeight="20.0" mnemonicParsing="false" onAction="#accionCambiarMPDevolucion" prefHeight="36.0" prefWidth="70.0" styleClass="btCambio" text="" />
+                              </children>
+                            </FlowPane>
+                          </children>
+                        </AnchorPane>
+                      </children>
+                    </VBox>
+                  </children>
+                </HBox>
+                <HBox id="HBox" alignment="CENTER" maxHeight="0.0" minHeight="0.0" prefHeight="-1.0" prefWidth="1024.0" spacing="5.0" VBox.vgrow="NEVER">
+                  <children>
+                    <AnchorPane maxHeight="0.0" minHeight="0.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                      <children>
+                        <Label fx:id="lbDocActivo" layoutY="15.0" prefHeight="30.0" prefWidth="438.0" styleClass="label-total" text="" AnchorPane.leftAnchor="10.0" />
+                      </children>
+                    </AnchorPane>
+                    <AnchorPane maxHeight="0.0" minHeight="0.0" prefHeight="0.0" prefWidth="568.0">
+                      <children>
+                        <TilePane alignment="CENTER_RIGHT" minHeight="0.0" prefHeight="56.0" prefWidth="438.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <children>
+                            <Button fx:id="btAceptar" minHeight="0.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#aceptar" prefHeight="0.0" prefWidth="115.0" styleClass="btAceptar" text="%Aceptar" />
+                          </children>
+                        </TilePane>
+                      </children>
+                    </AnchorPane>
+                  </children>
+                </HBox>
+              </children>
+            </VBox>
+          </children>
+          <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+          </padding>
+        </VBox>
+      </children>
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@../../../styles/styles.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-stylesheet ../../../../styles/styles.css?>
+<?scenebuilder-stylesheet selfcheckouttipoobtencionticket.css?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="218.0" prefWidth="600.0" styleClass="pantalla-modal" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.comerzzia.brico.pos.selfcheckout.gui.pagos.tipoobtencionticket.SelfCheckoutTipoObtencionTicketController">
+  <children>
+    <VBox layoutX="0.0" layoutY="0.0" minHeight="51.0" prefHeight="186.0" prefWidth="600.0">
+      <children>
+        <VBox alignment="CENTER" minHeight="108.0" prefHeight="197.0" prefWidth="600.0" spacing="5.0">
+          <children>
+            <HBox prefHeight="63.0" prefWidth="600.0">
+              <children>
+                <Label id="lbpregunta" fx:id="lbPregunta" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="63.0" prefWidth="600.0" styleClass="textoResaltado" text="%¿Cómo quiere su factura?">
+                  <stylesheets>
+                    <URL value="@../../../../styles/styles.css" />
+                  </stylesheets>
+                  <HBox.margin>
+                    <Insets bottom="25.0" />
+                  </HBox.margin>
+                </Label>
+              </children>
+            </HBox>
+            <HBox alignment="CENTER" minHeight="42.0" prefHeight="58.0" prefWidth="600.0" spacing="20.0">
+              <children>
+                <Button fx:id="btnPapel" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#seleccionarTipoFacturaPapel" prefHeight="130.0" prefWidth="130.0" styleClass="textoResaltado, btPapel">
+                  <graphic>
+                    <VBox alignment="BOTTOM_CENTER" spacing="5.0">
+                      <children>
+                        <Label id="lblPapel" fx:id="lbPapel" text="%Papel" />
+                      </children>
+                    </VBox>
+                  </graphic>
+                  <stylesheets>
+                    <URL value="@../../../../styles/styles.css" />
+                  </stylesheets>
+                </Button>
+                <Button fx:id="btnCorreo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#seleccionarTipoFacturaCorreo" prefHeight="130.0" prefWidth="130.0" styleClass="textoResaltado, btEmail">
+                  <graphic>
+                    <VBox alignment="CENTER" spacing="5.0">
+                      <children>
+                        <ImageView fitHeight="77.50003051757812" fitWidth="84.60761169877675" pickOnBounds="true" preserveRatio="true" />
+                        <Label id="lblEmail" fx:id="lbEmail" text="%Email" />
+                      </children>
+                    </VBox>
+                  </graphic>
+                  <stylesheets>
+                    <URL value="@../../../../styles/styles.css" />
+                  </stylesheets>
+                </Button>
+                <Button fx:id="btnAmbos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#seleccionarTipoFacturaAmbos" prefHeight="132.0" prefWidth="133.0" styleClass="textoResaltado, btAmbos">
+                  <graphic>
+                    <VBox alignment="CENTER" spacing="5.0">
+                      <children>
+                        <ImageView fitHeight="78.47007751464844" fitWidth="131.6781548147048" pickOnBounds="true" preserveRatio="true" />
+                        <Label id="lblAmbos" fx:id="lbAmbos" text="%Ambos" />
+                      </children>
+                    </VBox>
+                  </graphic>
+                  <stylesheets>
+                    <URL value="@../../../../styles/styles.css" />
+                  </stylesheets>
+                </Button>
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+      </children>
+    </VBox>
+  </children>
+  <stylesheets>
+    <URL value="@selfcheckouttipoobtencionticket.css" />
+  </stylesheets>
+</AnchorPane>

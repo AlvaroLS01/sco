@@ -1,0 +1,15 @@
+.lb-despedida {
+	-fx-font-size: 20px;
+	-fx-text-fill: rgba(0, 0, 0);
+	-fx-font-weight: bold;
+	-fx-padding: 0px 8px 0px 0px;
+}
+
+.logo-spar {
+	-fx-background-image: url("../bienvenida/logotipo_altacomerzzia.png");
+    -fx-background-position: center;
+    -fx-background-size: 50% auto;
+    -fx-background-repeat: no-repeat;
+    -fx-text-fill: rgba(0, 0, 0);
+    
+}
